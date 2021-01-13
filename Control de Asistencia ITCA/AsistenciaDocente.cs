@@ -21,7 +21,8 @@ namespace Control_de_Asistencia_ITCA
             //AJUSTAR LOS MENU DESCPLEGABLE DEL COMBO A LOS ITEMS 
             cmbUserName.DropDownWidth = DropDownWidth(cmbUserName);
             iniciarDatos();
-
+            validaciones();
+            auxSeleccionar();
         }
 
         int DropDownWidth(ComboBox myCombo)
@@ -62,15 +63,16 @@ namespace Control_de_Asistencia_ITCA
             return "";
         };
 
-        public string Recursos { get; private set; }
+        public void validaciones()
+        {
+            Validar validar = new Validar();
+            validar.validarAsistencia(btnRegistrar, tblHorarioAsistencia);
+        }
 
         public void iniciarDatos()
         {
             //INICIAR EL HORARIO DE ASISTENCIA DE DOCENTE ACTUAL
-            iniciar.iniciarHorarioAsistencia(tblHorarioAsistencia);
-
-            //SELECCIONAR LA FILA PROXIMA A LA ASISTENCIA
-            auxSeleccionar();
+            iniciar.iniciarHorarioAsistencia(tblHorarioAsistencia);            
 
             //ESTABLECER EN EL COMOBOBOX EL NOMBRE DEL USUARIO ACTUALMENTE INGRESADO
             cmbUserName.Items.Add(getNombre(servicio.getListNombresCompletos()));
@@ -79,10 +81,14 @@ namespace Control_de_Asistencia_ITCA
             lblTipo.Text = Tipo.SesionTipo.descripcionTipo;
             lblCargo.Text = Usuario.Sesion.funcion;
         }
-        
+
+       
+
         public void auxSeleccionar()
         {
+            //ESTABLECER UN TEMPORIZADOR CADA CIERTO TIEMPO
             var timer = new System.Timers.Timer(TimeSpan.FromSeconds(0.5).TotalMilliseconds);
+            //LA ACCION QUE VA A HACER AL ALCANZAR EL TIEMPO LIMITE
             timer.Elapsed += (sender, e) =>
             {
                 if (DateTimeInternet())
@@ -92,30 +98,48 @@ namespace Control_de_Asistencia_ITCA
                 }
                 else
                 {
-                    DateTime horaLocal = DateTime.Today;
+                    DateTimeOffset horaLocal = DateTime.Today;
                     seleccionarFila(horaLocal);
                 }
             };
+            //INICIAR EL TEMPORIZADOR
             timer.Start();
         }
 
         public void seleccionarFila(DateTimeOffset fecha)
         {
+            string horaMenor = tblHorarioAsistencia.Rows[0].Cells[6].Value.ToString();
+            int id = 0;
+            tblHorarioAsistencia.ClearSelection();
             foreach (DataGridViewRow row in tblHorarioAsistencia.Rows)
             {
-                DateTime auxFecha = DateTime.Parse(row.Cells["txtFecha"].Value.ToString());
-                DateTime actualFecha = DateTime.Parse(fecha.ToString("dd/MM/yyyy"));
-                if (actualFecha.Date < auxFecha.Date)
+               if( DateTime.Parse(row.Cells["txtIniciar"].Value.ToString()).Date < DateTime.Parse(horaMenor).Date)
                 {
-                    DateTime horaInicio = DateTime.Parse(row.Cells["txtIniciar"].Value.ToString());
-                    DateTime horaActual = DateTime.Parse(fecha.ToString("HH:mm"));
-                    if (horaActual.Date < horaInicio.Date)
-                    {
-                        row.Selected = true;
-                        row.DefaultCellStyle.BackColor = Color.FromArgb(50, 205, 50);
-                    }
+                    horaMenor = row.Cells["txtIniciar"].Value.ToString();
+                    id = id++;
                 }
             }
+
+            if (btnRegistrar.Enabled)
+            {
+                DateTime horaInicio = DateTime.Parse(horaMenor);
+                DateTime horaActual = DateTime.Parse(fecha.ToString("HH:mm"));
+                if (horaActual.Date < horaInicio.Date)
+                {
+                    tblHorarioAsistencia.Rows[id].Selected = true;
+                    //row.DefaultCellStyle.BackColor = Color.FromArgb(50, 205, 50);
+                }
+            }
+        }
+
+        public bool DateTimeInternet()
+        {
+            if (InternetTime.GetCurrentTime().Value.ToLocalTime() != null)
+            {
+                return true;
+
+            }
+            return false;
         }
 
         private void btnAsistenciaDocente_Click(object sender, EventArgs e)
@@ -126,6 +150,31 @@ namespace Control_de_Asistencia_ITCA
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+
+            List<String> fechas = new List<string>();
+            foreach (DataGridViewRow row in tblHorarioAsistencia.Rows)
+            {
+                fechas.Add(row.Cells["txtFecha"].Value.ToString());
+            }
+            Func<List<string>, ServicioAsistencia.estado> getEstado = lista =>
+            {
+                DateTime actual = DateTime.Parse(InternetTime.GetCurrentTime().Value.ToLocalTime().ToString("dd/MM/yyyy"));
+                foreach (string item in lista)
+                {
+                    DateTime referencia = DateTime.Parse(item);
+                    if (actual.Date < referencia.Date)
+                    {
+                        return servicio.getEstado(1);
+                    }
+                }
+                return null;
+            };
+            servicio.saveAsistencia(Tipo.SesionTipo, Usuario.Sesion, Valores.valores.msjAsistenciaPresente,
+                DateTime.Parse(DateTime.Today.ToString("dd/MM/yyyy")).Date, 
+                getEstado(fechas), "Sin comentaros", "S/A");
+
+            
+
             if (InternetTime.GetCurrentTime().Value.ToLocalTime() != null)
             {
                 DateTime horaInternet = DateTime.Parse(InternetTime.GetCurrentTime().Value.ToLocalTime().ToString("dd/MM/yyyy"));
@@ -136,16 +185,6 @@ namespace Control_de_Asistencia_ITCA
                 DateTime horaLocal = DateTime.Parse(DateTime.Today.ToString("dd/MM/yyyy"));
 
             }
-        }
-        
-        public bool DateTimeInternet()
-        {
-            if (InternetTime.GetCurrentTime().Value.ToLocalTime() != null)
-            {
-                return true;
-
-            }
-            return false;
         }
 
         private void tblHorarioAsistencia_ColumnSortModeChanged(object sender, DataGridViewColumnEventArgs e)

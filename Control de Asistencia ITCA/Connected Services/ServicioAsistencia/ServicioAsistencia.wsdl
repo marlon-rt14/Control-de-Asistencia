@@ -5,263 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WS_AttendanceControl/ServicioAsistencia?xsd=1" namespace="http://servicios/" />
     </xsd:schema>
   </types>
-  <message name="updateAula">
-    <part name="parameters" element="tns:updateAula" />
-  </message>
-  <message name="updateAulaResponse">
-    <part name="parameters" element="tns:updateAulaResponse" />
-  </message>
-  <message name="deleteAula">
-    <part name="parameters" element="tns:deleteAula" />
-  </message>
-  <message name="deleteAulaResponse">
-    <part name="parameters" element="tns:deleteAulaResponse" />
-  </message>
-  <message name="deleteEmpleado">
-    <part name="parameters" element="tns:deleteEmpleado" />
-  </message>
-  <message name="deleteEmpleadoResponse">
-    <part name="parameters" element="tns:deleteEmpleadoResponse" />
-  </message>
-  <message name="updateEmpleado">
-    <part name="parameters" element="tns:updateEmpleado" />
-  </message>
-  <message name="updateEmpleadoResponse">
-    <part name="parameters" element="tns:updateEmpleadoResponse" />
-  </message>
-  <message name="getAsistencia">
-    <part name="parameters" element="tns:getAsistencia" />
-  </message>
-  <message name="getAsistenciaResponse">
-    <part name="parameters" element="tns:getAsistenciaResponse" />
-  </message>
-  <message name="saveAsistencia">
-    <part name="parameters" element="tns:saveAsistencia" />
-  </message>
-  <message name="getListEstados">
-    <part name="parameters" element="tns:getListEstados" />
-  </message>
-  <message name="getListEstadosResponse">
-    <part name="parameters" element="tns:getListEstadosResponse" />
-  </message>
-  <message name="getAula">
-    <part name="parameters" element="tns:getAula" />
-  </message>
-  <message name="getAulaResponse">
-    <part name="parameters" element="tns:getAulaResponse" />
-  </message>
-  <message name="saveEstado">
-    <part name="parameters" element="tns:saveEstado" />
-  </message>
-  <message name="updateEstado">
-    <part name="parameters" element="tns:updateEstado" />
-  </message>
-  <message name="updateEstadoResponse">
-    <part name="parameters" element="tns:updateEstadoResponse" />
-  </message>
-  <message name="saveFechaHabil">
-    <part name="parameters" element="tns:saveFechaHabil" />
-  </message>
-  <message name="updateFechaHabil">
-    <part name="parameters" element="tns:updateFechaHabil" />
-  </message>
-  <message name="updateFechaHabilResponse">
-    <part name="parameters" element="tns:updateFechaHabilResponse" />
-  </message>
-  <message name="getListHorario">
-    <part name="parameters" element="tns:getListHorario" />
-  </message>
-  <message name="getListHorarioResponse">
-    <part name="parameters" element="tns:getListHorarioResponse" />
-  </message>
-  <message name="saveAula">
-    <part name="parameters" element="tns:saveAula" />
-  </message>
-  <message name="updateAsistencia">
-    <part name="parameters" element="tns:updateAsistencia" />
-  </message>
-  <message name="updateAsistenciaResponse">
-    <part name="parameters" element="tns:updateAsistenciaResponse" />
-  </message>
-  <message name="getListAulas">
-    <part name="parameters" element="tns:getListAulas" />
-  </message>
-  <message name="getListAulasResponse">
-    <part name="parameters" element="tns:getListAulasResponse" />
-  </message>
-  <message name="getListEmpleados">
-    <part name="parameters" element="tns:getListEmpleados" />
-  </message>
-  <message name="getListEmpleadosResponse">
-    <part name="parameters" element="tns:getListEmpleadosResponse" />
-  </message>
-  <message name="getFechaHabil">
-    <part name="parameters" element="tns:getFechaHabil" />
-  </message>
-  <message name="getFechaHabilResponse">
-    <part name="parameters" element="tns:getFechaHabilResponse" />
-  </message>
-  <message name="deleteEstado">
-    <part name="parameters" element="tns:deleteEstado" />
-  </message>
-  <message name="deleteEstadoResponse">
-    <part name="parameters" element="tns:deleteEstadoResponse" />
-  </message>
-  <message name="saveEmpleado">
-    <part name="parameters" element="tns:saveEmpleado" />
-  </message>
-  <message name="getEstado">
-    <part name="parameters" element="tns:getEstado" />
-  </message>
-  <message name="getEstadoResponse">
-    <part name="parameters" element="tns:getEstadoResponse" />
-  </message>
-  <message name="getHorario">
-    <part name="parameters" element="tns:getHorario" />
-  </message>
-  <message name="getHorarioResponse">
-    <part name="parameters" element="tns:getHorarioResponse" />
-  </message>
-  <message name="getEmpleado">
-    <part name="parameters" element="tns:getEmpleado" />
-  </message>
-  <message name="getEmpleadoResponse">
-    <part name="parameters" element="tns:getEmpleadoResponse" />
-  </message>
-  <message name="deleteHorario">
-    <part name="parameters" element="tns:deleteHorario" />
-  </message>
-  <message name="deleteHorarioResponse">
-    <part name="parameters" element="tns:deleteHorarioResponse" />
-  </message>
-  <message name="saveHorario">
-    <part name="parameters" element="tns:saveHorario" />
-  </message>
-  <message name="deleteFechaHabil">
-    <part name="parameters" element="tns:deleteFechaHabil" />
-  </message>
-  <message name="deleteFechaHabilResponse">
-    <part name="parameters" element="tns:deleteFechaHabilResponse" />
-  </message>
-  <message name="deleteAsistencia">
-    <part name="parameters" element="tns:deleteAsistencia" />
-  </message>
-  <message name="deleteAsistenciaResponse">
-    <part name="parameters" element="tns:deleteAsistenciaResponse" />
-  </message>
-  <message name="getTipoEmpleado">
-    <part name="parameters" element="tns:getTipoEmpleado" />
-  </message>
-  <message name="getTipoEmpleadoResponse">
-    <part name="parameters" element="tns:getTipoEmpleadoResponse" />
-  </message>
-  <message name="getVistaDocente">
-    <part name="parameters" element="tns:getVistaDocente" />
-  </message>
-  <message name="getVistaDocenteResponse">
-    <part name="parameters" element="tns:getVistaDocenteResponse" />
-  </message>
-  <message name="getListTipos">
-    <part name="parameters" element="tns:getListTipos" />
-  </message>
-  <message name="getListTiposResponse">
-    <part name="parameters" element="tns:getListTiposResponse" />
-  </message>
-  <message name="saveTipo">
-    <part name="parameters" element="tns:saveTipo" />
-  </message>
-  <message name="updateTipo">
-    <part name="parameters" element="tns:updateTipo" />
-  </message>
-  <message name="updateTipoResponse">
-    <part name="parameters" element="tns:updateTipoResponse" />
-  </message>
-  <message name="getVistaJornada">
-    <part name="parameters" element="tns:getVistaJornada" />
-  </message>
-  <message name="getVistaJornadaResponse">
-    <part name="parameters" element="tns:getVistaJornadaResponse" />
-  </message>
-  <message name="updateHorario">
-    <part name="parameters" element="tns:updateHorario" />
-  </message>
-  <message name="updateHorarioResponse">
-    <part name="parameters" element="tns:updateHorarioResponse" />
-  </message>
-  <message name="updateJornada">
-    <part name="parameters" element="tns:updateJornada" />
-  </message>
-  <message name="updateJornadaResponse">
-    <part name="parameters" element="tns:updateJornadaResponse" />
-  </message>
-  <message name="getMateria">
-    <part name="parameters" element="tns:getMateria" />
-  </message>
-  <message name="getMateriaResponse">
-    <part name="parameters" element="tns:getMateriaResponse" />
-  </message>
-  <message name="saveTipoEmpleado">
-    <part name="parameters" element="tns:saveTipoEmpleado" />
-  </message>
-  <message name="deleteJornada">
-    <part name="parameters" element="tns:deleteJornada" />
-  </message>
-  <message name="deleteJornadaResponse">
-    <part name="parameters" element="tns:deleteJornadaResponse" />
-  </message>
-  <message name="getListMaterias">
-    <part name="parameters" element="tns:getListMaterias" />
-  </message>
-  <message name="getListMateriasResponse">
-    <part name="parameters" element="tns:getListMateriasResponse" />
-  </message>
-  <message name="saveJornada">
-    <part name="parameters" element="tns:saveJornada" />
-  </message>
-  <message name="deleteTipo">
-    <part name="parameters" element="tns:deleteTipo" />
-  </message>
-  <message name="deleteTipoResponse">
-    <part name="parameters" element="tns:deleteTipoResponse" />
-  </message>
-  <message name="saveMateria">
-    <part name="parameters" element="tns:saveMateria" />
-  </message>
-  <message name="getTipo">
-    <part name="parameters" element="tns:getTipo" />
-  </message>
-  <message name="getTipoResponse">
-    <part name="parameters" element="tns:getTipoResponse" />
-  </message>
-  <message name="updateMateria">
-    <part name="parameters" element="tns:updateMateria" />
-  </message>
-  <message name="updateMateriaResponse">
-    <part name="parameters" element="tns:updateMateriaResponse" />
-  </message>
-  <message name="deleteMateria">
-    <part name="parameters" element="tns:deleteMateria" />
-  </message>
-  <message name="deleteMateriaResponse">
-    <part name="parameters" element="tns:deleteMateriaResponse" />
-  </message>
-  <message name="getJornada">
-    <part name="parameters" element="tns:getJornada" />
-  </message>
-  <message name="getJornadaResponse">
-    <part name="parameters" element="tns:getJornadaResponse" />
-  </message>
-  <message name="getListJornada">
-    <part name="parameters" element="tns:getListJornada" />
-  </message>
-  <message name="getListJornadaResponse">
-    <part name="parameters" element="tns:getListJornadaResponse" />
-  </message>
-  <message name="getListAsistencia">
-    <part name="parameters" element="tns:getListAsistencia" />
-  </message>
-  <message name="getListAsistenciaResponse">
-    <part name="parameters" element="tns:getListAsistenciaResponse" />
+  <message name="getListNombresCompletos">
+    <part name="parameters" element="tns:getListNombresCompletos" />
+  </message>
+  <message name="getListNombresCompletosResponse">
+    <part name="parameters" element="tns:getListNombresCompletosResponse" />
   </message>
   <message name="getListFechasHabiles">
     <part name="parameters" element="tns:getListFechasHabiles" />
@@ -275,23 +23,11 @@
   <message name="deleteTipoEmpleadoResponse">
     <part name="parameters" element="tns:deleteTipoEmpleadoResponse" />
   </message>
-  <message name="getListTiposEmpleados">
-    <part name="parameters" element="tns:getListTiposEmpleados" />
+  <message name="getNombreCompleto">
+    <part name="parameters" element="tns:getNombreCompleto" />
   </message>
-  <message name="getListTiposEmpleadosResponse">
-    <part name="parameters" element="tns:getListTiposEmpleadosResponse" />
-  </message>
-  <message name="updateTipoEmpleado">
-    <part name="parameters" element="tns:updateTipoEmpleado" />
-  </message>
-  <message name="updateTipoEmpleadoResponse">
-    <part name="parameters" element="tns:updateTipoEmpleadoResponse" />
-  </message>
-  <message name="getListVistaJornada">
-    <part name="parameters" element="tns:getListVistaJornada" />
-  </message>
-  <message name="getListVistaJornadaResponse">
-    <part name="parameters" element="tns:getListVistaJornadaResponse" />
+  <message name="getNombreCompletoResponse">
+    <part name="parameters" element="tns:getNombreCompletoResponse" />
   </message>
   <message name="getListVistaDocente">
     <part name="parameters" element="tns:getListVistaDocente" />
@@ -299,200 +35,286 @@
   <message name="getListVistaDocenteResponse">
     <part name="parameters" element="tns:getListVistaDocenteResponse" />
   </message>
-  <message name="getNombreCompleto">
-    <part name="parameters" element="tns:getNombreCompleto" />
+  <message name="getListVistaJornada">
+    <part name="parameters" element="tns:getListVistaJornada" />
   </message>
-  <message name="getNombreCompletoResponse">
-    <part name="parameters" element="tns:getNombreCompletoResponse" />
+  <message name="getListVistaJornadaResponse">
+    <part name="parameters" element="tns:getListVistaJornadaResponse" />
   </message>
-  <message name="getListNombresCompletos">
-    <part name="parameters" element="tns:getListNombresCompletos" />
+  <message name="getListTiposEmpleados">
+    <part name="parameters" element="tns:getListTiposEmpleados" />
   </message>
-  <message name="getListNombresCompletosResponse">
-    <part name="parameters" element="tns:getListNombresCompletosResponse" />
+  <message name="getListTiposEmpleadosResponse">
+    <part name="parameters" element="tns:getListTiposEmpleadosResponse" />
+  </message>
+  <message name="getListAsistencia">
+    <part name="parameters" element="tns:getListAsistencia" />
+  </message>
+  <message name="getListAsistenciaResponse">
+    <part name="parameters" element="tns:getListAsistenciaResponse" />
+  </message>
+  <message name="updateTipoEmpleado">
+    <part name="parameters" element="tns:updateTipoEmpleado" />
+  </message>
+  <message name="updateTipoEmpleadoResponse">
+    <part name="parameters" element="tns:updateTipoEmpleadoResponse" />
+  </message>
+  <message name="deleteAsistencia">
+    <part name="parameters" element="tns:deleteAsistencia" />
+  </message>
+  <message name="deleteAsistenciaResponse">
+    <part name="parameters" element="tns:deleteAsistenciaResponse" />
+  </message>
+  <message name="getAsistencia">
+    <part name="parameters" element="tns:getAsistencia" />
+  </message>
+  <message name="getAsistenciaResponse">
+    <part name="parameters" element="tns:getAsistenciaResponse" />
+  </message>
+  <message name="getListAulas">
+    <part name="parameters" element="tns:getListAulas" />
+  </message>
+  <message name="getListAulasResponse">
+    <part name="parameters" element="tns:getListAulasResponse" />
+  </message>
+  <message name="getAula">
+    <part name="parameters" element="tns:getAula" />
+  </message>
+  <message name="getAulaResponse">
+    <part name="parameters" element="tns:getAulaResponse" />
+  </message>
+  <message name="updateAula">
+    <part name="parameters" element="tns:updateAula" />
+  </message>
+  <message name="updateAulaResponse">
+    <part name="parameters" element="tns:updateAulaResponse" />
+  </message>
+  <message name="saveEmpleado">
+    <part name="parameters" element="tns:saveEmpleado" />
+  </message>
+  <message name="updateAsistencia">
+    <part name="parameters" element="tns:updateAsistencia" />
+  </message>
+  <message name="updateAsistenciaResponse">
+    <part name="parameters" element="tns:updateAsistenciaResponse" />
+  </message>
+  <message name="saveAula">
+    <part name="parameters" element="tns:saveAula" />
+  </message>
+  <message name="deleteAula">
+    <part name="parameters" element="tns:deleteAula" />
+  </message>
+  <message name="deleteAulaResponse">
+    <part name="parameters" element="tns:deleteAulaResponse" />
+  </message>
+  <message name="getListEmpleados">
+    <part name="parameters" element="tns:getListEmpleados" />
+  </message>
+  <message name="getListEmpleadosResponse">
+    <part name="parameters" element="tns:getListEmpleadosResponse" />
+  </message>
+  <message name="getEmpleado">
+    <part name="parameters" element="tns:getEmpleado" />
+  </message>
+  <message name="getEmpleadoResponse">
+    <part name="parameters" element="tns:getEmpleadoResponse" />
+  </message>
+  <message name="deleteEmpleado">
+    <part name="parameters" element="tns:deleteEmpleado" />
+  </message>
+  <message name="deleteEmpleadoResponse">
+    <part name="parameters" element="tns:deleteEmpleadoResponse" />
+  </message>
+  <message name="saveAsistencia">
+    <part name="parameters" element="tns:saveAsistencia" />
+  </message>
+  <message name="updateJornada">
+    <part name="parameters" element="tns:updateJornada" />
+  </message>
+  <message name="updateJornadaResponse">
+    <part name="parameters" element="tns:updateJornadaResponse" />
+  </message>
+  <message name="getFechaHabil">
+    <part name="parameters" element="tns:getFechaHabil" />
+  </message>
+  <message name="getFechaHabilResponse">
+    <part name="parameters" element="tns:getFechaHabilResponse" />
+  </message>
+  <message name="updateMateria">
+    <part name="parameters" element="tns:updateMateria" />
+  </message>
+  <message name="updateMateriaResponse">
+    <part name="parameters" element="tns:updateMateriaResponse" />
+  </message>
+  <message name="saveEstado">
+    <part name="parameters" element="tns:saveEstado" />
+  </message>
+  <message name="saveTipoEmpleado">
+    <part name="parameters" element="tns:saveTipoEmpleado" />
+  </message>
+  <message name="deleteFechaHabil">
+    <part name="parameters" element="tns:deleteFechaHabil" />
+  </message>
+  <message name="deleteFechaHabilResponse">
+    <part name="parameters" element="tns:deleteFechaHabilResponse" />
+  </message>
+  <message name="updateFechaHabil">
+    <part name="parameters" element="tns:updateFechaHabil" />
+  </message>
+  <message name="updateFechaHabilResponse">
+    <part name="parameters" element="tns:updateFechaHabilResponse" />
+  </message>
+  <message name="deleteHorario">
+    <part name="parameters" element="tns:deleteHorario" />
+  </message>
+  <message name="deleteHorarioResponse">
+    <part name="parameters" element="tns:deleteHorarioResponse" />
+  </message>
+  <message name="saveJornada">
+    <part name="parameters" element="tns:saveJornada" />
+  </message>
+  <message name="getJornada">
+    <part name="parameters" element="tns:getJornada" />
+  </message>
+  <message name="getJornadaResponse">
+    <part name="parameters" element="tns:getJornadaResponse" />
+  </message>
+  <message name="getListHorario">
+    <part name="parameters" element="tns:getListHorario" />
+  </message>
+  <message name="getListHorarioResponse">
+    <part name="parameters" element="tns:getListHorarioResponse" />
+  </message>
+  <message name="deleteJornada">
+    <part name="parameters" element="tns:deleteJornada" />
+  </message>
+  <message name="deleteJornadaResponse">
+    <part name="parameters" element="tns:deleteJornadaResponse" />
+  </message>
+  <message name="getListJornada">
+    <part name="parameters" element="tns:getListJornada" />
+  </message>
+  <message name="getListJornadaResponse">
+    <part name="parameters" element="tns:getListJornadaResponse" />
+  </message>
+  <message name="updateHorario">
+    <part name="parameters" element="tns:updateHorario" />
+  </message>
+  <message name="updateHorarioResponse">
+    <part name="parameters" element="tns:updateHorarioResponse" />
+  </message>
+  <message name="updateEstado">
+    <part name="parameters" element="tns:updateEstado" />
+  </message>
+  <message name="updateEstadoResponse">
+    <part name="parameters" element="tns:updateEstadoResponse" />
+  </message>
+  <message name="saveMateria">
+    <part name="parameters" element="tns:saveMateria" />
+  </message>
+  <message name="saveHorario">
+    <part name="parameters" element="tns:saveHorario" />
+  </message>
+  <message name="getListTipos">
+    <part name="parameters" element="tns:getListTipos" />
+  </message>
+  <message name="getListTiposResponse">
+    <part name="parameters" element="tns:getListTiposResponse" />
+  </message>
+  <message name="updateTipo">
+    <part name="parameters" element="tns:updateTipo" />
+  </message>
+  <message name="updateTipoResponse">
+    <part name="parameters" element="tns:updateTipoResponse" />
+  </message>
+  <message name="saveTipo">
+    <part name="parameters" element="tns:saveTipo" />
+  </message>
+  <message name="getVistaDocente">
+    <part name="parameters" element="tns:getVistaDocente" />
+  </message>
+  <message name="getVistaDocenteResponse">
+    <part name="parameters" element="tns:getVistaDocenteResponse" />
+  </message>
+  <message name="getMateria">
+    <part name="parameters" element="tns:getMateria" />
+  </message>
+  <message name="getMateriaResponse">
+    <part name="parameters" element="tns:getMateriaResponse" />
+  </message>
+  <message name="getHorario">
+    <part name="parameters" element="tns:getHorario" />
+  </message>
+  <message name="getHorarioResponse">
+    <part name="parameters" element="tns:getHorarioResponse" />
+  </message>
+  <message name="getListEstados">
+    <part name="parameters" element="tns:getListEstados" />
+  </message>
+  <message name="getListEstadosResponse">
+    <part name="parameters" element="tns:getListEstadosResponse" />
+  </message>
+  <message name="getTipo">
+    <part name="parameters" element="tns:getTipo" />
+  </message>
+  <message name="getTipoResponse">
+    <part name="parameters" element="tns:getTipoResponse" />
+  </message>
+  <message name="deleteMateria">
+    <part name="parameters" element="tns:deleteMateria" />
+  </message>
+  <message name="deleteMateriaResponse">
+    <part name="parameters" element="tns:deleteMateriaResponse" />
+  </message>
+  <message name="getListMaterias">
+    <part name="parameters" element="tns:getListMaterias" />
+  </message>
+  <message name="getListMateriasResponse">
+    <part name="parameters" element="tns:getListMateriasResponse" />
+  </message>
+  <message name="getVistaJornada">
+    <part name="parameters" element="tns:getVistaJornada" />
+  </message>
+  <message name="getVistaJornadaResponse">
+    <part name="parameters" element="tns:getVistaJornadaResponse" />
+  </message>
+  <message name="updateEmpleado">
+    <part name="parameters" element="tns:updateEmpleado" />
+  </message>
+  <message name="updateEmpleadoResponse">
+    <part name="parameters" element="tns:updateEmpleadoResponse" />
+  </message>
+  <message name="deleteTipo">
+    <part name="parameters" element="tns:deleteTipo" />
+  </message>
+  <message name="deleteTipoResponse">
+    <part name="parameters" element="tns:deleteTipoResponse" />
+  </message>
+  <message name="deleteEstado">
+    <part name="parameters" element="tns:deleteEstado" />
+  </message>
+  <message name="deleteEstadoResponse">
+    <part name="parameters" element="tns:deleteEstadoResponse" />
+  </message>
+  <message name="getTipoEmpleado">
+    <part name="parameters" element="tns:getTipoEmpleado" />
+  </message>
+  <message name="getTipoEmpleadoResponse">
+    <part name="parameters" element="tns:getTipoEmpleadoResponse" />
+  </message>
+  <message name="saveFechaHabil">
+    <part name="parameters" element="tns:saveFechaHabil" />
+  </message>
+  <message name="getEstado">
+    <part name="parameters" element="tns:getEstado" />
+  </message>
+  <message name="getEstadoResponse">
+    <part name="parameters" element="tns:getEstadoResponse" />
   </message>
   <portType name="ServicioAsistencia">
-    <operation name="updateAula">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateAulaRequest" message="tns:updateAula" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateAulaResponse" message="tns:updateAulaResponse" />
-    </operation>
-    <operation name="deleteAula">
-      <input wsam:Action="http://servicios/ServicioAsistencia/deleteAulaRequest" message="tns:deleteAula" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/deleteAulaResponse" message="tns:deleteAulaResponse" />
-    </operation>
-    <operation name="deleteEmpleado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/deleteEmpleadoRequest" message="tns:deleteEmpleado" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/deleteEmpleadoResponse" message="tns:deleteEmpleadoResponse" />
-    </operation>
-    <operation name="updateEmpleado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateEmpleadoRequest" message="tns:updateEmpleado" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateEmpleadoResponse" message="tns:updateEmpleadoResponse" />
-    </operation>
-    <operation name="getAsistencia">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getAsistenciaRequest" message="tns:getAsistencia" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getAsistenciaResponse" message="tns:getAsistenciaResponse" />
-    </operation>
-    <operation name="saveAsistencia">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveAsistencia" message="tns:saveAsistencia" />
-    </operation>
-    <operation name="getListEstados">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListEstadosRequest" message="tns:getListEstados" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListEstadosResponse" message="tns:getListEstadosResponse" />
-    </operation>
-    <operation name="getAula">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getAulaRequest" message="tns:getAula" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getAulaResponse" message="tns:getAulaResponse" />
-    </operation>
-    <operation name="saveEstado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveEstado" message="tns:saveEstado" />
-    </operation>
-    <operation name="updateEstado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateEstadoRequest" message="tns:updateEstado" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateEstadoResponse" message="tns:updateEstadoResponse" />
-    </operation>
-    <operation name="saveFechaHabil">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveFechaHabil" message="tns:saveFechaHabil" />
-    </operation>
-    <operation name="updateFechaHabil">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateFechaHabilRequest" message="tns:updateFechaHabil" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateFechaHabilResponse" message="tns:updateFechaHabilResponse" />
-    </operation>
-    <operation name="getListHorario">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListHorarioRequest" message="tns:getListHorario" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListHorarioResponse" message="tns:getListHorarioResponse" />
-    </operation>
-    <operation name="saveAula">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveAula" message="tns:saveAula" />
-    </operation>
-    <operation name="updateAsistencia">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateAsistenciaRequest" message="tns:updateAsistencia" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateAsistenciaResponse" message="tns:updateAsistenciaResponse" />
-    </operation>
-    <operation name="getListAulas">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListAulasRequest" message="tns:getListAulas" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListAulasResponse" message="tns:getListAulasResponse" />
-    </operation>
-    <operation name="getListEmpleados">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListEmpleadosRequest" message="tns:getListEmpleados" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListEmpleadosResponse" message="tns:getListEmpleadosResponse" />
-    </operation>
-    <operation name="getFechaHabil">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getFechaHabilRequest" message="tns:getFechaHabil" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getFechaHabilResponse" message="tns:getFechaHabilResponse" />
-    </operation>
-    <operation name="deleteEstado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/deleteEstadoRequest" message="tns:deleteEstado" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/deleteEstadoResponse" message="tns:deleteEstadoResponse" />
-    </operation>
-    <operation name="saveEmpleado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveEmpleado" message="tns:saveEmpleado" />
-    </operation>
-    <operation name="getEstado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getEstadoRequest" message="tns:getEstado" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getEstadoResponse" message="tns:getEstadoResponse" />
-    </operation>
-    <operation name="getHorario">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getHorarioRequest" message="tns:getHorario" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getHorarioResponse" message="tns:getHorarioResponse" />
-    </operation>
-    <operation name="getEmpleado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getEmpleadoRequest" message="tns:getEmpleado" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getEmpleadoResponse" message="tns:getEmpleadoResponse" />
-    </operation>
-    <operation name="deleteHorario">
-      <input wsam:Action="http://servicios/ServicioAsistencia/deleteHorarioRequest" message="tns:deleteHorario" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/deleteHorarioResponse" message="tns:deleteHorarioResponse" />
-    </operation>
-    <operation name="saveHorario">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveHorario" message="tns:saveHorario" />
-    </operation>
-    <operation name="deleteFechaHabil">
-      <input wsam:Action="http://servicios/ServicioAsistencia/deleteFechaHabilRequest" message="tns:deleteFechaHabil" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/deleteFechaHabilResponse" message="tns:deleteFechaHabilResponse" />
-    </operation>
-    <operation name="deleteAsistencia">
-      <input wsam:Action="http://servicios/ServicioAsistencia/deleteAsistenciaRequest" message="tns:deleteAsistencia" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/deleteAsistenciaResponse" message="tns:deleteAsistenciaResponse" />
-    </operation>
-    <operation name="getTipoEmpleado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getTipoEmpleadoRequest" message="tns:getTipoEmpleado" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getTipoEmpleadoResponse" message="tns:getTipoEmpleadoResponse" />
-    </operation>
-    <operation name="getVistaDocente">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getVistaDocenteRequest" message="tns:getVistaDocente" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getVistaDocenteResponse" message="tns:getVistaDocenteResponse" />
-    </operation>
-    <operation name="getListTipos">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListTiposRequest" message="tns:getListTipos" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListTiposResponse" message="tns:getListTiposResponse" />
-    </operation>
-    <operation name="saveTipo">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveTipo" message="tns:saveTipo" />
-    </operation>
-    <operation name="updateTipo">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateTipoRequest" message="tns:updateTipo" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateTipoResponse" message="tns:updateTipoResponse" />
-    </operation>
-    <operation name="getVistaJornada">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getVistaJornadaRequest" message="tns:getVistaJornada" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getVistaJornadaResponse" message="tns:getVistaJornadaResponse" />
-    </operation>
-    <operation name="updateHorario">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateHorarioRequest" message="tns:updateHorario" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateHorarioResponse" message="tns:updateHorarioResponse" />
-    </operation>
-    <operation name="updateJornada">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateJornadaRequest" message="tns:updateJornada" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateJornadaResponse" message="tns:updateJornadaResponse" />
-    </operation>
-    <operation name="getMateria">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getMateriaRequest" message="tns:getMateria" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getMateriaResponse" message="tns:getMateriaResponse" />
-    </operation>
-    <operation name="saveTipoEmpleado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveTipoEmpleado" message="tns:saveTipoEmpleado" />
-    </operation>
-    <operation name="deleteJornada">
-      <input wsam:Action="http://servicios/ServicioAsistencia/deleteJornadaRequest" message="tns:deleteJornada" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/deleteJornadaResponse" message="tns:deleteJornadaResponse" />
-    </operation>
-    <operation name="getListMaterias">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListMateriasRequest" message="tns:getListMaterias" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListMateriasResponse" message="tns:getListMateriasResponse" />
-    </operation>
-    <operation name="saveJornada">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveJornada" message="tns:saveJornada" />
-    </operation>
-    <operation name="deleteTipo">
-      <input wsam:Action="http://servicios/ServicioAsistencia/deleteTipoRequest" message="tns:deleteTipo" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/deleteTipoResponse" message="tns:deleteTipoResponse" />
-    </operation>
-    <operation name="saveMateria">
-      <input wsam:Action="http://servicios/ServicioAsistencia/saveMateria" message="tns:saveMateria" />
-    </operation>
-    <operation name="getTipo">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getTipoRequest" message="tns:getTipo" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getTipoResponse" message="tns:getTipoResponse" />
-    </operation>
-    <operation name="updateMateria">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateMateriaRequest" message="tns:updateMateria" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateMateriaResponse" message="tns:updateMateriaResponse" />
-    </operation>
-    <operation name="deleteMateria">
-      <input wsam:Action="http://servicios/ServicioAsistencia/deleteMateriaRequest" message="tns:deleteMateria" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/deleteMateriaResponse" message="tns:deleteMateriaResponse" />
-    </operation>
-    <operation name="getJornada">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getJornadaRequest" message="tns:getJornada" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getJornadaResponse" message="tns:getJornadaResponse" />
-    </operation>
-    <operation name="getListJornada">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListJornadaRequest" message="tns:getListJornada" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListJornadaResponse" message="tns:getListJornadaResponse" />
-    </operation>
-    <operation name="getListAsistencia">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListAsistenciaRequest" message="tns:getListAsistencia" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListAsistenciaResponse" message="tns:getListAsistenciaResponse" />
+    <operation name="getListNombresCompletos">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListNombresCompletosRequest" message="tns:getListNombresCompletos" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListNombresCompletosResponse" message="tns:getListNombresCompletosResponse" />
     </operation>
     <operation name="getListFechasHabiles">
       <input wsam:Action="http://servicios/ServicioAsistencia/getListFechasHabilesRequest" message="tns:getListFechasHabiles" />
@@ -502,427 +324,212 @@
       <input wsam:Action="http://servicios/ServicioAsistencia/deleteTipoEmpleadoRequest" message="tns:deleteTipoEmpleado" />
       <output wsam:Action="http://servicios/ServicioAsistencia/deleteTipoEmpleadoResponse" message="tns:deleteTipoEmpleadoResponse" />
     </operation>
-    <operation name="getListTiposEmpleados">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListTiposEmpleadosRequest" message="tns:getListTiposEmpleados" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListTiposEmpleadosResponse" message="tns:getListTiposEmpleadosResponse" />
-    </operation>
-    <operation name="updateTipoEmpleado">
-      <input wsam:Action="http://servicios/ServicioAsistencia/updateTipoEmpleadoRequest" message="tns:updateTipoEmpleado" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/updateTipoEmpleadoResponse" message="tns:updateTipoEmpleadoResponse" />
-    </operation>
-    <operation name="getListVistaJornada">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListVistaJornadaRequest" message="tns:getListVistaJornada" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListVistaJornadaResponse" message="tns:getListVistaJornadaResponse" />
+    <operation name="getNombreCompleto">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getNombreCompletoRequest" message="tns:getNombreCompleto" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getNombreCompletoResponse" message="tns:getNombreCompletoResponse" />
     </operation>
     <operation name="getListVistaDocente">
       <input wsam:Action="http://servicios/ServicioAsistencia/getListVistaDocenteRequest" message="tns:getListVistaDocente" />
       <output wsam:Action="http://servicios/ServicioAsistencia/getListVistaDocenteResponse" message="tns:getListVistaDocenteResponse" />
     </operation>
-    <operation name="getNombreCompleto">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getNombreCompletoRequest" message="tns:getNombreCompleto" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getNombreCompletoResponse" message="tns:getNombreCompletoResponse" />
+    <operation name="getListVistaJornada">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListVistaJornadaRequest" message="tns:getListVistaJornada" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListVistaJornadaResponse" message="tns:getListVistaJornadaResponse" />
     </operation>
-    <operation name="getListNombresCompletos">
-      <input wsam:Action="http://servicios/ServicioAsistencia/getListNombresCompletosRequest" message="tns:getListNombresCompletos" />
-      <output wsam:Action="http://servicios/ServicioAsistencia/getListNombresCompletosResponse" message="tns:getListNombresCompletosResponse" />
+    <operation name="getListTiposEmpleados">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListTiposEmpleadosRequest" message="tns:getListTiposEmpleados" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListTiposEmpleadosResponse" message="tns:getListTiposEmpleadosResponse" />
+    </operation>
+    <operation name="getListAsistencia">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListAsistenciaRequest" message="tns:getListAsistencia" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListAsistenciaResponse" message="tns:getListAsistenciaResponse" />
+    </operation>
+    <operation name="updateTipoEmpleado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateTipoEmpleadoRequest" message="tns:updateTipoEmpleado" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateTipoEmpleadoResponse" message="tns:updateTipoEmpleadoResponse" />
+    </operation>
+    <operation name="deleteAsistencia">
+      <input wsam:Action="http://servicios/ServicioAsistencia/deleteAsistenciaRequest" message="tns:deleteAsistencia" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/deleteAsistenciaResponse" message="tns:deleteAsistenciaResponse" />
+    </operation>
+    <operation name="getAsistencia">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getAsistenciaRequest" message="tns:getAsistencia" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getAsistenciaResponse" message="tns:getAsistenciaResponse" />
+    </operation>
+    <operation name="getListAulas">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListAulasRequest" message="tns:getListAulas" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListAulasResponse" message="tns:getListAulasResponse" />
+    </operation>
+    <operation name="getAula">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getAulaRequest" message="tns:getAula" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getAulaResponse" message="tns:getAulaResponse" />
+    </operation>
+    <operation name="updateAula">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateAulaRequest" message="tns:updateAula" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateAulaResponse" message="tns:updateAulaResponse" />
+    </operation>
+    <operation name="saveEmpleado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveEmpleado" message="tns:saveEmpleado" />
+    </operation>
+    <operation name="updateAsistencia">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateAsistenciaRequest" message="tns:updateAsistencia" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateAsistenciaResponse" message="tns:updateAsistenciaResponse" />
+    </operation>
+    <operation name="saveAula">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveAula" message="tns:saveAula" />
+    </operation>
+    <operation name="deleteAula">
+      <input wsam:Action="http://servicios/ServicioAsistencia/deleteAulaRequest" message="tns:deleteAula" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/deleteAulaResponse" message="tns:deleteAulaResponse" />
+    </operation>
+    <operation name="getListEmpleados">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListEmpleadosRequest" message="tns:getListEmpleados" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListEmpleadosResponse" message="tns:getListEmpleadosResponse" />
+    </operation>
+    <operation name="getEmpleado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getEmpleadoRequest" message="tns:getEmpleado" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getEmpleadoResponse" message="tns:getEmpleadoResponse" />
+    </operation>
+    <operation name="deleteEmpleado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/deleteEmpleadoRequest" message="tns:deleteEmpleado" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/deleteEmpleadoResponse" message="tns:deleteEmpleadoResponse" />
+    </operation>
+    <operation name="saveAsistencia">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveAsistencia" message="tns:saveAsistencia" />
+    </operation>
+    <operation name="updateJornada">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateJornadaRequest" message="tns:updateJornada" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateJornadaResponse" message="tns:updateJornadaResponse" />
+    </operation>
+    <operation name="getFechaHabil">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getFechaHabilRequest" message="tns:getFechaHabil" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getFechaHabilResponse" message="tns:getFechaHabilResponse" />
+    </operation>
+    <operation name="updateMateria">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateMateriaRequest" message="tns:updateMateria" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateMateriaResponse" message="tns:updateMateriaResponse" />
+    </operation>
+    <operation name="saveEstado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveEstado" message="tns:saveEstado" />
+    </operation>
+    <operation name="saveTipoEmpleado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveTipoEmpleado" message="tns:saveTipoEmpleado" />
+    </operation>
+    <operation name="deleteFechaHabil">
+      <input wsam:Action="http://servicios/ServicioAsistencia/deleteFechaHabilRequest" message="tns:deleteFechaHabil" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/deleteFechaHabilResponse" message="tns:deleteFechaHabilResponse" />
+    </operation>
+    <operation name="updateFechaHabil">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateFechaHabilRequest" message="tns:updateFechaHabil" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateFechaHabilResponse" message="tns:updateFechaHabilResponse" />
+    </operation>
+    <operation name="deleteHorario">
+      <input wsam:Action="http://servicios/ServicioAsistencia/deleteHorarioRequest" message="tns:deleteHorario" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/deleteHorarioResponse" message="tns:deleteHorarioResponse" />
+    </operation>
+    <operation name="saveJornada">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveJornada" message="tns:saveJornada" />
+    </operation>
+    <operation name="getJornada">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getJornadaRequest" message="tns:getJornada" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getJornadaResponse" message="tns:getJornadaResponse" />
+    </operation>
+    <operation name="getListHorario">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListHorarioRequest" message="tns:getListHorario" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListHorarioResponse" message="tns:getListHorarioResponse" />
+    </operation>
+    <operation name="deleteJornada">
+      <input wsam:Action="http://servicios/ServicioAsistencia/deleteJornadaRequest" message="tns:deleteJornada" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/deleteJornadaResponse" message="tns:deleteJornadaResponse" />
+    </operation>
+    <operation name="getListJornada">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListJornadaRequest" message="tns:getListJornada" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListJornadaResponse" message="tns:getListJornadaResponse" />
+    </operation>
+    <operation name="updateHorario">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateHorarioRequest" message="tns:updateHorario" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateHorarioResponse" message="tns:updateHorarioResponse" />
+    </operation>
+    <operation name="updateEstado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateEstadoRequest" message="tns:updateEstado" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateEstadoResponse" message="tns:updateEstadoResponse" />
+    </operation>
+    <operation name="saveMateria">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveMateria" message="tns:saveMateria" />
+    </operation>
+    <operation name="saveHorario">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveHorario" message="tns:saveHorario" />
+    </operation>
+    <operation name="getListTipos">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListTiposRequest" message="tns:getListTipos" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListTiposResponse" message="tns:getListTiposResponse" />
+    </operation>
+    <operation name="updateTipo">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateTipoRequest" message="tns:updateTipo" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateTipoResponse" message="tns:updateTipoResponse" />
+    </operation>
+    <operation name="saveTipo">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveTipo" message="tns:saveTipo" />
+    </operation>
+    <operation name="getVistaDocente">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getVistaDocenteRequest" message="tns:getVistaDocente" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getVistaDocenteResponse" message="tns:getVistaDocenteResponse" />
+    </operation>
+    <operation name="getMateria">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getMateriaRequest" message="tns:getMateria" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getMateriaResponse" message="tns:getMateriaResponse" />
+    </operation>
+    <operation name="getHorario">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getHorarioRequest" message="tns:getHorario" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getHorarioResponse" message="tns:getHorarioResponse" />
+    </operation>
+    <operation name="getListEstados">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListEstadosRequest" message="tns:getListEstados" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListEstadosResponse" message="tns:getListEstadosResponse" />
+    </operation>
+    <operation name="getTipo">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getTipoRequest" message="tns:getTipo" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getTipoResponse" message="tns:getTipoResponse" />
+    </operation>
+    <operation name="deleteMateria">
+      <input wsam:Action="http://servicios/ServicioAsistencia/deleteMateriaRequest" message="tns:deleteMateria" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/deleteMateriaResponse" message="tns:deleteMateriaResponse" />
+    </operation>
+    <operation name="getListMaterias">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getListMateriasRequest" message="tns:getListMaterias" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getListMateriasResponse" message="tns:getListMateriasResponse" />
+    </operation>
+    <operation name="getVistaJornada">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getVistaJornadaRequest" message="tns:getVistaJornada" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getVistaJornadaResponse" message="tns:getVistaJornadaResponse" />
+    </operation>
+    <operation name="updateEmpleado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/updateEmpleadoRequest" message="tns:updateEmpleado" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/updateEmpleadoResponse" message="tns:updateEmpleadoResponse" />
+    </operation>
+    <operation name="deleteTipo">
+      <input wsam:Action="http://servicios/ServicioAsistencia/deleteTipoRequest" message="tns:deleteTipo" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/deleteTipoResponse" message="tns:deleteTipoResponse" />
+    </operation>
+    <operation name="deleteEstado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/deleteEstadoRequest" message="tns:deleteEstado" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/deleteEstadoResponse" message="tns:deleteEstadoResponse" />
+    </operation>
+    <operation name="getTipoEmpleado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getTipoEmpleadoRequest" message="tns:getTipoEmpleado" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getTipoEmpleadoResponse" message="tns:getTipoEmpleadoResponse" />
+    </operation>
+    <operation name="saveFechaHabil">
+      <input wsam:Action="http://servicios/ServicioAsistencia/saveFechaHabil" message="tns:saveFechaHabil" />
+    </operation>
+    <operation name="getEstado">
+      <input wsam:Action="http://servicios/ServicioAsistencia/getEstadoRequest" message="tns:getEstado" />
+      <output wsam:Action="http://servicios/ServicioAsistencia/getEstadoResponse" message="tns:getEstadoResponse" />
     </operation>
   </portType>
   <binding name="ServicioAsistenciaPortBinding" type="tns:ServicioAsistencia">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="updateAula">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="deleteAula">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="deleteEmpleado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="updateEmpleado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getAsistencia">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveAsistencia">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="getListEstados">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getAula">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveEstado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="updateEstado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveFechaHabil">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="updateFechaHabil">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getListHorario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveAula">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="updateAsistencia">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getListAulas">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getListEmpleados">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getFechaHabil">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="deleteEstado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveEmpleado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="getEstado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getHorario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getEmpleado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="deleteHorario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveHorario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="deleteFechaHabil">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="deleteAsistencia">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getTipoEmpleado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getVistaDocente">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getListTipos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveTipo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="updateTipo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getVistaJornada">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="updateHorario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="updateJornada">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getMateria">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveTipoEmpleado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="deleteJornada">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getListMaterias">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveJornada">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="deleteTipo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="saveMateria">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-    </operation>
-    <operation name="getTipo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="updateMateria">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="deleteMateria">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getJornada">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getListJornada">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getListAsistencia">
+    <operation name="getListNombresCompletos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -949,25 +556,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="getListTiposEmpleados">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="updateTipoEmpleado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getListVistaJornada">
+    <operation name="getNombreCompleto">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -985,7 +574,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="getNombreCompleto">
+    <operation name="getListVistaJornada">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -994,7 +583,418 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="getListNombresCompletos">
+    <operation name="getListTiposEmpleados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListAsistencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateTipoEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteAsistencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getAsistencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListAulas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="updateAsistencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="deleteAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListEmpleados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveAsistencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="updateJornada">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getFechaHabil">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateMateria">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveEstado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="saveTipoEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="deleteFechaHabil">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateFechaHabil">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveJornada">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="getJornada">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteJornada">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListJornada">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateEstado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveMateria">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="saveHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="getListTipos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateTipo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveTipo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="getVistaDocente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getMateria">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getHorario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListEstados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTipo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteMateria">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListMaterias">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getVistaJornada">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteTipo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteEstado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTipoEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveFechaHabil">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+    <operation name="getEstado">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

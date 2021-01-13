@@ -13,5 +13,6 @@ namespace Control_de_Asistencia_ITCA.Valores
         public static string titleErrorServidor = "Error";
         public static string msjCredencialesIncorrectos = "El usuario o la contraseña no son correctos, verifiqe sus datos e intente de nuevo.";
         public static string titleErrorCredenciales = "Error";
+        public static string msjAsistenciaPresente = "Su asistencia se ha guardado exitosamente a las " + DateTime.Today.ToString("HH:mm");
     }
 }

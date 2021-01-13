@@ -84,6 +84,7 @@
     </Compile>
     <Compile Include="Controllers\InternetTime.cs" />
     <Compile Include="Controllers\IniciarDatos.cs" />
+    <Compile Include="Controllers\Validar.cs" />
     <Compile Include="Modelo\Tipo.cs" />
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Program.cs" />

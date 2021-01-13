@@ -16,426 +16,13 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     public interface ServicioAsistencia {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateAulaResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListNombresCompletosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListNombresCompletosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse updateAula(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest request);
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse getListNombresCompletos(Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateAulaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse> updateAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteAulaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse deleteAula(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteAulaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse> deleteAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteEmpleadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse deleteEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteEmpleadoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse> deleteEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateEmpleadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse updateEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateEmpleadoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse> updateEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/getAsistenciaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse getAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/getAsistenciaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse> getAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest request);
-        
-        // CODEGEN: El parámetro 'tipoEmpleado' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveAsistencia")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveAsistencia")]
-        System.Threading.Tasks.Task saveAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListEstadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListEstadosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse getListEstados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListEstadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListEstadosResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse> getListEstadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/getAulaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse getAula(Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/getAulaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse> getAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest request);
-        
-        // CODEGEN: El parámetro 'descripcionEstado' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveEstado")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveEstado")]
-        System.Threading.Tasks.Task saveEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateEstadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse updateEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateEstadoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse> updateEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest request);
-        
-        // CODEGEN: El parámetro 'tipo' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveFechaHabil")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveFechaHabil")]
-        System.Threading.Tasks.Task saveFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/updateFechaHabilResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse updateFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/updateFechaHabilResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse> updateFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/getListHorarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse getListHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/getListHorarioResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse> getListHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest request);
-        
-        // CODEGEN: El parámetro 'descripcionAula' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveAula")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveAula(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveAula")]
-        System.Threading.Tasks.Task saveAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateAsistenciaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse updateAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateAsistenciaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse> updateAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListAulasRequest", ReplyAction="http://servicios/ServicioAsistencia/getListAulasResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse getListAulas(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListAulasRequest", ReplyAction="http://servicios/ServicioAsistencia/getListAulasResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse> getListAulasAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListEmpleadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListEmpleadosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse getListEmpleados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListEmpleadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListEmpleadosResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse> getListEmpleadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/getFechaHabilResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse getFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/getFechaHabilResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse> getFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteEstadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse deleteEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteEstadoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse> deleteEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest request);
-        
-        // CODEGEN: El parámetro 'cedula' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveEmpleado")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveEmpleado")]
-        System.Threading.Tasks.Task saveEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getEstadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse getEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getEstadoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse> getEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/getHorarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse getHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/getHorarioResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse> getHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getEmpleadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse getEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getEmpleadoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse> getEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteHorarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse deleteHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteHorarioResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse> deleteHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest request);
-        
-        // CODEGEN: El parámetro 'empleado' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveHorario")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveHorario")]
-        System.Threading.Tasks.Task saveHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteFechaHabilResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse deleteFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteFechaHabilResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse> deleteFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteAsistenciaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse deleteAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteAsistenciaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse> deleteAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getTipoEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getTipoEmpleadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse getTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getTipoEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getTipoEmpleadoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse> getTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getVistaDocenteRequest", ReplyAction="http://servicios/ServicioAsistencia/getVistaDocenteResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse getVistaDocente(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getVistaDocenteRequest", ReplyAction="http://servicios/ServicioAsistencia/getVistaDocenteResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse> getVistaDocenteAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListTiposRequest", ReplyAction="http://servicios/ServicioAsistencia/getListTiposResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse getListTipos(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListTiposRequest", ReplyAction="http://servicios/ServicioAsistencia/getListTiposResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse> getListTiposAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest request);
-        
-        // CODEGEN: El parámetro 'descripcionTipo' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveTipo")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveTipo")]
-        System.Threading.Tasks.Task saveTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateTipoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse updateTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateTipoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse> updateTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getVistaJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getVistaJornadaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse getVistaJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getVistaJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getVistaJornadaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse> getVistaJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/updateHorarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse updateHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/updateHorarioResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse> updateHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateJornadaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse updateJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateJornadaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse> updateJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/getMateriaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse getMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/getMateriaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse> getMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest request);
-        
-        // CODEGEN: El parámetro 'empleado' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveTipoEmpleado")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveTipoEmpleado")]
-        System.Threading.Tasks.Task saveTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteJornadaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse deleteJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteJornadaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse> deleteJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListMateriasRequest", ReplyAction="http://servicios/ServicioAsistencia/getListMateriasResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse getListMaterias(Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListMateriasRequest", ReplyAction="http://servicios/ServicioAsistencia/getListMateriasResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse> getListMateriasAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest request);
-        
-        // CODEGEN: El parámetro 'entraPrimerPeriodo' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveJornada")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveJornada")]
-        System.Threading.Tasks.Task saveJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteTipoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse deleteTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteTipoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse> deleteTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest request);
-        
-        // CODEGEN: El parámetro 'descripcionMateria' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveMateria")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void saveMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria request);
-        
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveMateria")]
-        System.Threading.Tasks.Task saveMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/getTipoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse getTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/getTipoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse> getTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateMateriaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse updateMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateMateriaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse> updateMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteMateriaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse deleteMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteMateriaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse> deleteMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getJornadaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse getJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getJornadaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse> getJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListJornadaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse getListJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListJornadaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse> getListJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListAsistenciaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse getListAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListAsistenciaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse> getListAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListNombresCompletosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListNombresCompletosResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse> getListNombresCompletosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListFechasHabilesRequest", ReplyAction="http://servicios/ServicioAsistencia/getListFechasHabilesResponse")]
@@ -456,31 +43,13 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoEmpleadoResponse> deleteTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoEmpleadoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListTiposEmpleadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListTiposEmpleadosResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getNombreCompletoRequest", ReplyAction="http://servicios/ServicioAsistencia/getNombreCompletoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosResponse getListTiposEmpleados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosRequest request);
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse getNombreCompleto(Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListTiposEmpleadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListTiposEmpleadosResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosResponse> getListTiposEmpleadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateTipoEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateTipoEmpleadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoEmpleadoResponse updateTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoEmpleadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateTipoEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateTipoEmpleadoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoEmpleadoResponse> updateTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoEmpleadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListVistaJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListVistaJornadaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse getListVistaJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListVistaJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListVistaJornadaResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse> getListVistaJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getNombreCompletoRequest", ReplyAction="http://servicios/ServicioAsistencia/getNombreCompletoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse> getNombreCompletoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListVistaDocenteRequest", ReplyAction="http://servicios/ServicioAsistencia/getListVistaDocenteResponse")]
@@ -492,200 +61,512 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteResponse> getListVistaDocenteAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getNombreCompletoRequest", ReplyAction="http://servicios/ServicioAsistencia/getNombreCompletoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListVistaJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListVistaJornadaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse getNombreCompleto(Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest request);
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse getListVistaJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getNombreCompletoRequest", ReplyAction="http://servicios/ServicioAsistencia/getNombreCompletoResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse> getNombreCompletoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListVistaJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListVistaJornadaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse> getListVistaJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListNombresCompletosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListNombresCompletosResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListTiposEmpleadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListTiposEmpleadosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse getListNombresCompletos(Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest request);
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosResponse getListTiposEmpleados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListNombresCompletosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListNombresCompletosResponse")]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse> getListNombresCompletosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListTiposEmpleadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListTiposEmpleadosResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosResponse> getListTiposEmpleadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListAsistenciaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse getListAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListAsistenciaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse> getListAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateTipoEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateTipoEmpleadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoEmpleadoResponse updateTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoEmpleadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateTipoEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateTipoEmpleadoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoEmpleadoResponse> updateTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoEmpleadoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteAsistenciaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse deleteAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteAsistenciaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse> deleteAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/getAsistenciaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse getAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/getAsistenciaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse> getAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListAulasRequest", ReplyAction="http://servicios/ServicioAsistencia/getListAulasResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse getListAulas(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListAulasRequest", ReplyAction="http://servicios/ServicioAsistencia/getListAulasResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse> getListAulasAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/getAulaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse getAula(Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/getAulaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse> getAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateAulaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse updateAula(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateAulaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse> updateAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest request);
+        
+        // CODEGEN: El parámetro 'cedula' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveEmpleado")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveEmpleado")]
+        System.Threading.Tasks.Task saveEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateAsistenciaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse updateAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateAsistenciaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateAsistenciaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse> updateAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest request);
+        
+        // CODEGEN: El parámetro 'descripcionAula' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveAula")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveAula(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveAula")]
+        System.Threading.Tasks.Task saveAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteAulaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse deleteAula(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteAulaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteAulaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse> deleteAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListEmpleadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListEmpleadosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse getListEmpleados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListEmpleadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListEmpleadosResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse> getListEmpleadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getEmpleadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse getEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getEmpleadoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse> getEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteEmpleadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse deleteEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteEmpleadoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse> deleteEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest request);
+        
+        // CODEGEN: El parámetro 'tipo' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveAsistencia")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveAsistencia")]
+        System.Threading.Tasks.Task saveAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateJornadaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse updateJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateJornadaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse> updateJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/getFechaHabilResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse getFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/getFechaHabilResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse> getFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateMateriaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse updateMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/updateMateriaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse> updateMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest request);
+        
+        // CODEGEN: El parámetro 'descripcionEstado' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveEstado")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveEstado")]
+        System.Threading.Tasks.Task saveEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado request);
+        
+        // CODEGEN: El parámetro 'empleado' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveTipoEmpleado")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveTipoEmpleado")]
+        System.Threading.Tasks.Task saveTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteFechaHabilResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse deleteFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteFechaHabilResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse> deleteFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/updateFechaHabilResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse updateFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateFechaHabilRequest", ReplyAction="http://servicios/ServicioAsistencia/updateFechaHabilResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse> updateFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteHorarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse deleteHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteHorarioResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse> deleteHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest request);
+        
+        // CODEGEN: El parámetro 'entraPrimerPeriodo' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveJornada")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveJornada")]
+        System.Threading.Tasks.Task saveJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getJornadaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse getJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getJornadaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse> getJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/getListHorarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse getListHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/getListHorarioResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse> getListHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteJornadaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse deleteJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteJornadaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse> deleteJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListJornadaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse getListJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getListJornadaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse> getListJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/updateHorarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse updateHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/updateHorarioResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse> updateHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateEstadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse updateEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateEstadoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse> updateEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest request);
+        
+        // CODEGEN: El parámetro 'descripcionMateria' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveMateria")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveMateria")]
+        System.Threading.Tasks.Task saveMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria request);
+        
+        // CODEGEN: El parámetro 'empleado' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveHorario")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveHorario")]
+        System.Threading.Tasks.Task saveHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListTiposRequest", ReplyAction="http://servicios/ServicioAsistencia/getListTiposResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse getListTipos(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListTiposRequest", ReplyAction="http://servicios/ServicioAsistencia/getListTiposResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse> getListTiposAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateTipoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse updateTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateTipoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse> updateTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest request);
+        
+        // CODEGEN: El parámetro 'descripcionTipo' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveTipo")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveTipo")]
+        System.Threading.Tasks.Task saveTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getVistaDocenteRequest", ReplyAction="http://servicios/ServicioAsistencia/getVistaDocenteResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse getVistaDocente(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getVistaDocenteRequest", ReplyAction="http://servicios/ServicioAsistencia/getVistaDocenteResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse> getVistaDocenteAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/getMateriaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse getMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/getMateriaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse> getMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/getHorarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse getHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getHorarioRequest", ReplyAction="http://servicios/ServicioAsistencia/getHorarioResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse> getHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListEstadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListEstadosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse getListEstados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListEstadosRequest", ReplyAction="http://servicios/ServicioAsistencia/getListEstadosResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse> getListEstadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/getTipoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse getTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/getTipoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse> getTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteMateriaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse deleteMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteMateriaRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteMateriaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse> deleteMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListMateriasRequest", ReplyAction="http://servicios/ServicioAsistencia/getListMateriasResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse getListMaterias(Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getListMateriasRequest", ReplyAction="http://servicios/ServicioAsistencia/getListMateriasResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse> getListMateriasAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getVistaJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getVistaJornadaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse getVistaJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getVistaJornadaRequest", ReplyAction="http://servicios/ServicioAsistencia/getVistaJornadaResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse> getVistaJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateEmpleadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse updateEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/updateEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/updateEmpleadoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse> updateEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteTipoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse deleteTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteTipoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteTipoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse> deleteTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteEstadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse deleteEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/deleteEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/deleteEstadoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse> deleteEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getTipoEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getTipoEmpleadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse getTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getTipoEmpleadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getTipoEmpleadoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse> getTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest request);
+        
+        // CODEGEN: El parámetro 'tipo' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveFechaHabil")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void saveFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil request);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://servicios/ServicioAsistencia/saveFechaHabil")]
+        System.Threading.Tasks.Task saveFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getEstadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse getEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios/ServicioAsistencia/getEstadoRequest", ReplyAction="http://servicios/ServicioAsistencia/getEstadoResponse")]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse> getEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest request);
     }
     
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateAula", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateAulaRequest {
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
+    public partial class vistaNombreCompleto : object, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
+        private int idEmpleadoField;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string descripcionAula;
+        private long idViewNombreField;
         
-        public updateAulaRequest() {
+        private string nombreEmpleadoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int idEmpleado {
+            get {
+                return this.idEmpleadoField;
+            }
+            set {
+                this.idEmpleadoField = value;
+                this.RaisePropertyChanged("idEmpleado");
+            }
         }
         
-        public updateAulaRequest(int id, string descripcionAula) {
-            this.id = id;
-            this.descripcionAula = descripcionAula;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateAulaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateAulaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public updateAulaResponse() {
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public long idViewNombre {
+            get {
+                return this.idViewNombreField;
+            }
+            set {
+                this.idViewNombreField = value;
+                this.RaisePropertyChanged("idViewNombre");
+            }
         }
         
-        public updateAulaResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteAula", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteAulaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public deleteAulaRequest() {
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string nombreEmpleado {
+            get {
+                return this.nombreEmpleadoField;
+            }
+            set {
+                this.nombreEmpleadoField = value;
+                this.RaisePropertyChanged("nombreEmpleado");
+            }
         }
         
-        public deleteAulaRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteAulaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteAulaResponse {
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public deleteAulaResponse() {
-        }
-        
-        public deleteAulaResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteEmpleadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public deleteEmpleadoRequest() {
-        }
-        
-        public deleteEmpleadoRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEmpleadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteEmpleadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public deleteEmpleadoResponse() {
-        }
-        
-        public deleteEmpleadoResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateEmpleadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string cedula;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombres;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string Apellidos;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string usuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string funcion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=6)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string clave;
-        
-        public updateEmpleadoRequest() {
-        }
-        
-        public updateEmpleadoRequest(int id, string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
-            this.id = id;
-            this.cedula = cedula;
-            this.nombres = nombres;
-            this.Apellidos = Apellidos;
-            this.usuario = usuario;
-            this.funcion = funcion;
-            this.clave = clave;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateEmpleadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateEmpleadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public updateEmpleadoResponse() {
-        }
-        
-        public updateEmpleadoResponse(bool @return) {
-            this.@return = @return;
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
         }
     }
     
@@ -695,64 +576,148 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
-    public partial class asistencia : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class materia : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string comentariosField;
+        private string descripcionMateriaField;
         
-        private int idAsistenciaField;
+        private int idMateriaField;
         
-        private bool idAsistenciaFieldSpecified;
-        
-        private empleado idEmpleadoField;
-        
-        private estado idEstadoField;
-        
-        private fechaHabil idFechaHabilField;
-        
-        private tipoEmpleado idTipoEmpleadoField;
-        
-        private string mensajeAsistenciaField;
-        
-        private string observacionesField;
+        private bool idMateriaFieldSpecified;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string comentarios {
+        public string descripcionMateria {
             get {
-                return this.comentariosField;
+                return this.descripcionMateriaField;
             }
             set {
-                this.comentariosField = value;
-                this.RaisePropertyChanged("comentarios");
+                this.descripcionMateriaField = value;
+                this.RaisePropertyChanged("descripcionMateria");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idAsistencia {
+        public int idMateria {
             get {
-                return this.idAsistenciaField;
+                return this.idMateriaField;
             }
             set {
-                this.idAsistenciaField = value;
-                this.RaisePropertyChanged("idAsistencia");
+                this.idMateriaField = value;
+                this.RaisePropertyChanged("idMateria");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idAsistenciaSpecified {
+        public bool idMateriaSpecified {
             get {
-                return this.idAsistenciaFieldSpecified;
+                return this.idMateriaFieldSpecified;
             }
             set {
-                this.idAsistenciaFieldSpecified = value;
-                this.RaisePropertyChanged("idAsistenciaSpecified");
+                this.idMateriaFieldSpecified = value;
+                this.RaisePropertyChanged("idMateriaSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
+    public partial class horario : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.DateTime horaFinField;
+        
+        private bool horaFinFieldSpecified;
+        
+        private System.DateTime horaInicioField;
+        
+        private bool horaInicioFieldSpecified;
+        
+        private aula idAulaField;
+        
+        private empleado idEmpleadoField;
+        
+        private int idHorarioField;
+        
+        private bool idHorarioFieldSpecified;
+        
+        private materia idMateriaField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public System.DateTime horaFin {
+            get {
+                return this.horaFinField;
+            }
+            set {
+                this.horaFinField = value;
+                this.RaisePropertyChanged("horaFin");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool horaFinSpecified {
+            get {
+                return this.horaFinFieldSpecified;
+            }
+            set {
+                this.horaFinFieldSpecified = value;
+                this.RaisePropertyChanged("horaFinSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime horaInicio {
+            get {
+                return this.horaInicioField;
+            }
+            set {
+                this.horaInicioField = value;
+                this.RaisePropertyChanged("horaInicio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool horaInicioSpecified {
+            get {
+                return this.horaInicioFieldSpecified;
+            }
+            set {
+                this.horaInicioFieldSpecified = value;
+                this.RaisePropertyChanged("horaInicioSpecified");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public aula idAula {
+            get {
+                return this.idAulaField;
+            }
+            set {
+                this.idAulaField = value;
+                this.RaisePropertyChanged("idAula");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public empleado idEmpleado {
             get {
                 return this.idEmpleadoField;
@@ -764,62 +729,98 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public estado idEstado {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int idHorario {
             get {
-                return this.idEstadoField;
+                return this.idHorarioField;
             }
             set {
-                this.idEstadoField = value;
-                this.RaisePropertyChanged("idEstado");
+                this.idHorarioField = value;
+                this.RaisePropertyChanged("idHorario");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public fechaHabil idFechaHabil {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idHorarioSpecified {
             get {
-                return this.idFechaHabilField;
+                return this.idHorarioFieldSpecified;
             }
             set {
-                this.idFechaHabilField = value;
-                this.RaisePropertyChanged("idFechaHabil");
+                this.idHorarioFieldSpecified = value;
+                this.RaisePropertyChanged("idHorarioSpecified");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public tipoEmpleado idTipoEmpleado {
+        public materia idMateria {
             get {
-                return this.idTipoEmpleadoField;
+                return this.idMateriaField;
             }
             set {
-                this.idTipoEmpleadoField = value;
-                this.RaisePropertyChanged("idTipoEmpleado");
+                this.idMateriaField = value;
+                this.RaisePropertyChanged("idMateria");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
+    public partial class aula : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string descripcionAulaField;
+        
+        private int idAulaField;
+        
+        private bool idAulaFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string descripcionAula {
+            get {
+                return this.descripcionAulaField;
+            }
+            set {
+                this.descripcionAulaField = value;
+                this.RaisePropertyChanged("descripcionAula");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string mensajeAsistencia {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int idAula {
             get {
-                return this.mensajeAsistenciaField;
+                return this.idAulaField;
             }
             set {
-                this.mensajeAsistenciaField = value;
-                this.RaisePropertyChanged("mensajeAsistencia");
+                this.idAulaField = value;
+                this.RaisePropertyChanged("idAula");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public string observaciones {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idAulaSpecified {
             get {
-                return this.observacionesField;
+                return this.idAulaFieldSpecified;
             }
             set {
-                this.observacionesField = value;
-                this.RaisePropertyChanged("observaciones");
+                this.idAulaFieldSpecified = value;
+                this.RaisePropertyChanged("idAulaSpecified");
             }
         }
         
@@ -969,17 +970,471 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
-    public partial class vistaNombreCompleto : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class estado : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private int idEmpleadoField;
+        private string descripcionEstadoField;
         
-        private long idViewNombreField;
+        private int idEstadoField;
         
-        private string nombreEmpleadoField;
+        private bool idEstadoFieldSpecified;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int idEmpleado {
+        public string descripcionEstado {
+            get {
+                return this.descripcionEstadoField;
+            }
+            set {
+                this.descripcionEstadoField = value;
+                this.RaisePropertyChanged("descripcionEstado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int idEstado {
+            get {
+                return this.idEstadoField;
+            }
+            set {
+                this.idEstadoField = value;
+                this.RaisePropertyChanged("idEstado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idEstadoSpecified {
+            get {
+                return this.idEstadoFieldSpecified;
+            }
+            set {
+                this.idEstadoFieldSpecified = value;
+                this.RaisePropertyChanged("idEstadoSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
+    public partial class asistencia : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string comentariosField;
+        
+        private System.DateTime fechaField;
+        
+        private bool fechaFieldSpecified;
+        
+        private int idAsistenciaField;
+        
+        private bool idAsistenciaFieldSpecified;
+        
+        private empleado idEmpleadoField;
+        
+        private estado idEstadoField;
+        
+        private tipo idTipoField;
+        
+        private string mensajeAsistenciaField;
+        
+        private string observacionesField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string comentarios {
+            get {
+                return this.comentariosField;
+            }
+            set {
+                this.comentariosField = value;
+                this.RaisePropertyChanged("comentarios");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime fecha {
+            get {
+                return this.fechaField;
+            }
+            set {
+                this.fechaField = value;
+                this.RaisePropertyChanged("fecha");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaSpecified {
+            get {
+                return this.fechaFieldSpecified;
+            }
+            set {
+                this.fechaFieldSpecified = value;
+                this.RaisePropertyChanged("fechaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int idAsistencia {
+            get {
+                return this.idAsistenciaField;
+            }
+            set {
+                this.idAsistenciaField = value;
+                this.RaisePropertyChanged("idAsistencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idAsistenciaSpecified {
+            get {
+                return this.idAsistenciaFieldSpecified;
+            }
+            set {
+                this.idAsistenciaFieldSpecified = value;
+                this.RaisePropertyChanged("idAsistenciaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public empleado idEmpleado {
+            get {
+                return this.idEmpleadoField;
+            }
+            set {
+                this.idEmpleadoField = value;
+                this.RaisePropertyChanged("idEmpleado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public estado idEstado {
+            get {
+                return this.idEstadoField;
+            }
+            set {
+                this.idEstadoField = value;
+                this.RaisePropertyChanged("idEstado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public tipo idTipo {
+            get {
+                return this.idTipoField;
+            }
+            set {
+                this.idTipoField = value;
+                this.RaisePropertyChanged("idTipo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string mensajeAsistencia {
+            get {
+                return this.mensajeAsistenciaField;
+            }
+            set {
+                this.mensajeAsistenciaField = value;
+                this.RaisePropertyChanged("mensajeAsistencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string observaciones {
+            get {
+                return this.observacionesField;
+            }
+            set {
+                this.observacionesField = value;
+                this.RaisePropertyChanged("observaciones");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
+    public partial class tipo : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string descripcionTipoField;
+        
+        private int idTipoField;
+        
+        private bool idTipoFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string descripcionTipo {
+            get {
+                return this.descripcionTipoField;
+            }
+            set {
+                this.descripcionTipoField = value;
+                this.RaisePropertyChanged("descripcionTipo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int idTipo {
+            get {
+                return this.idTipoField;
+            }
+            set {
+                this.idTipoField = value;
+                this.RaisePropertyChanged("idTipo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idTipoSpecified {
+            get {
+                return this.idTipoFieldSpecified;
+            }
+            set {
+                this.idTipoFieldSpecified = value;
+                this.RaisePropertyChanged("idTipoSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
+    public partial class jornada : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.DateTime entraPrimerPeriodoField;
+        
+        private bool entraPrimerPeriodoFieldSpecified;
+        
+        private System.DateTime entraSegundoPeriodoField;
+        
+        private bool entraSegundoPeriodoFieldSpecified;
+        
+        private int idJornadaField;
+        
+        private bool idJornadaFieldSpecified;
+        
+        private tipo idTipoField;
+        
+        private System.DateTime salePrimerPeriodoField;
+        
+        private bool salePrimerPeriodoFieldSpecified;
+        
+        private System.DateTime saleSegundoPeriodoField;
+        
+        private bool saleSegundoPeriodoFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public System.DateTime entraPrimerPeriodo {
+            get {
+                return this.entraPrimerPeriodoField;
+            }
+            set {
+                this.entraPrimerPeriodoField = value;
+                this.RaisePropertyChanged("entraPrimerPeriodo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool entraPrimerPeriodoSpecified {
+            get {
+                return this.entraPrimerPeriodoFieldSpecified;
+            }
+            set {
+                this.entraPrimerPeriodoFieldSpecified = value;
+                this.RaisePropertyChanged("entraPrimerPeriodoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime entraSegundoPeriodo {
+            get {
+                return this.entraSegundoPeriodoField;
+            }
+            set {
+                this.entraSegundoPeriodoField = value;
+                this.RaisePropertyChanged("entraSegundoPeriodo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool entraSegundoPeriodoSpecified {
+            get {
+                return this.entraSegundoPeriodoFieldSpecified;
+            }
+            set {
+                this.entraSegundoPeriodoFieldSpecified = value;
+                this.RaisePropertyChanged("entraSegundoPeriodoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int idJornada {
+            get {
+                return this.idJornadaField;
+            }
+            set {
+                this.idJornadaField = value;
+                this.RaisePropertyChanged("idJornada");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idJornadaSpecified {
+            get {
+                return this.idJornadaFieldSpecified;
+            }
+            set {
+                this.idJornadaFieldSpecified = value;
+                this.RaisePropertyChanged("idJornadaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public tipo idTipo {
+            get {
+                return this.idTipoField;
+            }
+            set {
+                this.idTipoField = value;
+                this.RaisePropertyChanged("idTipo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public System.DateTime salePrimerPeriodo {
+            get {
+                return this.salePrimerPeriodoField;
+            }
+            set {
+                this.salePrimerPeriodoField = value;
+                this.RaisePropertyChanged("salePrimerPeriodo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool salePrimerPeriodoSpecified {
+            get {
+                return this.salePrimerPeriodoFieldSpecified;
+            }
+            set {
+                this.salePrimerPeriodoFieldSpecified = value;
+                this.RaisePropertyChanged("salePrimerPeriodoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public System.DateTime saleSegundoPeriodo {
+            get {
+                return this.saleSegundoPeriodoField;
+            }
+            set {
+                this.saleSegundoPeriodoField = value;
+                this.RaisePropertyChanged("saleSegundoPeriodo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool saleSegundoPeriodoSpecified {
+            get {
+                return this.saleSegundoPeriodoFieldSpecified;
+            }
+            set {
+                this.saleSegundoPeriodoFieldSpecified = value;
+                this.RaisePropertyChanged("saleSegundoPeriodoSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
+    public partial class tipoEmpleado : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private empleado idEmpleadoField;
+        
+        private jornada idJornadaField;
+        
+        private tipo idTipoField;
+        
+        private int idTipoEmpleadoField;
+        
+        private bool idTipoEmpleadoFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public empleado idEmpleado {
             get {
                 return this.idEmpleadoField;
             }
@@ -991,25 +1446,49 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public long idViewNombre {
+        public jornada idJornada {
             get {
-                return this.idViewNombreField;
+                return this.idJornadaField;
             }
             set {
-                this.idViewNombreField = value;
-                this.RaisePropertyChanged("idViewNombre");
+                this.idJornadaField = value;
+                this.RaisePropertyChanged("idJornada");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string nombreEmpleado {
+        public tipo idTipo {
             get {
-                return this.nombreEmpleadoField;
+                return this.idTipoField;
             }
             set {
-                this.nombreEmpleadoField = value;
-                this.RaisePropertyChanged("nombreEmpleado");
+                this.idTipoField = value;
+                this.RaisePropertyChanged("idTipo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int idTipoEmpleado {
+            get {
+                return this.idTipoEmpleadoField;
+            }
+            set {
+                this.idTipoEmpleadoField = value;
+                this.RaisePropertyChanged("idTipoEmpleado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idTipoEmpleadoSpecified {
+            get {
+                return this.idTipoEmpleadoFieldSpecified;
+            }
+            set {
+                this.idTipoEmpleadoFieldSpecified = value;
+                this.RaisePropertyChanged("idTipoEmpleadoSpecified");
             }
         }
         
@@ -1457,590 +1936,6 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
-    public partial class materia : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string descripcionMateriaField;
-        
-        private int idMateriaField;
-        
-        private bool idMateriaFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string descripcionMateria {
-            get {
-                return this.descripcionMateriaField;
-            }
-            set {
-                this.descripcionMateriaField = value;
-                this.RaisePropertyChanged("descripcionMateria");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idMateria {
-            get {
-                return this.idMateriaField;
-            }
-            set {
-                this.idMateriaField = value;
-                this.RaisePropertyChanged("idMateria");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idMateriaSpecified {
-            get {
-                return this.idMateriaFieldSpecified;
-            }
-            set {
-                this.idMateriaFieldSpecified = value;
-                this.RaisePropertyChanged("idMateriaSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
-    public partial class horario : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private System.DateTime horaFinField;
-        
-        private bool horaFinFieldSpecified;
-        
-        private System.DateTime horaInicioField;
-        
-        private bool horaInicioFieldSpecified;
-        
-        private aula idAulaField;
-        
-        private empleado idEmpleadoField;
-        
-        private int idHorarioField;
-        
-        private bool idHorarioFieldSpecified;
-        
-        private materia idMateriaField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public System.DateTime horaFin {
-            get {
-                return this.horaFinField;
-            }
-            set {
-                this.horaFinField = value;
-                this.RaisePropertyChanged("horaFin");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool horaFinSpecified {
-            get {
-                return this.horaFinFieldSpecified;
-            }
-            set {
-                this.horaFinFieldSpecified = value;
-                this.RaisePropertyChanged("horaFinSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public System.DateTime horaInicio {
-            get {
-                return this.horaInicioField;
-            }
-            set {
-                this.horaInicioField = value;
-                this.RaisePropertyChanged("horaInicio");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool horaInicioSpecified {
-            get {
-                return this.horaInicioFieldSpecified;
-            }
-            set {
-                this.horaInicioFieldSpecified = value;
-                this.RaisePropertyChanged("horaInicioSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public aula idAula {
-            get {
-                return this.idAulaField;
-            }
-            set {
-                this.idAulaField = value;
-                this.RaisePropertyChanged("idAula");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public empleado idEmpleado {
-            get {
-                return this.idEmpleadoField;
-            }
-            set {
-                this.idEmpleadoField = value;
-                this.RaisePropertyChanged("idEmpleado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int idHorario {
-            get {
-                return this.idHorarioField;
-            }
-            set {
-                this.idHorarioField = value;
-                this.RaisePropertyChanged("idHorario");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idHorarioSpecified {
-            get {
-                return this.idHorarioFieldSpecified;
-            }
-            set {
-                this.idHorarioFieldSpecified = value;
-                this.RaisePropertyChanged("idHorarioSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public materia idMateria {
-            get {
-                return this.idMateriaField;
-            }
-            set {
-                this.idMateriaField = value;
-                this.RaisePropertyChanged("idMateria");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
-    public partial class aula : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string descripcionAulaField;
-        
-        private int idAulaField;
-        
-        private bool idAulaFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string descripcionAula {
-            get {
-                return this.descripcionAulaField;
-            }
-            set {
-                this.descripcionAulaField = value;
-                this.RaisePropertyChanged("descripcionAula");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idAula {
-            get {
-                return this.idAulaField;
-            }
-            set {
-                this.idAulaField = value;
-                this.RaisePropertyChanged("idAula");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idAulaSpecified {
-            get {
-                return this.idAulaFieldSpecified;
-            }
-            set {
-                this.idAulaFieldSpecified = value;
-                this.RaisePropertyChanged("idAulaSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
-    public partial class jornada : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private System.DateTime entraPrimerPeriodoField;
-        
-        private bool entraPrimerPeriodoFieldSpecified;
-        
-        private System.DateTime entraSegundoPeriodoField;
-        
-        private bool entraSegundoPeriodoFieldSpecified;
-        
-        private int idJornadaField;
-        
-        private bool idJornadaFieldSpecified;
-        
-        private tipo idTipoField;
-        
-        private System.DateTime salePrimerPeriodoField;
-        
-        private bool salePrimerPeriodoFieldSpecified;
-        
-        private System.DateTime saleSegundoPeriodoField;
-        
-        private bool saleSegundoPeriodoFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public System.DateTime entraPrimerPeriodo {
-            get {
-                return this.entraPrimerPeriodoField;
-            }
-            set {
-                this.entraPrimerPeriodoField = value;
-                this.RaisePropertyChanged("entraPrimerPeriodo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool entraPrimerPeriodoSpecified {
-            get {
-                return this.entraPrimerPeriodoFieldSpecified;
-            }
-            set {
-                this.entraPrimerPeriodoFieldSpecified = value;
-                this.RaisePropertyChanged("entraPrimerPeriodoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public System.DateTime entraSegundoPeriodo {
-            get {
-                return this.entraSegundoPeriodoField;
-            }
-            set {
-                this.entraSegundoPeriodoField = value;
-                this.RaisePropertyChanged("entraSegundoPeriodo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool entraSegundoPeriodoSpecified {
-            get {
-                return this.entraSegundoPeriodoFieldSpecified;
-            }
-            set {
-                this.entraSegundoPeriodoFieldSpecified = value;
-                this.RaisePropertyChanged("entraSegundoPeriodoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int idJornada {
-            get {
-                return this.idJornadaField;
-            }
-            set {
-                this.idJornadaField = value;
-                this.RaisePropertyChanged("idJornada");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idJornadaSpecified {
-            get {
-                return this.idJornadaFieldSpecified;
-            }
-            set {
-                this.idJornadaFieldSpecified = value;
-                this.RaisePropertyChanged("idJornadaSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public tipo idTipo {
-            get {
-                return this.idTipoField;
-            }
-            set {
-                this.idTipoField = value;
-                this.RaisePropertyChanged("idTipo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public System.DateTime salePrimerPeriodo {
-            get {
-                return this.salePrimerPeriodoField;
-            }
-            set {
-                this.salePrimerPeriodoField = value;
-                this.RaisePropertyChanged("salePrimerPeriodo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool salePrimerPeriodoSpecified {
-            get {
-                return this.salePrimerPeriodoFieldSpecified;
-            }
-            set {
-                this.salePrimerPeriodoFieldSpecified = value;
-                this.RaisePropertyChanged("salePrimerPeriodoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public System.DateTime saleSegundoPeriodo {
-            get {
-                return this.saleSegundoPeriodoField;
-            }
-            set {
-                this.saleSegundoPeriodoField = value;
-                this.RaisePropertyChanged("saleSegundoPeriodo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool saleSegundoPeriodoSpecified {
-            get {
-                return this.saleSegundoPeriodoFieldSpecified;
-            }
-            set {
-                this.saleSegundoPeriodoFieldSpecified = value;
-                this.RaisePropertyChanged("saleSegundoPeriodoSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
-    public partial class tipo : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string descripcionTipoField;
-        
-        private int idTipoField;
-        
-        private bool idTipoFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string descripcionTipo {
-            get {
-                return this.descripcionTipoField;
-            }
-            set {
-                this.descripcionTipoField = value;
-                this.RaisePropertyChanged("descripcionTipo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idTipo {
-            get {
-                return this.idTipoField;
-            }
-            set {
-                this.idTipoField = value;
-                this.RaisePropertyChanged("idTipo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idTipoSpecified {
-            get {
-                return this.idTipoFieldSpecified;
-            }
-            set {
-                this.idTipoFieldSpecified = value;
-                this.RaisePropertyChanged("idTipoSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
-    public partial class tipoEmpleado : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private empleado idEmpleadoField;
-        
-        private jornada idJornadaField;
-        
-        private tipo idTipoField;
-        
-        private int idTipoEmpleadoField;
-        
-        private bool idTipoEmpleadoFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public empleado idEmpleado {
-            get {
-                return this.idEmpleadoField;
-            }
-            set {
-                this.idEmpleadoField = value;
-                this.RaisePropertyChanged("idEmpleado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public jornada idJornada {
-            get {
-                return this.idJornadaField;
-            }
-            set {
-                this.idJornadaField = value;
-                this.RaisePropertyChanged("idJornada");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public tipo idTipo {
-            get {
-                return this.idTipoField;
-            }
-            set {
-                this.idTipoField = value;
-                this.RaisePropertyChanged("idTipo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int idTipoEmpleado {
-            get {
-                return this.idTipoEmpleadoField;
-            }
-            set {
-                this.idTipoEmpleadoField = value;
-                this.RaisePropertyChanged("idTipoEmpleado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idTipoEmpleadoSpecified {
-            get {
-                return this.idTipoEmpleadoFieldSpecified;
-            }
-            set {
-                this.idTipoEmpleadoFieldSpecified = value;
-                this.RaisePropertyChanged("idTipoEmpleadoSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
     public partial class fechaHabil : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.DateTime fechaField;
@@ -2123,1612 +2018,30 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         }
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios/")]
-    public partial class estado : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListNombresCompletos", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListNombresCompletosRequest {
         
-        private string descripcionEstadoField;
-        
-        private int idEstadoField;
-        
-        private bool idEstadoFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string descripcionEstado {
-            get {
-                return this.descripcionEstadoField;
-            }
-            set {
-                this.descripcionEstadoField = value;
-                this.RaisePropertyChanged("descripcionEstado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idEstado {
-            get {
-                return this.idEstadoField;
-            }
-            set {
-                this.idEstadoField = value;
-                this.RaisePropertyChanged("idEstado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idEstadoSpecified {
-            get {
-                return this.idEstadoFieldSpecified;
-            }
-            set {
-                this.idEstadoFieldSpecified = value;
-                this.RaisePropertyChanged("idEstadoSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+        public getListNombresCompletosRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getAsistenciaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getAsistenciaRequest() {
-        }
-        
-        public getAsistenciaRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getAsistenciaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getAsistenciaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia @return;
-        
-        public getAsistenciaResponse() {
-        }
-        
-        public getAsistenciaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveAsistencia {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado tipoEmpleado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string mensajeAsistencia;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil fechaHabil;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string comentarios;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=6)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string observaciones;
-        
-        public saveAsistencia() {
-        }
-        
-        public saveAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado tipoEmpleado, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil fechaHabil, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
-            this.tipoEmpleado = tipoEmpleado;
-            this.empleado = empleado;
-            this.mensajeAsistencia = mensajeAsistencia;
-            this.fechaHabil = fechaHabil;
-            this.estado = estado;
-            this.comentarios = comentarios;
-            this.observaciones = observaciones;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListEstados", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListEstadosRequest {
-        
-        public getListEstadosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListEstadosResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListEstadosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListNombresCompletosResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListNombresCompletosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado[] @return;
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto[] @return;
         
-        public getListEstadosResponse() {
+        public getListNombresCompletosResponse() {
         }
         
-        public getListEstadosResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.estado[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getAula", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getAulaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getAulaRequest() {
-        }
-        
-        public getAulaRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getAulaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getAulaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula @return;
-        
-        public getAulaResponse() {
-        }
-        
-        public getAulaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.aula @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveEstado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveEstado {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string descripcionEstado;
-        
-        public saveEstado() {
-        }
-        
-        public saveEstado(string descripcionEstado) {
-            this.descripcionEstado = descripcionEstado;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateEstado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateEstadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string descripcionEstado;
-        
-        public updateEstadoRequest() {
-        }
-        
-        public updateEstadoRequest(int id, string descripcionEstado) {
-            this.id = id;
-            this.descripcionEstado = descripcionEstado;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateEstadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateEstadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public updateEstadoResponse() {
-        }
-        
-        public updateEstadoResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveFechaHabil", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveFechaHabil {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fecha;
-        
-        public saveFechaHabil() {
-        }
-        
-        public saveFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
-            this.tipo = tipo;
-            this.fecha = fecha;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateFechaHabil", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateFechaHabilRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fecha;
-        
-        public updateFechaHabilRequest() {
-        }
-        
-        public updateFechaHabilRequest(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
-            this.id = id;
-            this.tipo = tipo;
-            this.fecha = fecha;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateFechaHabilResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateFechaHabilResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public updateFechaHabilResponse() {
-        }
-        
-        public updateFechaHabilResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListHorarioRequest {
-        
-        public getListHorarioRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListHorarioResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListHorarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.horario[] @return;
-        
-        public getListHorarioResponse() {
-        }
-        
-        public getListHorarioResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.horario[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveAula", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveAula {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string descripcionAula;
-        
-        public saveAula() {
-        }
-        
-        public saveAula(string descripcionAula) {
-            this.descripcionAula = descripcionAula;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateAsistenciaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado tipoEmpleado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string mensajeAsistencia;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil fechaHabil;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=6)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string comentarios;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=7)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string observaciones;
-        
-        public updateAsistenciaRequest() {
-        }
-        
-        public updateAsistenciaRequest(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado tipoEmpleado, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil fechaHabil, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
-            this.id = id;
-            this.tipoEmpleado = tipoEmpleado;
-            this.empleado = empleado;
-            this.mensajeAsistencia = mensajeAsistencia;
-            this.fechaHabil = fechaHabil;
-            this.estado = estado;
-            this.comentarios = comentarios;
-            this.observaciones = observaciones;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateAsistenciaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateAsistenciaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public updateAsistenciaResponse() {
-        }
-        
-        public updateAsistenciaResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListAulas", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListAulasRequest {
-        
-        public getListAulasRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListAulasResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListAulasResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula[] @return;
-        
-        public getListAulasResponse() {
-        }
-        
-        public getListAulasResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.aula[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListEmpleados", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListEmpleadosRequest {
-        
-        public getListEmpleadosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListEmpleadosResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListEmpleadosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado[] @return;
-        
-        public getListEmpleadosResponse() {
-        }
-        
-        public getListEmpleadosResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getFechaHabil", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getFechaHabilRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getFechaHabilRequest() {
-        }
-        
-        public getFechaHabilRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getFechaHabilResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getFechaHabilResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil @return;
-        
-        public getFechaHabilResponse() {
-        }
-        
-        public getFechaHabilResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEstado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteEstadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public deleteEstadoRequest() {
-        }
-        
-        public deleteEstadoRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEstadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteEstadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public deleteEstadoResponse() {
-        }
-        
-        public deleteEstadoResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveEmpleado {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string cedula;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombres;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string Apellidos;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string usuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string funcion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string clave;
-        
-        public saveEmpleado() {
-        }
-        
-        public saveEmpleado(string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
-            this.cedula = cedula;
-            this.nombres = nombres;
-            this.Apellidos = Apellidos;
-            this.usuario = usuario;
-            this.funcion = funcion;
-            this.clave = clave;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getEstado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getEstadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getEstadoRequest() {
-        }
-        
-        public getEstadoRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getEstadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getEstadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado @return;
-        
-        public getEstadoResponse() {
-        }
-        
-        public getEstadoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.estado @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getHorarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getHorarioRequest() {
-        }
-        
-        public getHorarioRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getHorarioResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getHorarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.horario @return;
-        
-        public getHorarioResponse() {
-        }
-        
-        public getHorarioResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.horario @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getEmpleadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getEmpleadoRequest() {
-        }
-        
-        public getEmpleadoRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getEmpleadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getEmpleadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado @return;
-        
-        public getEmpleadoResponse() {
-        }
-        
-        public getEmpleadoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteHorarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public deleteHorarioRequest() {
-        }
-        
-        public deleteHorarioRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteHorarioResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteHorarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public deleteHorarioResponse() {
-        }
-        
-        public deleteHorarioResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveHorario {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime horaInicio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime horaFin;
-        
-        public saveHorario() {
-        }
-        
-        public saveHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
-            this.empleado = empleado;
-            this.aula = aula;
-            this.materia = materia;
-            this.horaInicio = horaInicio;
-            this.horaFin = horaFin;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFechaHabil", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteFechaHabilRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public deleteFechaHabilRequest() {
-        }
-        
-        public deleteFechaHabilRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFechaHabilResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteFechaHabilResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public deleteFechaHabilResponse() {
-        }
-        
-        public deleteFechaHabilResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteAsistenciaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public deleteAsistenciaRequest() {
-        }
-        
-        public deleteAsistenciaRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteAsistenciaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteAsistenciaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public deleteAsistenciaResponse() {
-        }
-        
-        public deleteAsistenciaResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getTipoEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getTipoEmpleadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getTipoEmpleadoRequest() {
-        }
-        
-        public getTipoEmpleadoRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getTipoEmpleadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getTipoEmpleadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado @return;
-        
-        public getTipoEmpleadoResponse() {
-        }
-        
-        public getTipoEmpleadoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getVistaDocente", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getVistaDocenteRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
-        
-        public getVistaDocenteRequest() {
-        }
-        
-        public getVistaDocenteRequest(int arg0) {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getVistaDocenteResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getVistaDocenteResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente @return;
-        
-        public getVistaDocenteResponse() {
-        }
-        
-        public getVistaDocenteResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListTipos", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListTiposRequest {
-        
-        public getListTiposRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListTiposResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListTiposResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo[] @return;
-        
-        public getListTiposResponse() {
-        }
-        
-        public getListTiposResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveTipo", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveTipo {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string descripcionTipo;
-        
-        public saveTipo() {
-        }
-        
-        public saveTipo(string descripcionTipo) {
-            this.descripcionTipo = descripcionTipo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateTipo", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateTipoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string descripcionTipo;
-        
-        public updateTipoRequest() {
-        }
-        
-        public updateTipoRequest(int id, string descripcionTipo) {
-            this.id = id;
-            this.descripcionTipo = descripcionTipo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateTipoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateTipoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public updateTipoResponse() {
-        }
-        
-        public updateTipoResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getVistaJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getVistaJornadaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
-        
-        public getVistaJornadaRequest() {
-        }
-        
-        public getVistaJornadaRequest(int arg0) {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getVistaJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getVistaJornadaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada @return;
-        
-        public getVistaJornadaResponse() {
-        }
-        
-        public getVistaJornadaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateHorarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime horaInicio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime horaFin;
-        
-        public updateHorarioRequest() {
-        }
-        
-        public updateHorarioRequest(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
-            this.id = id;
-            this.empleado = empleado;
-            this.aula = aula;
-            this.materia = materia;
-            this.horaInicio = horaInicio;
-            this.horaFin = horaFin;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateHorarioResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateHorarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public updateHorarioResponse() {
-        }
-        
-        public updateHorarioResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateJornadaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime entraPrimerPeriodo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime salePrimerPeriodo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime entraSegundoPeriodo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime saleSegundoPeriodo;
-        
-        public updateJornadaRequest() {
-        }
-        
-        public updateJornadaRequest(int id, System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
-            this.id = id;
-            this.entraPrimerPeriodo = entraPrimerPeriodo;
-            this.salePrimerPeriodo = salePrimerPeriodo;
-            this.entraSegundoPeriodo = entraSegundoPeriodo;
-            this.saleSegundoPeriodo = saleSegundoPeriodo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateJornadaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public updateJornadaResponse() {
-        }
-        
-        public updateJornadaResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getMateria", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getMateriaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getMateriaRequest() {
-        }
-        
-        public getMateriaRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getMateriaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getMateriaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia @return;
-        
-        public getMateriaResponse() {
-        }
-        
-        public getMateriaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.materia @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveTipoEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveTipoEmpleado {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada jornada;
-        
-        public saveTipoEmpleado() {
-        }
-        
-        public saveTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.jornada jornada) {
-            this.empleado = empleado;
-            this.tipo = tipo;
-            this.jornada = jornada;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteJornadaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public deleteJornadaRequest() {
-        }
-        
-        public deleteJornadaRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteJornadaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public deleteJornadaResponse() {
-        }
-        
-        public deleteJornadaResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListMaterias", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListMateriasRequest {
-        
-        public getListMateriasRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListMateriasResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListMateriasResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia[] @return;
-        
-        public getListMateriasResponse() {
-        }
-        
-        public getListMateriasResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.materia[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveJornada {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime entraPrimerPeriodo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime salePrimerPeriodo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime entraSegundoPeriodo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime saleSegundoPeriodo;
-        
-        public saveJornada() {
-        }
-        
-        public saveJornada(System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
-            this.entraPrimerPeriodo = entraPrimerPeriodo;
-            this.salePrimerPeriodo = salePrimerPeriodo;
-            this.entraSegundoPeriodo = entraSegundoPeriodo;
-            this.saleSegundoPeriodo = saleSegundoPeriodo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteTipo", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteTipoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public deleteTipoRequest() {
-        }
-        
-        public deleteTipoRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteTipoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteTipoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public deleteTipoResponse() {
-        }
-        
-        public deleteTipoResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="saveMateria", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class saveMateria {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string descripcionMateria;
-        
-        public saveMateria() {
-        }
-        
-        public saveMateria(string descripcionMateria) {
-            this.descripcionMateria = descripcionMateria;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getTipo", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getTipoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getTipoRequest() {
-        }
-        
-        public getTipoRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getTipoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getTipoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo @return;
-        
-        public getTipoResponse() {
-        }
-        
-        public getTipoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateMateria", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateMateriaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string descripcionMateria;
-        
-        public updateMateriaRequest() {
-        }
-        
-        public updateMateriaRequest(int id, string descripcionMateria) {
-            this.id = id;
-            this.descripcionMateria = descripcionMateria;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="updateMateriaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class updateMateriaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public updateMateriaResponse() {
-        }
-        
-        public updateMateriaResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteMateria", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteMateriaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public deleteMateriaRequest() {
-        }
-        
-        public deleteMateriaRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteMateriaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class deleteMateriaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public deleteMateriaResponse() {
-        }
-        
-        public deleteMateriaResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getJornadaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public getJornadaRequest() {
-        }
-        
-        public getJornadaRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getJornadaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada @return;
-        
-        public getJornadaResponse() {
-        }
-        
-        public getJornadaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.jornada @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListJornadaRequest {
-        
-        public getListJornadaRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListJornadaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada[] @return;
-        
-        public getListJornadaResponse() {
-        }
-        
-        public getListJornadaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.jornada[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListAsistenciaRequest {
-        
-        public getListAsistenciaRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListAsistenciaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListAsistenciaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia[] @return;
-        
-        public getListAsistenciaResponse() {
-        }
-        
-        public getListAsistenciaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia[] @return) {
+        public getListNombresCompletosResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto[] @return) {
             this.@return = @return;
         }
     }
@@ -3800,6 +2113,98 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getNombreCompleto", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getNombreCompletoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        public getNombreCompletoRequest() {
+        }
+        
+        public getNombreCompletoRequest(int arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getNombreCompletoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getNombreCompletoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto @return;
+        
+        public getNombreCompletoResponse() {
+        }
+        
+        public getNombreCompletoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListVistaDocente", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListVistaDocenteRequest {
+        
+        public getListVistaDocenteRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListVistaDocenteResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListVistaDocenteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente[] @return;
+        
+        public getListVistaDocenteResponse() {
+        }
+        
+        public getListVistaDocenteResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListVistaJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListVistaJornadaRequest {
+        
+        public getListVistaJornadaRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListVistaJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListVistaJornadaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada[] @return;
+        
+        public getListVistaJornadaResponse() {
+        }
+        
+        public getListVistaJornadaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="getListTiposEmpleados", WrapperNamespace="http://servicios/", IsWrapped=true)]
     public partial class getListTiposEmpleadosRequest {
         
@@ -3821,6 +2226,34 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         }
         
         public getListTiposEmpleadosResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListAsistenciaRequest {
+        
+        public getListAsistenciaRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListAsistenciaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListAsistenciaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia[] @return;
+        
+        public getListAsistenciaResponse() {
+        }
+        
+        public getListAsistenciaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia[] @return) {
             this.@return = @return;
         }
     }
@@ -3879,27 +2312,35 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListVistaJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListVistaJornadaRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteAsistenciaRequest {
         
-        public getListVistaJornadaRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteAsistenciaRequest() {
+        }
+        
+        public deleteAsistenciaRequest(int id) {
+            this.id = id;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListVistaJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListVistaJornadaResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteAsistenciaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteAsistenciaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
         
-        public getListVistaJornadaResponse() {
+        public deleteAsistenciaResponse() {
         }
         
-        public getListVistaJornadaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada[] @return) {
+        public deleteAsistenciaResponse(bool @return) {
             this.@return = @return;
         }
     }
@@ -3907,27 +2348,35 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListVistaDocente", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListVistaDocenteRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getAsistenciaRequest {
         
-        public getListVistaDocenteRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getAsistenciaRequest() {
+        }
+        
+        public getAsistenciaRequest(int id) {
+            this.id = id;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListVistaDocenteResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListVistaDocenteResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAsistenciaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getAsistenciaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia @return;
         
-        public getListVistaDocenteResponse() {
+        public getAsistenciaResponse() {
         }
         
-        public getListVistaDocenteResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente[] @return) {
+        public getAsistenciaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia @return) {
             this.@return = @return;
         }
     }
@@ -3935,17 +2384,1141 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getNombreCompleto", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getNombreCompletoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListAulas", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListAulasRequest {
+        
+        public getListAulasRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListAulasResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListAulasResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula[] @return;
+        
+        public getListAulasResponse() {
+        }
+        
+        public getListAulasResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.aula[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAula", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getAulaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getAulaRequest() {
+        }
+        
+        public getAulaRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAulaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getAulaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula @return;
+        
+        public getAulaResponse() {
+        }
+        
+        public getAulaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.aula @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateAula", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateAulaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string descripcionAula;
+        
+        public updateAulaRequest() {
+        }
+        
+        public updateAulaRequest(int id, string descripcionAula) {
+            this.id = id;
+            this.descripcionAula = descripcionAula;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateAulaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateAulaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public updateAulaResponse() {
+        }
+        
+        public updateAulaResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveEmpleado {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string cedula;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombres;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string Apellidos;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string usuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string funcion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string clave;
+        
+        public saveEmpleado() {
+        }
+        
+        public saveEmpleado(string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
+            this.cedula = cedula;
+            this.nombres = nombres;
+            this.Apellidos = Apellidos;
+            this.usuario = usuario;
+            this.funcion = funcion;
+            this.clave = clave;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateAsistenciaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string mensajeAsistencia;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fecha;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string comentarios;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string observaciones;
+        
+        public updateAsistenciaRequest() {
+        }
+        
+        public updateAsistenciaRequest(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, System.DateTime fecha, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
+            this.id = id;
+            this.tipo = tipo;
+            this.empleado = empleado;
+            this.mensajeAsistencia = mensajeAsistencia;
+            this.fecha = fecha;
+            this.estado = estado;
+            this.comentarios = comentarios;
+            this.observaciones = observaciones;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateAsistenciaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateAsistenciaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public updateAsistenciaResponse() {
+        }
+        
+        public updateAsistenciaResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveAula", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveAula {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string descripcionAula;
+        
+        public saveAula() {
+        }
+        
+        public saveAula(string descripcionAula) {
+            this.descripcionAula = descripcionAula;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteAula", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteAulaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteAulaRequest() {
+        }
+        
+        public deleteAulaRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteAulaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteAulaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public deleteAulaResponse() {
+        }
+        
+        public deleteAulaResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListEmpleados", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListEmpleadosRequest {
+        
+        public getListEmpleadosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListEmpleadosResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListEmpleadosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado[] @return;
+        
+        public getListEmpleadosResponse() {
+        }
+        
+        public getListEmpleadosResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getEmpleadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getEmpleadoRequest() {
+        }
+        
+        public getEmpleadoRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getEmpleadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getEmpleadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado @return;
+        
+        public getEmpleadoResponse() {
+        }
+        
+        public getEmpleadoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteEmpleadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteEmpleadoRequest() {
+        }
+        
+        public deleteEmpleadoRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEmpleadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteEmpleadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public deleteEmpleadoResponse() {
+        }
+        
+        public deleteEmpleadoResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveAsistencia", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveAsistencia {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string mensajeAsistencia;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fecha;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string comentarios;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string observaciones;
+        
+        public saveAsistencia() {
+        }
+        
+        public saveAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, System.DateTime fecha, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
+            this.tipo = tipo;
+            this.empleado = empleado;
+            this.mensajeAsistencia = mensajeAsistencia;
+            this.fecha = fecha;
+            this.estado = estado;
+            this.comentarios = comentarios;
+            this.observaciones = observaciones;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateJornadaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime entraPrimerPeriodo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime salePrimerPeriodo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime entraSegundoPeriodo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime saleSegundoPeriodo;
+        
+        public updateJornadaRequest() {
+        }
+        
+        public updateJornadaRequest(int id, System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
+            this.id = id;
+            this.entraPrimerPeriodo = entraPrimerPeriodo;
+            this.salePrimerPeriodo = salePrimerPeriodo;
+            this.entraSegundoPeriodo = entraSegundoPeriodo;
+            this.saleSegundoPeriodo = saleSegundoPeriodo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateJornadaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public updateJornadaResponse() {
+        }
+        
+        public updateJornadaResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getFechaHabil", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getFechaHabilRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getFechaHabilRequest() {
+        }
+        
+        public getFechaHabilRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getFechaHabilResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getFechaHabilResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil @return;
+        
+        public getFechaHabilResponse() {
+        }
+        
+        public getFechaHabilResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateMateria", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateMateriaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string descripcionMateria;
+        
+        public updateMateriaRequest() {
+        }
+        
+        public updateMateriaRequest(int id, string descripcionMateria) {
+            this.id = id;
+            this.descripcionMateria = descripcionMateria;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateMateriaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateMateriaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public updateMateriaResponse() {
+        }
+        
+        public updateMateriaResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveEstado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveEstado {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string descripcionEstado;
+        
+        public saveEstado() {
+        }
+        
+        public saveEstado(string descripcionEstado) {
+            this.descripcionEstado = descripcionEstado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveTipoEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveTipoEmpleado {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada jornada;
+        
+        public saveTipoEmpleado() {
+        }
+        
+        public saveTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.jornada jornada) {
+            this.empleado = empleado;
+            this.tipo = tipo;
+            this.jornada = jornada;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFechaHabil", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteFechaHabilRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteFechaHabilRequest() {
+        }
+        
+        public deleteFechaHabilRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFechaHabilResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteFechaHabilResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public deleteFechaHabilResponse() {
+        }
+        
+        public deleteFechaHabilResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateFechaHabil", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateFechaHabilRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fecha;
+        
+        public updateFechaHabilRequest() {
+        }
+        
+        public updateFechaHabilRequest(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
+            this.id = id;
+            this.tipo = tipo;
+            this.fecha = fecha;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateFechaHabilResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateFechaHabilResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public updateFechaHabilResponse() {
+        }
+        
+        public updateFechaHabilResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteHorarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteHorarioRequest() {
+        }
+        
+        public deleteHorarioRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteHorarioResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteHorarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public deleteHorarioResponse() {
+        }
+        
+        public deleteHorarioResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveJornada {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime entraPrimerPeriodo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime salePrimerPeriodo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime entraSegundoPeriodo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime saleSegundoPeriodo;
+        
+        public saveJornada() {
+        }
+        
+        public saveJornada(System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
+            this.entraPrimerPeriodo = entraPrimerPeriodo;
+            this.salePrimerPeriodo = salePrimerPeriodo;
+            this.entraSegundoPeriodo = entraSegundoPeriodo;
+            this.saleSegundoPeriodo = saleSegundoPeriodo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getJornadaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getJornadaRequest() {
+        }
+        
+        public getJornadaRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getJornadaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada @return;
+        
+        public getJornadaResponse() {
+        }
+        
+        public getJornadaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.jornada @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListHorarioRequest {
+        
+        public getListHorarioRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListHorarioResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListHorarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.horario[] @return;
+        
+        public getListHorarioResponse() {
+        }
+        
+        public getListHorarioResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.horario[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteJornadaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteJornadaRequest() {
+        }
+        
+        public deleteJornadaRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteJornadaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public deleteJornadaResponse() {
+        }
+        
+        public deleteJornadaResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListJornadaRequest {
+        
+        public getListJornadaRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListJornadaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada[] @return;
+        
+        public getListJornadaResponse() {
+        }
+        
+        public getListJornadaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.jornada[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateHorarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime horaInicio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime horaFin;
+        
+        public updateHorarioRequest() {
+        }
+        
+        public updateHorarioRequest(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
+            this.id = id;
+            this.empleado = empleado;
+            this.aula = aula;
+            this.materia = materia;
+            this.horaInicio = horaInicio;
+            this.horaFin = horaFin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateHorarioResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateHorarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public updateHorarioResponse() {
+        }
+        
+        public updateHorarioResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateEstado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateEstadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string descripcionEstado;
+        
+        public updateEstadoRequest() {
+        }
+        
+        public updateEstadoRequest(int id, string descripcionEstado) {
+            this.id = id;
+            this.descripcionEstado = descripcionEstado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateEstadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateEstadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public updateEstadoResponse() {
+        }
+        
+        public updateEstadoResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveMateria", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveMateria {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string descripcionMateria;
+        
+        public saveMateria() {
+        }
+        
+        public saveMateria(string descripcionMateria) {
+            this.descripcionMateria = descripcionMateria;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveHorario {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime horaInicio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime horaFin;
+        
+        public saveHorario() {
+        }
+        
+        public saveHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
+            this.empleado = empleado;
+            this.aula = aula;
+            this.materia = materia;
+            this.horaInicio = horaInicio;
+            this.horaFin = horaFin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListTipos", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListTiposRequest {
+        
+        public getListTiposRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListTiposResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListTiposResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo[] @return;
+        
+        public getListTiposResponse() {
+        }
+        
+        public getListTiposResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateTipo", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateTipoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string descripcionTipo;
+        
+        public updateTipoRequest() {
+        }
+        
+        public updateTipoRequest(int id, string descripcionTipo) {
+            this.id = id;
+            this.descripcionTipo = descripcionTipo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateTipoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateTipoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public updateTipoResponse() {
+        }
+        
+        public updateTipoResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveTipo", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveTipo {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string descripcionTipo;
+        
+        public saveTipo() {
+        }
+        
+        public saveTipo(string descripcionTipo) {
+            this.descripcionTipo = descripcionTipo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getVistaDocente", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getVistaDocenteRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int arg0;
         
-        public getNombreCompletoRequest() {
+        public getVistaDocenteRequest() {
         }
         
-        public getNombreCompletoRequest(int arg0) {
+        public getVistaDocenteRequest(int arg0) {
             this.arg0 = arg0;
         }
     }
@@ -3953,17 +3526,17 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getNombreCompletoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getNombreCompletoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getVistaDocenteResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getVistaDocenteResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto @return;
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente @return;
         
-        public getNombreCompletoResponse() {
+        public getVistaDocenteResponse() {
         }
         
-        public getNombreCompletoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto @return) {
+        public getVistaDocenteResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente @return) {
             this.@return = @return;
         }
     }
@@ -3971,27 +3544,468 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListNombresCompletos", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListNombresCompletosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getMateria", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getMateriaRequest {
         
-        public getListNombresCompletosRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getMateriaRequest() {
+        }
+        
+        public getMateriaRequest(int id) {
+            this.id = id;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getListNombresCompletosResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
-    public partial class getListNombresCompletosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getMateriaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getMateriaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia @return;
+        
+        public getMateriaResponse() {
+        }
+        
+        public getMateriaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.materia @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getHorario", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getHorarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getHorarioRequest() {
+        }
+        
+        public getHorarioRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getHorarioResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getHorarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.horario @return;
+        
+        public getHorarioResponse() {
+        }
+        
+        public getHorarioResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.horario @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListEstados", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListEstadosRequest {
+        
+        public getListEstadosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListEstadosResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListEstadosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto[] @return;
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado[] @return;
         
-        public getListNombresCompletosResponse() {
+        public getListEstadosResponse() {
         }
         
-        public getListNombresCompletosResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto[] @return) {
+        public getListEstadosResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.estado[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getTipo", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getTipoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getTipoRequest() {
+        }
+        
+        public getTipoRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getTipoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getTipoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo @return;
+        
+        public getTipoResponse() {
+        }
+        
+        public getTipoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteMateria", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteMateriaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteMateriaRequest() {
+        }
+        
+        public deleteMateriaRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteMateriaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteMateriaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public deleteMateriaResponse() {
+        }
+        
+        public deleteMateriaResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListMaterias", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListMateriasRequest {
+        
+        public getListMateriasRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getListMateriasResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getListMateriasResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia[] @return;
+        
+        public getListMateriasResponse() {
+        }
+        
+        public getListMateriasResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.materia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getVistaJornada", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getVistaJornadaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        public getVistaJornadaRequest() {
+        }
+        
+        public getVistaJornadaRequest(int arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getVistaJornadaResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getVistaJornadaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada @return;
+        
+        public getVistaJornadaResponse() {
+        }
+        
+        public getVistaJornadaResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateEmpleadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string cedula;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombres;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string Apellidos;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string usuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string funcion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string clave;
+        
+        public updateEmpleadoRequest() {
+        }
+        
+        public updateEmpleadoRequest(int id, string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
+            this.id = id;
+            this.cedula = cedula;
+            this.nombres = nombres;
+            this.Apellidos = Apellidos;
+            this.usuario = usuario;
+            this.funcion = funcion;
+            this.clave = clave;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="updateEmpleadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class updateEmpleadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public updateEmpleadoResponse() {
+        }
+        
+        public updateEmpleadoResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteTipo", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteTipoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteTipoRequest() {
+        }
+        
+        public deleteTipoRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteTipoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteTipoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public deleteTipoResponse() {
+        }
+        
+        public deleteTipoResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEstado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteEstadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public deleteEstadoRequest() {
+        }
+        
+        public deleteEstadoRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEstadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class deleteEstadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public deleteEstadoResponse() {
+        }
+        
+        public deleteEstadoResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getTipoEmpleado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getTipoEmpleadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getTipoEmpleadoRequest() {
+        }
+        
+        public getTipoEmpleadoRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getTipoEmpleadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getTipoEmpleadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado @return;
+        
+        public getTipoEmpleadoResponse() {
+        }
+        
+        public getTipoEmpleadoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="saveFechaHabil", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class saveFechaHabil {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fecha;
+        
+        public saveFechaHabil() {
+        }
+        
+        public saveFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
+            this.tipo = tipo;
+            this.fecha = fecha;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getEstado", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getEstadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public getEstadoRequest() {
+        }
+        
+        public getEstadoRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getEstadoResponse", WrapperNamespace="http://servicios/", IsWrapped=true)]
+    public partial class getEstadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado @return;
+        
+        public getEstadoResponse() {
+        }
+        
+        public getEstadoResponse(Control_de_Asistencia_ITCA.ServicioAsistencia.estado @return) {
             this.@return = @return;
         }
     }
@@ -4024,1179 +4038,24 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateAula(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest request) {
-            return base.Channel.updateAula(request);
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListNombresCompletos(Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest request) {
+            return base.Channel.getListNombresCompletos(request);
         }
         
-        public bool updateAula(int id, string descripcionAula) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest();
-            inValue.id = id;
-            inValue.descripcionAula = descripcionAula;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateAula(inValue);
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto[] getListNombresCompletos() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListNombresCompletos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest request) {
-            return base.Channel.updateAulaAsync(request);
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListNombresCompletosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest request) {
+            return base.Channel.getListNombresCompletosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse> updateAulaAsync(int id, string descripcionAula) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest();
-            inValue.id = id;
-            inValue.descripcionAula = descripcionAula;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateAulaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteAula(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest request) {
-            return base.Channel.deleteAula(request);
-        }
-        
-        public bool deleteAula(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteAula(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest request) {
-            return base.Channel.deleteAulaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse> deleteAulaAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteAulaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest request) {
-            return base.Channel.deleteEmpleado(request);
-        }
-        
-        public bool deleteEmpleado(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteEmpleado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest request) {
-            return base.Channel.deleteEmpleadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse> deleteEmpleadoAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteEmpleadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest request) {
-            return base.Channel.updateEmpleado(request);
-        }
-        
-        public bool updateEmpleado(int id, string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest();
-            inValue.id = id;
-            inValue.cedula = cedula;
-            inValue.nombres = nombres;
-            inValue.Apellidos = Apellidos;
-            inValue.usuario = usuario;
-            inValue.funcion = funcion;
-            inValue.clave = clave;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateEmpleado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest request) {
-            return base.Channel.updateEmpleadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse> updateEmpleadoAsync(int id, string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest();
-            inValue.id = id;
-            inValue.cedula = cedula;
-            inValue.nombres = nombres;
-            inValue.Apellidos = Apellidos;
-            inValue.usuario = usuario;
-            inValue.funcion = funcion;
-            inValue.clave = clave;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateEmpleadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest request) {
-            return base.Channel.getAsistencia(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia getAsistencia(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getAsistencia(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest request) {
-            return base.Channel.getAsistenciaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse> getAsistenciaAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getAsistenciaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia request) {
-            base.Channel.saveAsistencia(request);
-        }
-        
-        public void saveAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado tipoEmpleado, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil fechaHabil, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia();
-            inValue.tipoEmpleado = tipoEmpleado;
-            inValue.empleado = empleado;
-            inValue.mensajeAsistencia = mensajeAsistencia;
-            inValue.fechaHabil = fechaHabil;
-            inValue.estado = estado;
-            inValue.comentarios = comentarios;
-            inValue.observaciones = observaciones;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveAsistencia(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia request) {
-            return base.Channel.saveAsistenciaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado tipoEmpleado, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil fechaHabil, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia();
-            inValue.tipoEmpleado = tipoEmpleado;
-            inValue.empleado = empleado;
-            inValue.mensajeAsistencia = mensajeAsistencia;
-            inValue.fechaHabil = fechaHabil;
-            inValue.estado = estado;
-            inValue.comentarios = comentarios;
-            inValue.observaciones = observaciones;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveAsistenciaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListEstados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest request) {
-            return base.Channel.getListEstados(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado[] getListEstados() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListEstados(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListEstadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest request) {
-            return base.Channel.getListEstadosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse> getListEstadosAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListEstadosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getAula(Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest request) {
-            return base.Channel.getAula(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula getAula(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getAula(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest request) {
-            return base.Channel.getAulaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse> getAulaAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getAulaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado request) {
-            base.Channel.saveEstado(request);
-        }
-        
-        public void saveEstado(string descripcionEstado) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado();
-            inValue.descripcionEstado = descripcionEstado;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveEstado(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado request) {
-            return base.Channel.saveEstadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveEstadoAsync(string descripcionEstado) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado();
-            inValue.descripcionEstado = descripcionEstado;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveEstadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest request) {
-            return base.Channel.updateEstado(request);
-        }
-        
-        public bool updateEstado(int id, string descripcionEstado) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest();
-            inValue.id = id;
-            inValue.descripcionEstado = descripcionEstado;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateEstado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest request) {
-            return base.Channel.updateEstadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse> updateEstadoAsync(int id, string descripcionEstado) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest();
-            inValue.id = id;
-            inValue.descripcionEstado = descripcionEstado;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateEstadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil request) {
-            base.Channel.saveFechaHabil(request);
-        }
-        
-        public void saveFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil();
-            inValue.tipo = tipo;
-            inValue.fecha = fecha;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveFechaHabil(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil request) {
-            return base.Channel.saveFechaHabilAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil();
-            inValue.tipo = tipo;
-            inValue.fecha = fecha;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveFechaHabilAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest request) {
-            return base.Channel.updateFechaHabil(request);
-        }
-        
-        public bool updateFechaHabil(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest();
-            inValue.id = id;
-            inValue.tipo = tipo;
-            inValue.fecha = fecha;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateFechaHabil(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest request) {
-            return base.Channel.updateFechaHabilAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse> updateFechaHabilAsync(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest();
-            inValue.id = id;
-            inValue.tipo = tipo;
-            inValue.fecha = fecha;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateFechaHabilAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest request) {
-            return base.Channel.getListHorario(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.horario[] getListHorario() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListHorario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest request) {
-            return base.Channel.getListHorarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse> getListHorarioAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListHorarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveAula(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula request) {
-            base.Channel.saveAula(request);
-        }
-        
-        public void saveAula(string descripcionAula) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula();
-            inValue.descripcionAula = descripcionAula;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveAula(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula request) {
-            return base.Channel.saveAulaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveAulaAsync(string descripcionAula) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula();
-            inValue.descripcionAula = descripcionAula;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveAulaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest request) {
-            return base.Channel.updateAsistencia(request);
-        }
-        
-        public bool updateAsistencia(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado tipoEmpleado, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil fechaHabil, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest();
-            inValue.id = id;
-            inValue.tipoEmpleado = tipoEmpleado;
-            inValue.empleado = empleado;
-            inValue.mensajeAsistencia = mensajeAsistencia;
-            inValue.fechaHabil = fechaHabil;
-            inValue.estado = estado;
-            inValue.comentarios = comentarios;
-            inValue.observaciones = observaciones;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateAsistencia(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest request) {
-            return base.Channel.updateAsistenciaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse> updateAsistenciaAsync(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado tipoEmpleado, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil fechaHabil, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest();
-            inValue.id = id;
-            inValue.tipoEmpleado = tipoEmpleado;
-            inValue.empleado = empleado;
-            inValue.mensajeAsistencia = mensajeAsistencia;
-            inValue.fechaHabil = fechaHabil;
-            inValue.estado = estado;
-            inValue.comentarios = comentarios;
-            inValue.observaciones = observaciones;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateAsistenciaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListAulas(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest request) {
-            return base.Channel.getListAulas(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula[] getListAulas() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListAulas(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListAulasAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest request) {
-            return base.Channel.getListAulasAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse> getListAulasAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListAulasAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListEmpleados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest request) {
-            return base.Channel.getListEmpleados(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado[] getListEmpleados() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListEmpleados(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListEmpleadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest request) {
-            return base.Channel.getListEmpleadosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse> getListEmpleadosAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListEmpleadosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest request) {
-            return base.Channel.getFechaHabil(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil getFechaHabil(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getFechaHabil(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest request) {
-            return base.Channel.getFechaHabilAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse> getFechaHabilAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getFechaHabilAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest request) {
-            return base.Channel.deleteEstado(request);
-        }
-        
-        public bool deleteEstado(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteEstado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest request) {
-            return base.Channel.deleteEstadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse> deleteEstadoAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteEstadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado request) {
-            base.Channel.saveEmpleado(request);
-        }
-        
-        public void saveEmpleado(string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado();
-            inValue.cedula = cedula;
-            inValue.nombres = nombres;
-            inValue.Apellidos = Apellidos;
-            inValue.usuario = usuario;
-            inValue.funcion = funcion;
-            inValue.clave = clave;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveEmpleado(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado request) {
-            return base.Channel.saveEmpleadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveEmpleadoAsync(string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado();
-            inValue.cedula = cedula;
-            inValue.nombres = nombres;
-            inValue.Apellidos = Apellidos;
-            inValue.usuario = usuario;
-            inValue.funcion = funcion;
-            inValue.clave = clave;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveEmpleadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest request) {
-            return base.Channel.getEstado(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado getEstado(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getEstado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest request) {
-            return base.Channel.getEstadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse> getEstadoAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getEstadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest request) {
-            return base.Channel.getHorario(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.horario getHorario(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getHorario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest request) {
-            return base.Channel.getHorarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse> getHorarioAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getHorarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest request) {
-            return base.Channel.getEmpleado(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado getEmpleado(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getEmpleado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest request) {
-            return base.Channel.getEmpleadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse> getEmpleadoAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getEmpleadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest request) {
-            return base.Channel.deleteHorario(request);
-        }
-        
-        public bool deleteHorario(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteHorario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest request) {
-            return base.Channel.deleteHorarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse> deleteHorarioAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteHorarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario request) {
-            base.Channel.saveHorario(request);
-        }
-        
-        public void saveHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario();
-            inValue.empleado = empleado;
-            inValue.aula = aula;
-            inValue.materia = materia;
-            inValue.horaInicio = horaInicio;
-            inValue.horaFin = horaFin;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveHorario(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario request) {
-            return base.Channel.saveHorarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario();
-            inValue.empleado = empleado;
-            inValue.aula = aula;
-            inValue.materia = materia;
-            inValue.horaInicio = horaInicio;
-            inValue.horaFin = horaFin;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveHorarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest request) {
-            return base.Channel.deleteFechaHabil(request);
-        }
-        
-        public bool deleteFechaHabil(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteFechaHabil(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest request) {
-            return base.Channel.deleteFechaHabilAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse> deleteFechaHabilAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteFechaHabilAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest request) {
-            return base.Channel.deleteAsistencia(request);
-        }
-        
-        public bool deleteAsistencia(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteAsistencia(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest request) {
-            return base.Channel.deleteAsistenciaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse> deleteAsistenciaAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteAsistenciaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest request) {
-            return base.Channel.getTipoEmpleado(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado getTipoEmpleado(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getTipoEmpleado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest request) {
-            return base.Channel.getTipoEmpleadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse> getTipoEmpleadoAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getTipoEmpleadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getVistaDocente(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest request) {
-            return base.Channel.getVistaDocente(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente getVistaDocente(int arg0) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest();
-            inValue.arg0 = arg0;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getVistaDocente(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getVistaDocenteAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest request) {
-            return base.Channel.getVistaDocenteAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse> getVistaDocenteAsync(int arg0) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest();
-            inValue.arg0 = arg0;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getVistaDocenteAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListTipos(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest request) {
-            return base.Channel.getListTipos(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo[] getListTipos() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListTipos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListTiposAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest request) {
-            return base.Channel.getListTiposAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse> getListTiposAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListTiposAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo request) {
-            base.Channel.saveTipo(request);
-        }
-        
-        public void saveTipo(string descripcionTipo) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo();
-            inValue.descripcionTipo = descripcionTipo;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveTipo(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo request) {
-            return base.Channel.saveTipoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveTipoAsync(string descripcionTipo) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo();
-            inValue.descripcionTipo = descripcionTipo;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveTipoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest request) {
-            return base.Channel.updateTipo(request);
-        }
-        
-        public bool updateTipo(int id, string descripcionTipo) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest();
-            inValue.id = id;
-            inValue.descripcionTipo = descripcionTipo;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateTipo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest request) {
-            return base.Channel.updateTipoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse> updateTipoAsync(int id, string descripcionTipo) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest();
-            inValue.id = id;
-            inValue.descripcionTipo = descripcionTipo;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateTipoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getVistaJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest request) {
-            return base.Channel.getVistaJornada(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada getVistaJornada(int arg0) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest();
-            inValue.arg0 = arg0;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getVistaJornada(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getVistaJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest request) {
-            return base.Channel.getVistaJornadaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse> getVistaJornadaAsync(int arg0) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest();
-            inValue.arg0 = arg0;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getVistaJornadaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest request) {
-            return base.Channel.updateHorario(request);
-        }
-        
-        public bool updateHorario(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest();
-            inValue.id = id;
-            inValue.empleado = empleado;
-            inValue.aula = aula;
-            inValue.materia = materia;
-            inValue.horaInicio = horaInicio;
-            inValue.horaFin = horaFin;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateHorario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest request) {
-            return base.Channel.updateHorarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse> updateHorarioAsync(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest();
-            inValue.id = id;
-            inValue.empleado = empleado;
-            inValue.aula = aula;
-            inValue.materia = materia;
-            inValue.horaInicio = horaInicio;
-            inValue.horaFin = horaFin;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateHorarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest request) {
-            return base.Channel.updateJornada(request);
-        }
-        
-        public bool updateJornada(int id, System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest();
-            inValue.id = id;
-            inValue.entraPrimerPeriodo = entraPrimerPeriodo;
-            inValue.salePrimerPeriodo = salePrimerPeriodo;
-            inValue.entraSegundoPeriodo = entraSegundoPeriodo;
-            inValue.saleSegundoPeriodo = saleSegundoPeriodo;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateJornada(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest request) {
-            return base.Channel.updateJornadaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse> updateJornadaAsync(int id, System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest();
-            inValue.id = id;
-            inValue.entraPrimerPeriodo = entraPrimerPeriodo;
-            inValue.salePrimerPeriodo = salePrimerPeriodo;
-            inValue.entraSegundoPeriodo = entraSegundoPeriodo;
-            inValue.saleSegundoPeriodo = saleSegundoPeriodo;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateJornadaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest request) {
-            return base.Channel.getMateria(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia getMateria(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getMateria(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest request) {
-            return base.Channel.getMateriaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse> getMateriaAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getMateriaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado request) {
-            base.Channel.saveTipoEmpleado(request);
-        }
-        
-        public void saveTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.jornada jornada) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado();
-            inValue.empleado = empleado;
-            inValue.tipo = tipo;
-            inValue.jornada = jornada;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveTipoEmpleado(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado request) {
-            return base.Channel.saveTipoEmpleadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.jornada jornada) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado();
-            inValue.empleado = empleado;
-            inValue.tipo = tipo;
-            inValue.jornada = jornada;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveTipoEmpleadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest request) {
-            return base.Channel.deleteJornada(request);
-        }
-        
-        public bool deleteJornada(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteJornada(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest request) {
-            return base.Channel.deleteJornadaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse> deleteJornadaAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteJornadaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListMaterias(Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest request) {
-            return base.Channel.getListMaterias(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia[] getListMaterias() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListMaterias(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListMateriasAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest request) {
-            return base.Channel.getListMateriasAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse> getListMateriasAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListMateriasAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada request) {
-            base.Channel.saveJornada(request);
-        }
-        
-        public void saveJornada(System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada();
-            inValue.entraPrimerPeriodo = entraPrimerPeriodo;
-            inValue.salePrimerPeriodo = salePrimerPeriodo;
-            inValue.entraSegundoPeriodo = entraSegundoPeriodo;
-            inValue.saleSegundoPeriodo = saleSegundoPeriodo;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveJornada(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada request) {
-            return base.Channel.saveJornadaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveJornadaAsync(System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada();
-            inValue.entraPrimerPeriodo = entraPrimerPeriodo;
-            inValue.salePrimerPeriodo = salePrimerPeriodo;
-            inValue.entraSegundoPeriodo = entraSegundoPeriodo;
-            inValue.saleSegundoPeriodo = saleSegundoPeriodo;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveJornadaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest request) {
-            return base.Channel.deleteTipo(request);
-        }
-        
-        public bool deleteTipo(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteTipo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest request) {
-            return base.Channel.deleteTipoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse> deleteTipoAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteTipoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria request) {
-            base.Channel.saveMateria(request);
-        }
-        
-        public void saveMateria(string descripcionMateria) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria();
-            inValue.descripcionMateria = descripcionMateria;
-            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveMateria(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria request) {
-            return base.Channel.saveMateriaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task saveMateriaAsync(string descripcionMateria) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria();
-            inValue.descripcionMateria = descripcionMateria;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveMateriaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest request) {
-            return base.Channel.getTipo(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo getTipo(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getTipo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest request) {
-            return base.Channel.getTipoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse> getTipoAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getTipoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest request) {
-            return base.Channel.updateMateria(request);
-        }
-        
-        public bool updateMateria(int id, string descripcionMateria) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest();
-            inValue.id = id;
-            inValue.descripcionMateria = descripcionMateria;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateMateria(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest request) {
-            return base.Channel.updateMateriaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse> updateMateriaAsync(int id, string descripcionMateria) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest();
-            inValue.id = id;
-            inValue.descripcionMateria = descripcionMateria;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateMateriaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest request) {
-            return base.Channel.deleteMateria(request);
-        }
-        
-        public bool deleteMateria(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteMateria(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest request) {
-            return base.Channel.deleteMateriaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse> deleteMateriaAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteMateriaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest request) {
-            return base.Channel.getJornada(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada getJornada(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest();
-            inValue.id = id;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getJornada(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest request) {
-            return base.Channel.getJornadaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse> getJornadaAsync(int id) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest();
-            inValue.id = id;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getJornadaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest request) {
-            return base.Channel.getListJornada(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada[] getListJornada() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListJornada(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest request) {
-            return base.Channel.getListJornadaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse> getListJornadaAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListJornadaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest request) {
-            return base.Channel.getListAsistencia(request);
-        }
-        
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia[] getListAsistencia() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListAsistencia(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest request) {
-            return base.Channel.getListAsistenciaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse> getListAsistenciaAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListAsistenciaAsync(inValue);
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse> getListNombresCompletosAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListNombresCompletosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -5244,6 +4103,71 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getNombreCompleto(Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest request) {
+            return base.Channel.getNombreCompleto(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto getNombreCompleto(int arg0) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest();
+            inValue.arg0 = arg0;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getNombreCompleto(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getNombreCompletoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest request) {
+            return base.Channel.getNombreCompletoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse> getNombreCompletoAsync(int arg0) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest();
+            inValue.arg0 = arg0;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getNombreCompletoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListVistaDocente(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest request) {
+            return base.Channel.getListVistaDocente(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente[] getListVistaDocente() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListVistaDocente(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListVistaDocenteAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest request) {
+            return base.Channel.getListVistaDocenteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteResponse> getListVistaDocenteAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListVistaDocenteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListVistaJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest request) {
+            return base.Channel.getListVistaJornada(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada[] getListVistaJornada() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListVistaJornada(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListVistaJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest request) {
+            return base.Channel.getListVistaJornadaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse> getListVistaJornadaAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListVistaJornadaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListTiposEmpleados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosRequest request) {
             return base.Channel.getListTiposEmpleados(request);
         }
@@ -5262,6 +4186,27 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosResponse> getListTiposEmpleadosAsync() {
             Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposEmpleadosRequest();
             return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListTiposEmpleadosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest request) {
+            return base.Channel.getListAsistencia(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia[] getListAsistencia() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListAsistencia(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest request) {
+            return base.Channel.getListAsistenciaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaResponse> getListAsistenciaAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListAsistenciaRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListAsistenciaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -5294,89 +4239,1158 @@ namespace Control_de_Asistencia_ITCA.ServicioAsistencia {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListVistaJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest request) {
-            return base.Channel.getListVistaJornada(request);
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest request) {
+            return base.Channel.deleteAsistencia(request);
         }
         
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada[] getListVistaJornada() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListVistaJornada(inValue);
+        public bool deleteAsistencia(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteAsistencia(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListVistaJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest request) {
-            return base.Channel.getListVistaJornadaAsync(request);
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest request) {
+            return base.Channel.deleteAsistenciaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaResponse> getListVistaJornadaAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaJornadaRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListVistaJornadaAsync(inValue);
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaResponse> deleteAsistenciaAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAsistenciaRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteAsistenciaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListVistaDocente(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest request) {
-            return base.Channel.getListVistaDocente(request);
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest request) {
+            return base.Channel.getAsistencia(request);
         }
         
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente[] getListVistaDocente() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListVistaDocente(inValue);
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia getAsistencia(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getAsistencia(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListVistaDocenteAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest request) {
-            return base.Channel.getListVistaDocenteAsync(request);
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest request) {
+            return base.Channel.getAsistenciaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteResponse> getListVistaDocenteAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListVistaDocenteRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListVistaDocenteAsync(inValue);
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaResponse> getAsistenciaAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getAsistenciaRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getAsistenciaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getNombreCompleto(Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest request) {
-            return base.Channel.getNombreCompleto(request);
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListAulas(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest request) {
+            return base.Channel.getListAulas(request);
         }
         
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto getNombreCompleto(int arg0) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest();
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula[] getListAulas() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListAulas(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListAulasAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest request) {
+            return base.Channel.getListAulasAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasResponse> getListAulasAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListAulasRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListAulasAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getAula(Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest request) {
+            return base.Channel.getAula(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.aula getAula(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getAula(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest request) {
+            return base.Channel.getAulaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaResponse> getAulaAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getAulaRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getAulaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateAula(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest request) {
+            return base.Channel.updateAula(request);
+        }
+        
+        public bool updateAula(int id, string descripcionAula) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest();
+            inValue.id = id;
+            inValue.descripcionAula = descripcionAula;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateAula(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest request) {
+            return base.Channel.updateAulaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaResponse> updateAulaAsync(int id, string descripcionAula) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateAulaRequest();
+            inValue.id = id;
+            inValue.descripcionAula = descripcionAula;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateAulaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado request) {
+            base.Channel.saveEmpleado(request);
+        }
+        
+        public void saveEmpleado(string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado();
+            inValue.cedula = cedula;
+            inValue.nombres = nombres;
+            inValue.Apellidos = Apellidos;
+            inValue.usuario = usuario;
+            inValue.funcion = funcion;
+            inValue.clave = clave;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveEmpleado(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado request) {
+            return base.Channel.saveEmpleadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveEmpleadoAsync(string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveEmpleado();
+            inValue.cedula = cedula;
+            inValue.nombres = nombres;
+            inValue.Apellidos = Apellidos;
+            inValue.usuario = usuario;
+            inValue.funcion = funcion;
+            inValue.clave = clave;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveEmpleadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest request) {
+            return base.Channel.updateAsistencia(request);
+        }
+        
+        public bool updateAsistencia(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, System.DateTime fecha, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest();
+            inValue.id = id;
+            inValue.tipo = tipo;
+            inValue.empleado = empleado;
+            inValue.mensajeAsistencia = mensajeAsistencia;
+            inValue.fecha = fecha;
+            inValue.estado = estado;
+            inValue.comentarios = comentarios;
+            inValue.observaciones = observaciones;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateAsistencia(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest request) {
+            return base.Channel.updateAsistenciaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaResponse> updateAsistenciaAsync(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, System.DateTime fecha, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateAsistenciaRequest();
+            inValue.id = id;
+            inValue.tipo = tipo;
+            inValue.empleado = empleado;
+            inValue.mensajeAsistencia = mensajeAsistencia;
+            inValue.fecha = fecha;
+            inValue.estado = estado;
+            inValue.comentarios = comentarios;
+            inValue.observaciones = observaciones;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateAsistenciaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveAula(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula request) {
+            base.Channel.saveAula(request);
+        }
+        
+        public void saveAula(string descripcionAula) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula();
+            inValue.descripcionAula = descripcionAula;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveAula(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula request) {
+            return base.Channel.saveAulaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveAulaAsync(string descripcionAula) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveAula();
+            inValue.descripcionAula = descripcionAula;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveAulaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteAula(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest request) {
+            return base.Channel.deleteAula(request);
+        }
+        
+        public bool deleteAula(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteAula(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteAulaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest request) {
+            return base.Channel.deleteAulaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaResponse> deleteAulaAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteAulaRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteAulaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListEmpleados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest request) {
+            return base.Channel.getListEmpleados(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado[] getListEmpleados() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListEmpleados(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListEmpleadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest request) {
+            return base.Channel.getListEmpleadosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosResponse> getListEmpleadosAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListEmpleadosRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListEmpleadosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest request) {
+            return base.Channel.getEmpleado(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.empleado getEmpleado(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getEmpleado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest request) {
+            return base.Channel.getEmpleadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoResponse> getEmpleadoAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getEmpleadoRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getEmpleadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest request) {
+            return base.Channel.deleteEmpleado(request);
+        }
+        
+        public bool deleteEmpleado(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteEmpleado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest request) {
+            return base.Channel.deleteEmpleadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoResponse> deleteEmpleadoAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEmpleadoRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteEmpleadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia request) {
+            base.Channel.saveAsistencia(request);
+        }
+        
+        public void saveAsistencia(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, System.DateTime fecha, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia();
+            inValue.tipo = tipo;
+            inValue.empleado = empleado;
+            inValue.mensajeAsistencia = mensajeAsistencia;
+            inValue.fecha = fecha;
+            inValue.estado = estado;
+            inValue.comentarios = comentarios;
+            inValue.observaciones = observaciones;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveAsistencia(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia request) {
+            return base.Channel.saveAsistenciaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveAsistenciaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, string mensajeAsistencia, System.DateTime fecha, Control_de_Asistencia_ITCA.ServicioAsistencia.estado estado, string comentarios, string observaciones) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveAsistencia();
+            inValue.tipo = tipo;
+            inValue.empleado = empleado;
+            inValue.mensajeAsistencia = mensajeAsistencia;
+            inValue.fecha = fecha;
+            inValue.estado = estado;
+            inValue.comentarios = comentarios;
+            inValue.observaciones = observaciones;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveAsistenciaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest request) {
+            return base.Channel.updateJornada(request);
+        }
+        
+        public bool updateJornada(int id, System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest();
+            inValue.id = id;
+            inValue.entraPrimerPeriodo = entraPrimerPeriodo;
+            inValue.salePrimerPeriodo = salePrimerPeriodo;
+            inValue.entraSegundoPeriodo = entraSegundoPeriodo;
+            inValue.saleSegundoPeriodo = saleSegundoPeriodo;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateJornada(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest request) {
+            return base.Channel.updateJornadaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaResponse> updateJornadaAsync(int id, System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateJornadaRequest();
+            inValue.id = id;
+            inValue.entraPrimerPeriodo = entraPrimerPeriodo;
+            inValue.salePrimerPeriodo = salePrimerPeriodo;
+            inValue.entraSegundoPeriodo = entraSegundoPeriodo;
+            inValue.saleSegundoPeriodo = saleSegundoPeriodo;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateJornadaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest request) {
+            return base.Channel.getFechaHabil(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.fechaHabil getFechaHabil(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getFechaHabil(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest request) {
+            return base.Channel.getFechaHabilAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilResponse> getFechaHabilAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getFechaHabilRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getFechaHabilAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest request) {
+            return base.Channel.updateMateria(request);
+        }
+        
+        public bool updateMateria(int id, string descripcionMateria) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest();
+            inValue.id = id;
+            inValue.descripcionMateria = descripcionMateria;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateMateria(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest request) {
+            return base.Channel.updateMateriaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaResponse> updateMateriaAsync(int id, string descripcionMateria) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateMateriaRequest();
+            inValue.id = id;
+            inValue.descripcionMateria = descripcionMateria;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateMateriaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado request) {
+            base.Channel.saveEstado(request);
+        }
+        
+        public void saveEstado(string descripcionEstado) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado();
+            inValue.descripcionEstado = descripcionEstado;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveEstado(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado request) {
+            return base.Channel.saveEstadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveEstadoAsync(string descripcionEstado) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveEstado();
+            inValue.descripcionEstado = descripcionEstado;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveEstadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado request) {
+            base.Channel.saveTipoEmpleado(request);
+        }
+        
+        public void saveTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.jornada jornada) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado();
+            inValue.empleado = empleado;
+            inValue.tipo = tipo;
+            inValue.jornada = jornada;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveTipoEmpleado(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado request) {
+            return base.Channel.saveTipoEmpleadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, Control_de_Asistencia_ITCA.ServicioAsistencia.jornada jornada) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipoEmpleado();
+            inValue.empleado = empleado;
+            inValue.tipo = tipo;
+            inValue.jornada = jornada;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveTipoEmpleadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest request) {
+            return base.Channel.deleteFechaHabil(request);
+        }
+        
+        public bool deleteFechaHabil(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteFechaHabil(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest request) {
+            return base.Channel.deleteFechaHabilAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilResponse> deleteFechaHabilAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteFechaHabilRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteFechaHabilAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest request) {
+            return base.Channel.updateFechaHabil(request);
+        }
+        
+        public bool updateFechaHabil(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest();
+            inValue.id = id;
+            inValue.tipo = tipo;
+            inValue.fecha = fecha;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateFechaHabil(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest request) {
+            return base.Channel.updateFechaHabilAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilResponse> updateFechaHabilAsync(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateFechaHabilRequest();
+            inValue.id = id;
+            inValue.tipo = tipo;
+            inValue.fecha = fecha;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateFechaHabilAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest request) {
+            return base.Channel.deleteHorario(request);
+        }
+        
+        public bool deleteHorario(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteHorario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest request) {
+            return base.Channel.deleteHorarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioResponse> deleteHorarioAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteHorarioRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteHorarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada request) {
+            base.Channel.saveJornada(request);
+        }
+        
+        public void saveJornada(System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada();
+            inValue.entraPrimerPeriodo = entraPrimerPeriodo;
+            inValue.salePrimerPeriodo = salePrimerPeriodo;
+            inValue.entraSegundoPeriodo = entraSegundoPeriodo;
+            inValue.saleSegundoPeriodo = saleSegundoPeriodo;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveJornada(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada request) {
+            return base.Channel.saveJornadaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveJornadaAsync(System.DateTime entraPrimerPeriodo, System.DateTime salePrimerPeriodo, System.DateTime entraSegundoPeriodo, System.DateTime saleSegundoPeriodo) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveJornada();
+            inValue.entraPrimerPeriodo = entraPrimerPeriodo;
+            inValue.salePrimerPeriodo = salePrimerPeriodo;
+            inValue.entraSegundoPeriodo = entraSegundoPeriodo;
+            inValue.saleSegundoPeriodo = saleSegundoPeriodo;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveJornadaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest request) {
+            return base.Channel.getJornada(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada getJornada(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getJornada(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest request) {
+            return base.Channel.getJornadaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaResponse> getJornadaAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getJornadaRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getJornadaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest request) {
+            return base.Channel.getListHorario(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.horario[] getListHorario() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListHorario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest request) {
+            return base.Channel.getListHorarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioResponse> getListHorarioAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListHorarioRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListHorarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest request) {
+            return base.Channel.deleteJornada(request);
+        }
+        
+        public bool deleteJornada(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteJornada(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest request) {
+            return base.Channel.deleteJornadaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaResponse> deleteJornadaAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteJornadaRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteJornadaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest request) {
+            return base.Channel.getListJornada(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.jornada[] getListJornada() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListJornada(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest request) {
+            return base.Channel.getListJornadaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaResponse> getListJornadaAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListJornadaRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListJornadaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest request) {
+            return base.Channel.updateHorario(request);
+        }
+        
+        public bool updateHorario(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest();
+            inValue.id = id;
+            inValue.empleado = empleado;
+            inValue.aula = aula;
+            inValue.materia = materia;
+            inValue.horaInicio = horaInicio;
+            inValue.horaFin = horaFin;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateHorario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest request) {
+            return base.Channel.updateHorarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioResponse> updateHorarioAsync(int id, Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateHorarioRequest();
+            inValue.id = id;
+            inValue.empleado = empleado;
+            inValue.aula = aula;
+            inValue.materia = materia;
+            inValue.horaInicio = horaInicio;
+            inValue.horaFin = horaFin;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateHorarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest request) {
+            return base.Channel.updateEstado(request);
+        }
+        
+        public bool updateEstado(int id, string descripcionEstado) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest();
+            inValue.id = id;
+            inValue.descripcionEstado = descripcionEstado;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateEstado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest request) {
+            return base.Channel.updateEstadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoResponse> updateEstadoAsync(int id, string descripcionEstado) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateEstadoRequest();
+            inValue.id = id;
+            inValue.descripcionEstado = descripcionEstado;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateEstadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria request) {
+            base.Channel.saveMateria(request);
+        }
+        
+        public void saveMateria(string descripcionMateria) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria();
+            inValue.descripcionMateria = descripcionMateria;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveMateria(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria request) {
+            return base.Channel.saveMateriaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveMateriaAsync(string descripcionMateria) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveMateria();
+            inValue.descripcionMateria = descripcionMateria;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveMateriaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario request) {
+            base.Channel.saveHorario(request);
+        }
+        
+        public void saveHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario();
+            inValue.empleado = empleado;
+            inValue.aula = aula;
+            inValue.materia = materia;
+            inValue.horaInicio = horaInicio;
+            inValue.horaFin = horaFin;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveHorario(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario request) {
+            return base.Channel.saveHorarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.empleado empleado, Control_de_Asistencia_ITCA.ServicioAsistencia.aula aula, Control_de_Asistencia_ITCA.ServicioAsistencia.materia materia, System.DateTime horaInicio, System.DateTime horaFin) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveHorario();
+            inValue.empleado = empleado;
+            inValue.aula = aula;
+            inValue.materia = materia;
+            inValue.horaInicio = horaInicio;
+            inValue.horaFin = horaFin;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveHorarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListTipos(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest request) {
+            return base.Channel.getListTipos(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo[] getListTipos() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListTipos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListTiposAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest request) {
+            return base.Channel.getListTiposAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposResponse> getListTiposAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListTiposRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListTiposAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest request) {
+            return base.Channel.updateTipo(request);
+        }
+        
+        public bool updateTipo(int id, string descripcionTipo) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest();
+            inValue.id = id;
+            inValue.descripcionTipo = descripcionTipo;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateTipo(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest request) {
+            return base.Channel.updateTipoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoResponse> updateTipoAsync(int id, string descripcionTipo) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateTipoRequest();
+            inValue.id = id;
+            inValue.descripcionTipo = descripcionTipo;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateTipoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo request) {
+            base.Channel.saveTipo(request);
+        }
+        
+        public void saveTipo(string descripcionTipo) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo();
+            inValue.descripcionTipo = descripcionTipo;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveTipo(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo request) {
+            return base.Channel.saveTipoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveTipoAsync(string descripcionTipo) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveTipo();
+            inValue.descripcionTipo = descripcionTipo;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveTipoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getVistaDocente(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest request) {
+            return base.Channel.getVistaDocente(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaDocente getVistaDocente(int arg0) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest();
             inValue.arg0 = arg0;
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getNombreCompleto(inValue);
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getVistaDocente(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getNombreCompletoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest request) {
-            return base.Channel.getNombreCompletoAsync(request);
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getVistaDocenteAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest request) {
+            return base.Channel.getVistaDocenteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoResponse> getNombreCompletoAsync(int arg0) {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getNombreCompletoRequest();
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteResponse> getVistaDocenteAsync(int arg0) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaDocenteRequest();
             inValue.arg0 = arg0;
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getNombreCompletoAsync(inValue);
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getVistaDocenteAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListNombresCompletos(Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest request) {
-            return base.Channel.getListNombresCompletos(request);
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest request) {
+            return base.Channel.getMateria(request);
         }
         
-        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaNombreCompleto[] getListNombresCompletos() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest();
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListNombresCompletos(inValue);
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia getMateria(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getMateria(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListNombresCompletosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest request) {
-            return base.Channel.getListNombresCompletosAsync(request);
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest request) {
+            return base.Channel.getMateriaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosResponse> getListNombresCompletosAsync() {
-            Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListNombresCompletosRequest();
-            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListNombresCompletosAsync(inValue);
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaResponse> getMateriaAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getMateriaRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getMateriaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getHorario(Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest request) {
+            return base.Channel.getHorario(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.horario getHorario(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getHorario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getHorarioAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest request) {
+            return base.Channel.getHorarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioResponse> getHorarioAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getHorarioRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getHorarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListEstados(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest request) {
+            return base.Channel.getListEstados(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado[] getListEstados() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListEstados(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListEstadosAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest request) {
+            return base.Channel.getListEstadosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosResponse> getListEstadosAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListEstadosRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListEstadosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest request) {
+            return base.Channel.getTipo(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipo getTipo(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getTipo(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest request) {
+            return base.Channel.getTipoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoResponse> getTipoAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getTipoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteMateria(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest request) {
+            return base.Channel.deleteMateria(request);
+        }
+        
+        public bool deleteMateria(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteMateria(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteMateriaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest request) {
+            return base.Channel.deleteMateriaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaResponse> deleteMateriaAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteMateriaRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteMateriaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListMaterias(Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest request) {
+            return base.Channel.getListMaterias(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.materia[] getListMaterias() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest();
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListMaterias(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getListMateriasAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest request) {
+            return base.Channel.getListMateriasAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasResponse> getListMateriasAsync() {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getListMateriasRequest();
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getListMateriasAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getVistaJornada(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest request) {
+            return base.Channel.getVistaJornada(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.vistaJornada getVistaJornada(int arg0) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest();
+            inValue.arg0 = arg0;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getVistaJornada(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getVistaJornadaAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest request) {
+            return base.Channel.getVistaJornadaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaResponse> getVistaJornadaAsync(int arg0) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getVistaJornadaRequest();
+            inValue.arg0 = arg0;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getVistaJornadaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest request) {
+            return base.Channel.updateEmpleado(request);
+        }
+        
+        public bool updateEmpleado(int id, string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest();
+            inValue.id = id;
+            inValue.cedula = cedula;
+            inValue.nombres = nombres;
+            inValue.Apellidos = Apellidos;
+            inValue.usuario = usuario;
+            inValue.funcion = funcion;
+            inValue.clave = clave;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateEmpleado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.updateEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest request) {
+            return base.Channel.updateEmpleadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoResponse> updateEmpleadoAsync(int id, string cedula, string nombres, string Apellidos, string usuario, string funcion, string clave) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.updateEmpleadoRequest();
+            inValue.id = id;
+            inValue.cedula = cedula;
+            inValue.nombres = nombres;
+            inValue.Apellidos = Apellidos;
+            inValue.usuario = usuario;
+            inValue.funcion = funcion;
+            inValue.clave = clave;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).updateEmpleadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteTipo(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest request) {
+            return base.Channel.deleteTipo(request);
+        }
+        
+        public bool deleteTipo(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteTipo(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteTipoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest request) {
+            return base.Channel.deleteTipoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoResponse> deleteTipoAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteTipoRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteTipoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest request) {
+            return base.Channel.deleteEstado(request);
+        }
+        
+        public bool deleteEstado(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteEstado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.deleteEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest request) {
+            return base.Channel.deleteEstadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoResponse> deleteEstadoAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.deleteEstadoRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).deleteEstadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getTipoEmpleado(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest request) {
+            return base.Channel.getTipoEmpleado(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.tipoEmpleado getTipoEmpleado(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getTipoEmpleado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getTipoEmpleadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest request) {
+            return base.Channel.getTipoEmpleadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoResponse> getTipoEmpleadoAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getTipoEmpleadoRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getTipoEmpleadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil request) {
+            base.Channel.saveFechaHabil(request);
+        }
+        
+        public void saveFechaHabil(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil();
+            inValue.tipo = tipo;
+            inValue.fecha = fecha;
+            ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveFechaHabil(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.saveFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil request) {
+            return base.Channel.saveFechaHabilAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task saveFechaHabilAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.tipo tipo, System.DateTime fecha) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.saveFechaHabil();
+            inValue.tipo = tipo;
+            inValue.fecha = fecha;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).saveFechaHabilAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getEstado(Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest request) {
+            return base.Channel.getEstado(request);
+        }
+        
+        public Control_de_Asistencia_ITCA.ServicioAsistencia.estado getEstado(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest();
+            inValue.id = id;
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse retVal = ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getEstado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse> Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia.getEstadoAsync(Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest request) {
+            return base.Channel.getEstadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoResponse> getEstadoAsync(int id) {
+            Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest inValue = new Control_de_Asistencia_ITCA.ServicioAsistencia.getEstadoRequest();
+            inValue.id = id;
+            return ((Control_de_Asistencia_ITCA.ServicioAsistencia.ServicioAsistencia)(this)).getEstadoAsync(inValue);
         }
     }
 }

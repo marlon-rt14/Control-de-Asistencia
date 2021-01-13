@@ -61,9 +61,9 @@ namespace Control_de_Asistencia_ITCA.Controllers
             {
                 if (item.idEmpleado.cedula == Usuario.Sesion.cedula)
                 {
-                    dtm.Rows.Add(new object[] { item.idAsistencia, item.idTipoEmpleado.idTipo.descripcionTipo, item.idEmpleado.cedula,
+                    dtm.Rows.Add(new object[] { item.idAsistencia, item.idTipo.descripcionTipo, item.idEmpleado.cedula,
                         getNombre(clienteServicio.getListNombresCompletos()), item.mensajeAsistencia,
-                    item.idFechaHabil.fecha.ToString("dd/MM/yyyy"), item.idEstado.descripcionEstado, item.comentarios, item.observaciones});
+                    item.fecha.ToString("dd/MM/yyyy"), item.idEstado.descripcionEstado, item.comentarios, item.observaciones});
                 }
             });
         }
