@@ -25,7 +25,7 @@ namespace Control_de_Asistencia_ITCA.Views
         public void iniciarDatos()
         {
             IniciarDatos iniciar = new IniciarDatos();
-            iniciar.iniciarRegistroAsistencia(tblAsistencia);
+            iniciar.RegistroAsistenciaDocente(tblAsistencia);
 
             lblDescripcionAsistencia.Text = Valores.valores.infoRegistroAsistecia;
         }

@@ -72,7 +72,7 @@ namespace Control_de_Asistencia_ITCA
         public void iniciarDatos()
         {
             //INICIAR EL HORARIO DE ASISTENCIA DE DOCENTE ACTUAL
-            iniciar.iniciarHorarioAsistencia(tblHorarioAsistencia);            
+            iniciar.HorarioAsistencia(tblHorarioAsistencia);            
 
             //ESTABLECER EN EL COMOBOBOX EL NOMBRE DEL USUARIO ACTUALMENTE INGRESADO
             cmbUserName.Items.Add(getNombre(servicio.getListNombresCompletos()));

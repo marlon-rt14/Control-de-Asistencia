@@ -15,8 +15,7 @@ namespace Control_de_Asistencia_ITCA.Controllers
         //CONECTARSE AL SERVIDODR
         private static ServicioAsistencia.ServicioAsistenciaClient clienteServicio = new ServicioAsistencia.ServicioAsistenciaClient();
 
-        public DateTime fechaMenor = DateTime.Parse("01/01/2050");
-        public void iniciarHorarioAsistencia(DataGridView dtm)
+        public void HorarioAsistencia(DataGridView dtm)
         {
             //RECUPERAR TODAS LAS ELEMENTOS DE LA VISTA DOCENTES
             IList<ServicioAsistencia.vistaDocente> listViewDocentes = clienteServicio.getListVistaDocente();
@@ -32,18 +31,11 @@ namespace Control_de_Asistencia_ITCA.Controllers
                     dtm.Rows.Add(new object[] { item.idEmpleado, item.descripcionTipo,
                     item.cedula, item.nombreEmpleado, item.descripcionAula, item.descripcionMateria,
                     item.horaInicio.ToString("HH:mm"), item.horaFin.ToString("HH:mm"),item.fecha.ToString("dd/MM/yyyy")});
-
-                    DateTime fechaIterator = DateTime.Parse(item.fecha.ToString("dd/MM/yyyy"));
-                    //VALIDAR FECHA
-                    if (fechaIterator.Date < fechaMenor.Date)
-                    {
-                        fechaMenor = fechaIterator.Date;
-                    }
                 }
             });
         }
 
-        public void iniciarRegistroAsistencia(DataGridView dtm)
+        public void RegistroAsistenciaDocente(DataGridView dtm)
         {
             dtm.RowCount = 0;
             Func<IList<ServicioAsistencia.vistaNombreCompleto>, string> getNombre = lista =>
@@ -68,5 +60,24 @@ namespace Control_de_Asistencia_ITCA.Controllers
             });
         }
 
+        public void JornadaAsistencia(DataGridView dtm)
+        {
+            //RECUPERA TODAS LOS ELEMENTOS DE LA VISTA JORNADA
+            IList<ServicioAsistencia.vistaJornada> listaJornada = clienteServicio.getListVistaJornada();
+            //ESTABLECER EL VALOR DE LAS FILAS EN 0
+            dtm.RowCount = 0;
+            //RECOORER CADA ITEM TIPO VISTA_JORNADA DE LA VISTA JORNADA
+            listaJornada.ToList().ForEach(item =>
+            {
+                //VALIDAR QUE SE MUESTREN LOS DATOS SOLO DEL USUARIO QUE INICIO SESION
+                if (item.cedula == Usuario.Sesion.cedula)
+                {
+                    //AGREGAR UNA NUEVA FILA
+                    dtm.Rows.Add(new object[] { item.idEmpleado, item.descripcionTipo, item.cedula, item.nombreEmpleado, item.fecha.ToString("dd/MM/yyyy"),
+                    item.entraPrimerPeriodo.ToString("HH:mm"), item.salePrimerPeriodo.ToString("HH:mm"),
+                        item.entraSegundoPeriodo.ToString("HH:mm"), item.saleSegundoPeriodo.ToString("HH:mm")});
+                }
+            });
+        }
     }
 }

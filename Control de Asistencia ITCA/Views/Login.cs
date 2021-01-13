@@ -57,6 +57,7 @@ namespace Control_de_Asistencia_ITCA.Views
                         ServicioAsistencia.empleado empleadoActual = GetServicio.getEmpleado(idEmpleadoActual);
                         Usuario.Sesion = empleadoActual;
 
+                        //ABRIR FORMULARIOS PARA DOCENTES
                         AsistenciaDocente childDocente = new AsistenciaDocente();
                         this.Hide();
                         childDocente.Show();
@@ -64,10 +65,15 @@ namespace Control_de_Asistencia_ITCA.Views
                     }
                     else if (tipo != null && (tipo.descripcionTipo == "Administrativo" || tipo.descripcionTipo == "Limpieza"))
                     {
+                        ServicioAsistencia.empleado empleadoActual = GetServicio.getEmpleado(idEmpleadoActual);
+                        Usuario.Sesion = empleadoActual;
+                        //ABRIR FORMULARIOS PARA ADMINISTRATIVOS
                         AsistenciaJornada childJornada = new AsistenciaJornada();
-                        //childJornada.Show();
+                        this.Hide();
+                        childJornada.Show();
                         //this.Dispose();
                     }
+                    //this.Close();
                 }
                 else
                 {
