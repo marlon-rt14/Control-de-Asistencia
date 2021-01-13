@@ -1,0 +1,13 @@
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\bin\Debug\Control de Asistencia ITCA.exe.config
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\bin\Debug\Control de Asistencia ITCA.exe
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\bin\Debug\Control de Asistencia ITCA.pdb
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.Properties.Resources.resources
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control de Asistencia ITCA.csproj.GenerateResource.cache
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control de Asistencia ITCA.csproj.CoreCompileInputs.cache
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control de Asistencia ITCA.exe
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control de Asistencia ITCA.pdb
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.Views.Login.resources
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.AsistenciaDocente.resources
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.AsistenciaJornada.resources
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.Views.RegistroAsistenciaDocente.resources
+C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control de Asistencia ITCA.csprojAssemblyReference.cache

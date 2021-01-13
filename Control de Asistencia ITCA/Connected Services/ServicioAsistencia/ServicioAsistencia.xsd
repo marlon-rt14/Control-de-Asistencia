@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://servicios/" targetNamespace="http://servicios/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="asistencia" type="tns:asistencia" />
+  <xs:element name="aula" type="tns:aula" />
+  <xs:element name="deleteAsistencia" type="tns:deleteAsistencia" />
+  <xs:element name="deleteAsistenciaResponse" type="tns:deleteAsistenciaResponse" />
+  <xs:element name="deleteAula" type="tns:deleteAula" />
+  <xs:element name="deleteAulaResponse" type="tns:deleteAulaResponse" />
+  <xs:element name="deleteEmpleado" type="tns:deleteEmpleado" />
+  <xs:element name="deleteEmpleadoResponse" type="tns:deleteEmpleadoResponse" />
+  <xs:element name="deleteEstado" type="tns:deleteEstado" />
+  <xs:element name="deleteEstadoResponse" type="tns:deleteEstadoResponse" />
+  <xs:element name="deleteFechaHabil" type="tns:deleteFechaHabil" />
+  <xs:element name="deleteFechaHabilResponse" type="tns:deleteFechaHabilResponse" />
+  <xs:element name="deleteHorario" type="tns:deleteHorario" />
+  <xs:element name="deleteHorarioResponse" type="tns:deleteHorarioResponse" />
+  <xs:element name="deleteJornada" type="tns:deleteJornada" />
+  <xs:element name="deleteJornadaResponse" type="tns:deleteJornadaResponse" />
+  <xs:element name="deleteMateria" type="tns:deleteMateria" />
+  <xs:element name="deleteMateriaResponse" type="tns:deleteMateriaResponse" />
+  <xs:element name="deleteTipo" type="tns:deleteTipo" />
+  <xs:element name="deleteTipoEmpleado" type="tns:deleteTipoEmpleado" />
+  <xs:element name="deleteTipoEmpleadoResponse" type="tns:deleteTipoEmpleadoResponse" />
+  <xs:element name="deleteTipoResponse" type="tns:deleteTipoResponse" />
+  <xs:element name="empleado" type="tns:empleado" />
+  <xs:element name="estado" type="tns:estado" />
+  <xs:element name="fechaHabil" type="tns:fechaHabil" />
+  <xs:element name="getAsistencia" type="tns:getAsistencia" />
+  <xs:element name="getAsistenciaResponse" type="tns:getAsistenciaResponse" />
+  <xs:element name="getAula" type="tns:getAula" />
+  <xs:element name="getAulaResponse" type="tns:getAulaResponse" />
+  <xs:element name="getEmpleado" type="tns:getEmpleado" />
+  <xs:element name="getEmpleadoResponse" type="tns:getEmpleadoResponse" />
+  <xs:element name="getEstado" type="tns:getEstado" />
+  <xs:element name="getEstadoResponse" type="tns:getEstadoResponse" />
+  <xs:element name="getFechaHabil" type="tns:getFechaHabil" />
+  <xs:element name="getFechaHabilResponse" type="tns:getFechaHabilResponse" />
+  <xs:element name="getHorario" type="tns:getHorario" />
+  <xs:element name="getHorarioResponse" type="tns:getHorarioResponse" />
+  <xs:element name="getJornada" type="tns:getJornada" />
+  <xs:element name="getJornadaResponse" type="tns:getJornadaResponse" />
+  <xs:element name="getListAsistencia" type="tns:getListAsistencia" />
+  <xs:element name="getListAsistenciaResponse" type="tns:getListAsistenciaResponse" />
+  <xs:element name="getListAulas" type="tns:getListAulas" />
+  <xs:element name="getListAulasResponse" type="tns:getListAulasResponse" />
+  <xs:element name="getListEmpleados" type="tns:getListEmpleados" />
+  <xs:element name="getListEmpleadosResponse" type="tns:getListEmpleadosResponse" />
+  <xs:element name="getListEstados" type="tns:getListEstados" />
+  <xs:element name="getListEstadosResponse" type="tns:getListEstadosResponse" />
+  <xs:element name="getListFechasHabiles" type="tns:getListFechasHabiles" />
+  <xs:element name="getListFechasHabilesResponse" type="tns:getListFechasHabilesResponse" />
+  <xs:element name="getListHorario" type="tns:getListHorario" />
+  <xs:element name="getListHorarioResponse" type="tns:getListHorarioResponse" />
+  <xs:element name="getListJornada" type="tns:getListJornada" />
+  <xs:element name="getListJornadaResponse" type="tns:getListJornadaResponse" />
+  <xs:element name="getListMaterias" type="tns:getListMaterias" />
+  <xs:element name="getListMateriasResponse" type="tns:getListMateriasResponse" />
+  <xs:element name="getListNombresCompletos" type="tns:getListNombresCompletos" />
+  <xs:element name="getListNombresCompletosResponse" type="tns:getListNombresCompletosResponse" />
+  <xs:element name="getListTipos" type="tns:getListTipos" />
+  <xs:element name="getListTiposEmpleados" type="tns:getListTiposEmpleados" />
+  <xs:element name="getListTiposEmpleadosResponse" type="tns:getListTiposEmpleadosResponse" />
+  <xs:element name="getListTiposResponse" type="tns:getListTiposResponse" />
+  <xs:element name="getListVistaDocente" type="tns:getListVistaDocente" />
+  <xs:element name="getListVistaDocenteResponse" type="tns:getListVistaDocenteResponse" />
+  <xs:element name="getListVistaJornada" type="tns:getListVistaJornada" />
+  <xs:element name="getListVistaJornadaResponse" type="tns:getListVistaJornadaResponse" />
+  <xs:element name="getMateria" type="tns:getMateria" />
+  <xs:element name="getMateriaResponse" type="tns:getMateriaResponse" />
+  <xs:element name="getNombreCompleto" type="tns:getNombreCompleto" />
+  <xs:element name="getNombreCompletoResponse" type="tns:getNombreCompletoResponse" />
+  <xs:element name="getTipo" type="tns:getTipo" />
+  <xs:element name="getTipoEmpleado" type="tns:getTipoEmpleado" />
+  <xs:element name="getTipoEmpleadoResponse" type="tns:getTipoEmpleadoResponse" />
+  <xs:element name="getTipoResponse" type="tns:getTipoResponse" />
+  <xs:element name="getVistaDocente" type="tns:getVistaDocente" />
+  <xs:element name="getVistaDocenteResponse" type="tns:getVistaDocenteResponse" />
+  <xs:element name="getVistaJornada" type="tns:getVistaJornada" />
+  <xs:element name="getVistaJornadaResponse" type="tns:getVistaJornadaResponse" />
+  <xs:element name="horario" type="tns:horario" />
+  <xs:element name="jornada" type="tns:jornada" />
+  <xs:element name="materia" type="tns:materia" />
+  <xs:element name="saveAsistencia" type="tns:saveAsistencia" />
+  <xs:element name="saveAula" type="tns:saveAula" />
+  <xs:element name="saveEmpleado" type="tns:saveEmpleado" />
+  <xs:element name="saveEstado" type="tns:saveEstado" />
+  <xs:element name="saveFechaHabil" type="tns:saveFechaHabil" />
+  <xs:element name="saveHorario" type="tns:saveHorario" />
+  <xs:element name="saveJornada" type="tns:saveJornada" />
+  <xs:element name="saveMateria" type="tns:saveMateria" />
+  <xs:element name="saveTipo" type="tns:saveTipo" />
+  <xs:element name="saveTipoEmpleado" type="tns:saveTipoEmpleado" />
+  <xs:element name="tipo" type="tns:tipo" />
+  <xs:element name="tipoEmpleado" type="tns:tipoEmpleado" />
+  <xs:element name="updateAsistencia" type="tns:updateAsistencia" />
+  <xs:element name="updateAsistenciaResponse" type="tns:updateAsistenciaResponse" />
+  <xs:element name="updateAula" type="tns:updateAula" />
+  <xs:element name="updateAulaResponse" type="tns:updateAulaResponse" />
+  <xs:element name="updateEmpleado" type="tns:updateEmpleado" />
+  <xs:element name="updateEmpleadoResponse" type="tns:updateEmpleadoResponse" />
+  <xs:element name="updateEstado" type="tns:updateEstado" />
+  <xs:element name="updateEstadoResponse" type="tns:updateEstadoResponse" />
+  <xs:element name="updateFechaHabil" type="tns:updateFechaHabil" />
+  <xs:element name="updateFechaHabilResponse" type="tns:updateFechaHabilResponse" />
+  <xs:element name="updateHorario" type="tns:updateHorario" />
+  <xs:element name="updateHorarioResponse" type="tns:updateHorarioResponse" />
+  <xs:element name="updateJornada" type="tns:updateJornada" />
+  <xs:element name="updateJornadaResponse" type="tns:updateJornadaResponse" />
+  <xs:element name="updateMateria" type="tns:updateMateria" />
+  <xs:element name="updateMateriaResponse" type="tns:updateMateriaResponse" />
+  <xs:element name="updateTipo" type="tns:updateTipo" />
+  <xs:element name="updateTipoEmpleado" type="tns:updateTipoEmpleado" />
+  <xs:element name="updateTipoEmpleadoResponse" type="tns:updateTipoEmpleadoResponse" />
+  <xs:element name="updateTipoResponse" type="tns:updateTipoResponse" />
+  <xs:element name="vistaDocente" type="tns:vistaDocente" />
+  <xs:element name="vistaJornada" type="tns:vistaJornada" />
+  <xs:element name="vistaNombreCompleto" type="tns:vistaNombreCompleto" />
+  <xs:complexType name="updateEstado">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcionEstado" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateEstadoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteAsistencia">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteAsistenciaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateAsistencia">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="tipoEmpleado" type="tns:tipoEmpleado" />
+      <xs:element minOccurs="0" name="empleado" type="tns:empleado" />
+      <xs:element minOccurs="0" name="mensajeAsistencia" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaHabil" type="tns:fechaHabil" />
+      <xs:element minOccurs="0" name="estado" type="tns:estado" />
+      <xs:element minOccurs="0" name="comentarios" type="xs:string" />
+      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoEmpleado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idEmpleado" type="tns:empleado" />
+      <xs:element minOccurs="0" name="idJornada" type="tns:jornada" />
+      <xs:element minOccurs="0" name="idTipo" type="tns:tipo" />
+      <xs:element minOccurs="0" name="idTipoEmpleado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="empleado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="cedula" type="xs:string" />
+      <xs:element minOccurs="0" name="clave" type="xs:string" />
+      <xs:element minOccurs="0" name="funcion" type="xs:string" />
+      <xs:element minOccurs="0" name="idEmpleado" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="jornada">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entraPrimerPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="entraSegundoPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idJornada" type="xs:int" />
+      <xs:element minOccurs="0" name="idTipo" type="tns:tipo" />
+      <xs:element minOccurs="0" name="salePrimerPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="saleSegundoPeriodo" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcionTipo" type="xs:string" />
+      <xs:element minOccurs="0" name="idTipo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fechaHabil">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idFechaHabil" type="xs:int" />
+      <xs:element minOccurs="0" name="idTipo" type="tns:tipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="estado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcionEstado" type="xs:string" />
+      <xs:element minOccurs="0" name="idEstado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateAsistenciaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListEstados">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListEstadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:estado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteHorario">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteHorarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getJornada">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getJornadaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:jornada" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getVistaJornada">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getVistaJornadaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:vistaJornada" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vistaJornada">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cedula" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionTipo" type="xs:string" />
+      <xs:element minOccurs="0" name="entraPrimerPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="entraSegundoPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element name="idEmpleado" type="xs:int" />
+      <xs:element name="idViewJornada" type="xs:long" />
+      <xs:element minOccurs="0" name="nombreEmpleado" type="xs:string" />
+      <xs:element minOccurs="0" name="salePrimerPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="saleSegundoPeriodo" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateFechaHabil">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipo" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateFechaHabilResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAsistencia">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAsistenciaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:asistencia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="asistencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="comentarios" type="xs:string" />
+      <xs:element minOccurs="0" name="idAsistencia" type="xs:int" />
+      <xs:element minOccurs="0" name="idEmpleado" type="tns:empleado" />
+      <xs:element minOccurs="0" name="idEstado" type="tns:estado" />
+      <xs:element minOccurs="0" name="idFechaHabil" type="tns:fechaHabil" />
+      <xs:element minOccurs="0" name="idTipoEmpleado" type="tns:tipoEmpleado" />
+      <xs:element minOccurs="0" name="mensajeAsistencia" type="xs:string" />
+      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getHorario">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getHorarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:horario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="horaFin" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="horaInicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idAula" type="tns:aula" />
+      <xs:element minOccurs="0" name="idEmpleado" type="tns:empleado" />
+      <xs:element minOccurs="0" name="idHorario" type="xs:int" />
+      <xs:element minOccurs="0" name="idMateria" type="tns:materia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcionAula" type="xs:string" />
+      <xs:element minOccurs="0" name="idAula" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="materia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcionMateria" type="xs:string" />
+      <xs:element minOccurs="0" name="idMateria" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteFechaHabil">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteFechaHabilResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListVistaDocente">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListVistaDocenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:vistaDocente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vistaDocente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cedula" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionAula" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionMateria" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionTipo" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="horaFin" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="horaInicio" type="xs:dateTime" />
+      <xs:element name="idEmpleado" type="xs:int" />
+      <xs:element name="idViewDocente" type="xs:long" />
+      <xs:element minOccurs="0" name="nombreEmpleado" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListFechasHabiles">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListFechasHabilesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:fechaHabil" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNombreCompleto">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNombreCompletoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:vistaNombreCompleto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vistaNombreCompleto">
+    <xs:sequence>
+      <xs:element name="idEmpleado" type="xs:int" />
+      <xs:element name="idViewNombre" type="xs:long" />
+      <xs:element minOccurs="0" name="nombreEmpleado" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveEstado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcionEstado" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTipoEmpleado">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTipoEmpleadoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:tipoEmpleado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteJornada">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteJornadaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getVistaDocente">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getVistaDocenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:vistaDocente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getFechaHabil">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getFechaHabilResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:fechaHabil" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveEmpleado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cedula" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="Apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="funcion" type="xs:string" />
+      <xs:element minOccurs="0" name="clave" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTipo">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTipoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:tipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveAula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcionAula" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateMateria">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcionMateria" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateMateriaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEstado">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEstadoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:estado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveTipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcionTipo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListJornada">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListJornadaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:jornada" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateTipoEmpleado">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="empleado" type="tns:empleado" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipo" />
+      <xs:element minOccurs="0" name="jornada" type="tns:jornada" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateTipoEmpleadoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListMaterias">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListMateriasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:materia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEmpleado">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEmpleadoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:empleado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateJornada">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="entraPrimerPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="salePrimerPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="entraSegundoPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="saleSegundoPeriodo" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateJornadaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListAsistencia">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListAsistenciaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:asistencia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListVistaJornada">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListVistaJornadaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:vistaJornada" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveHorario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="empleado" type="tns:empleado" />
+      <xs:element minOccurs="0" name="aula" type="tns:aula" />
+      <xs:element minOccurs="0" name="materia" type="tns:materia" />
+      <xs:element minOccurs="0" name="horaInicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="horaFin" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEstado">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEstadoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateEmpleado">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="cedula" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="Apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="funcion" type="xs:string" />
+      <xs:element minOccurs="0" name="clave" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateEmpleadoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListEmpleados">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListEmpleadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:empleado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveTipoEmpleado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="empleado" type="tns:empleado" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipo" />
+      <xs:element minOccurs="0" name="jornada" type="tns:jornada" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateAula">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcionAula" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateAulaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateTipo">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcionTipo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateTipoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMateria">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMateriaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:materia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteTipoEmpleado">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteTipoEmpleadoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListTiposEmpleados">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListTiposEmpleadosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tipoEmpleado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListTipos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListTiposResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEmpleado">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEmpleadoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteAula">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteAulaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteMateria">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteMateriaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteTipo">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteTipoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListNombresCompletos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListNombresCompletosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:vistaNombreCompleto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListAulas">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListAulasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:aula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAula">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAulaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:aula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateHorario">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="empleado" type="tns:empleado" />
+      <xs:element minOccurs="0" name="aula" type="tns:aula" />
+      <xs:element minOccurs="0" name="materia" type="tns:materia" />
+      <xs:element minOccurs="0" name="horaInicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="horaFin" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateHorarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveMateria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcionMateria" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveJornada">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entraPrimerPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="salePrimerPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="entraSegundoPeriodo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="saleSegundoPeriodo" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListHorario">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getListHorarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:horario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveAsistencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tipoEmpleado" type="tns:tipoEmpleado" />
+      <xs:element minOccurs="0" name="empleado" type="tns:empleado" />
+      <xs:element minOccurs="0" name="mensajeAsistencia" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaHabil" type="tns:fechaHabil" />
+      <xs:element minOccurs="0" name="estado" type="tns:estado" />
+      <xs:element minOccurs="0" name="comentarios" type="xs:string" />
+      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveFechaHabil">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tipo" type="tns:tipo" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
