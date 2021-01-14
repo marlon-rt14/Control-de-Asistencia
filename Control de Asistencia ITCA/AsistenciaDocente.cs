@@ -135,10 +135,13 @@ namespace Control_de_Asistencia_ITCA
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
 
+            //OBTENER UNA LISTA DE TODAS LAS FECHAS QUE MUESTRA EL REGISTRO 
             List<String> horasNormales = new List<string>();
+            //OBTENER UNA LISTA DE TODAS LAS FECHAS MUESTRAS EL REGISTRO MAS 15 MINUTOS
             List<String> horasMaximas = new List<string>();
-            string mensaje =  "";
-            //LLENAR UNA LISTA DE FECHAS
+
+            string mensaje = "";
+            //RECORRER LAS FILAS DE LA TABLA Y LLENAR LAS LISTA DE horasNormales Y horasMaximas
             foreach (DataGridViewRow row in tblHorarioAsistencia.Rows)
             {
                 //fechas.Add(row.Cells["txtFecha"].Value.ToString());
@@ -147,51 +150,73 @@ namespace Control_de_Asistencia_ITCA
                 horasMaximas.Add(horaRegistro.ToString("HH:mm"));
                 horasNormales.Add(row.Cells["txtInicio"].Value.ToString());
             }
+
+            //METODO ANONIMO MAS EXPRESIONES LAMBDA PARA RECUPERAR EL ESTADO DEL USUARIO SEGUN LA HORA QUE REGISTRE ASISTENCIA
             Func<List<string>, ServicioAsistencia.estado> getEstado = listaHoras =>
             {
-                try
+                try //VALIDAR ALGUN POSIBLE ERROR AL OBTENER LA HORA DE INTERNET
                 {
                     DateTime actualInternet = DateTime.Parse(InternetTime.GetCurrentTime().Value.ToLocalTime().ToString("HH:mm"));
                     DateTime actualLocal = DateTime.Parse(DateTime.Today.ToString("HH:mm"));
+
+                    //RECORRER LA LISTA DE HORAS NORMALES Y MAXIMAS PARA OBTENER SU ESTADO
                     for (int i = 0; i < listaHoras.Count; i++)
                     {
                         DateTime auxHora = DateTime.Parse(listaHoras[i]);
                         DateTime auxHoraMax = DateTime.Parse(horasMaximas[i]);
+
+                        //VALIDAR PARA QUE EL ESTADO SEA PRESENTE
                         if ((actualInternet.Date >= auxHora.Date && actualInternet.Date <= auxHoraMax.Date) ||
                         (actualLocal.Date >= auxHora.Date && actualLocal.Date <= auxHoraMax.Date))
                         {
                             mensaje = Valores.valores.msjAsistenciaPresente;
                             return servicio.getEstado(1);
-                        }else if (actualInternet.Date > auxHoraMax.Date.AddHours(2) || actualLocal.Date > auxHoraMax.Date.AddHours(2))
+                        }
+                        //CASO CONTRARIO CUANDO SEA ATRASADO
+                        else if (actualInternet.Date > auxHoraMax.Date.AddHours(2) || actualLocal.Date > auxHoraMax.Date.AddHours(2))
                         {
                             mensaje = Valores.valores.msjAsistenciaAtraso;
                             return servicio.getEstado(2);
                         }
+                        //CASO CONTRARIO INJUSTIFICADO
                         else
                         {
                             mensaje = Valores.valores.msjAsistenciaInjustificado;
                             return servicio.getEstado(3);
                         }
                     }
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show("Se ha producio una excepción al obtener la fecha y hora.", "Exception",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 return null;
             };
-            DateTimeOffset fechaActual = InternetTime.GetCurrentTime().Value.ToLocalTime();
-            if (DateTimeInternet())
+
+            try//VALIDAR ALGUN POSIBLE ERROR AL RECUPERAR LA HORA DE INTERNET
             {
-                servicio.saveAsistencia(Tipo.SesionTipo, Usuario.Sesion, mensaje,
-                DateTime.Parse(fechaActual.ToString("dd/MM/yyyy")).Date,
-                getEstado(horasNormales), "Sin comentaros", "S/A");
+                DateTimeOffset fechaActual = InternetTime.GetCurrentTime().Value.ToLocalTime();
+
+                //GUARDAR EL REGISTRO DE ASISTENCIA CON LA HORA DE INTERNET
+                if (DateTimeInternet())
+                {
+                    servicio.saveAsistencia(Tipo.SesionTipo, Usuario.Sesion, mensaje,
+                    DateTime.Parse(fechaActual.ToString("dd/MM/yyyy")).Date,
+                    getEstado(horasNormales), "Sin comentaros", "S/A");
+                }
+                //CASO CONTRARIO GUARDAR EL REGISTRO DE ASISTENCIA CON LA HORA LOCAL DEL COMPUTADOR
+                else
+                {
+                    servicio.saveAsistencia(Tipo.SesionTipo, Usuario.Sesion, mensaje,
+                   DateTime.Parse(DateTime.Today.ToString("dd/MM/yyyy")).Date,
+                   getEstado(horasNormales), "Sin comentaros", "S/A");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                servicio.saveAsistencia(Tipo.SesionTipo, Usuario.Sesion, mensaje,
-               DateTime.Parse(DateTime.Today.ToString("dd/MM/yyyy")).Date,
-               getEstado(horasNormales), "Sin comentaros", "S/A");
+                MessageBox.Show("Se ha producio una excepción al obtener la fecha y hora.", "Exception",
+                       MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }
