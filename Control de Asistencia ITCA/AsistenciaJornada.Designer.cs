@@ -163,6 +163,7 @@ namespace Control_de_Asistencia_ITCA
             this.cmbUserName.Name = "cmbUserName";
             this.cmbUserName.Size = new System.Drawing.Size(121, 21);
             this.cmbUserName.TabIndex = 16;
+            this.cmbUserName.SelectedIndexChanged += new System.EventHandler(this.cmbUserName_SelectedIndexChanged);
             // 
             // btnAsistenciaDocente
             // 
@@ -259,12 +260,12 @@ namespace Control_de_Asistencia_ITCA
         private System.Windows.Forms.DataGridViewTextBoxColumn txtSpp;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtEsp;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtSsp;
-        private System.Windows.Forms.ComboBox cmbUserName;
         private System.Windows.Forms.Button btnAsistenciaDocente;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.PictureBox pbxUser;
+        public System.Windows.Forms.ComboBox cmbUserName;
     }
 }

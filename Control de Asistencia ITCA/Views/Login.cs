@@ -1,4 +1,5 @@
-﻿using Control_de_Asistencia_ITCA.Modelo;
+﻿using Control_de_Asistencia_ITCA.Controllers;
+using Control_de_Asistencia_ITCA.Modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,16 +33,35 @@ namespace Control_de_Asistencia_ITCA.Views
                 int idEmpleadoActual = new int();
                 //USUARIO ENCONTRAD
                 bool encontrado = false;
+                //DECLARAR UNA VARIABLE COMO BANDERA DE LA CLAVE
+                string auxClave = "";
                 //RECORRER TODA LA LISTA DE EMPLEADOS PARA VALIDAR USUARIO Y CONTRASEÑA
                 foreach (ServicioAsistencia.empleado item in listaEmpleados)
                 {
                     //VALIDAR USUARIO Y CONTRASEÑA
-                    if (item.usuario == txtUsuario.Text && item.clave == txtClave.Text)
+                    if (item.usuario == txtUsuario.Text)
                     {
-                        encontrado = true;
-                        //RECUPERAR EL ID DEL EMPLEADO ACTUAL
-                        idEmpleadoActual = item.idEmpleado;
-                        break;
+                        //VALIDAR SI EL USUARIO INGRESA POR PRIMERA VEZ PARA ENCRIPTAR SU CLAVE ACTUAL
+                        if(item.clave == txtClave.Text)
+                        {
+                            auxClave = txtClave.Text;
+                            encontrado = true;
+                            //RECUPERAR EL ID DEL EMPLEADO ACTUAL
+                            idEmpleadoActual = item.idEmpleado;
+                            break;
+                        }
+                        //CASO CONTRARIO SI SU CLAVE YA ESTA ENCRIPTADA, DESENCRIPTAR Y COMPARAR CON LA QUE INGRESÓ
+                        else
+                        {
+                            if(txtClave.Text == Seguridad.Desencriptar(item.clave))
+                            {
+                                encontrado = true;
+                                //RECUPERAR EL ID DEL EMPLEADO ACTUAL
+                                idEmpleadoActual = item.idEmpleado;
+                                break;
+                            }
+                        }
+                        
                     }
                 }
 
@@ -56,6 +76,14 @@ namespace Control_de_Asistencia_ITCA.Views
                     {
                         ServicioAsistencia.empleado empleadoActual = GetServicio.getEmpleado(idEmpleadoActual);
                         Usuario.Sesion = empleadoActual;
+
+                        //GUARDAR PRIMERA VEZ
+                        if(Usuario.Sesion.clave == auxClave)
+                        {
+                            GetServicio.updateEmpleado(Usuario.Sesion.idEmpleado, Usuario.Sesion.cedula, Usuario.Sesion.nombres,
+                            Usuario.Sesion.apellidos, Usuario.Sesion.usuario, Usuario.Sesion.funcion,
+                            Seguridad.Encriptar(auxClave));
+                        }
 
                         //ABRIR FORMULARIOS PARA DOCENTES
                         AsistenciaDocente childDocente = new AsistenciaDocente();

@@ -21,7 +21,7 @@ namespace Control_de_Asistencia_ITCA
             Application.Run(new Login());
             //Application.Run(new AsistenciaDocente());
             //Application.Run(new RegistroAsistenciaDocente());
-            //Application.Run(new prueba());
+            //Application.Run(new frmCambiarClave());
         }
     }
 }

@@ -123,6 +123,7 @@ namespace Control_de_Asistencia_ITCA
             this.cmbUserName.Name = "cmbUserName";
             this.cmbUserName.Size = new System.Drawing.Size(121, 21);
             this.cmbUserName.TabIndex = 8;
+            this.cmbUserName.SelectedIndexChanged += new System.EventHandler(this.cmbUserName_SelectedIndexChanged);
             // 
             // tblHorarioAsistencia
             // 
@@ -256,7 +257,6 @@ namespace Control_de_Asistencia_ITCA
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnAsistenciaDocente;
-        private System.Windows.Forms.ComboBox cmbUserName;
         public System.Windows.Forms.DataGridView tblHorarioAsistencia;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtID;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtTipo;
@@ -267,6 +267,7 @@ namespace Control_de_Asistencia_ITCA
         private System.Windows.Forms.DataGridViewTextBoxColumn txtIniciar;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtConcluir;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtFecha;
+        public System.Windows.Forms.ComboBox cmbUserName;
     }
 }
 

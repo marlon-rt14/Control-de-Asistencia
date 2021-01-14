@@ -225,6 +225,20 @@ namespace Control_de_Asistencia_ITCA
         {
             //auxSeleccionar();
         }
+
+        private void cmbUserName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbUserName.SelectedIndex == 0)
+            {
+                frmCambiarUsuario cambarUsuario = new frmCambiarUsuario(this);
+                cambarUsuario.ShowDialog();
+            }
+            else if (cmbUserName.SelectedIndex == 1)
+            {
+                frmCambiarClave cambiarClave = new frmCambiarClave();
+                cambiarClave.ShowDialog();
+            }
+        }
     }
 }
 
