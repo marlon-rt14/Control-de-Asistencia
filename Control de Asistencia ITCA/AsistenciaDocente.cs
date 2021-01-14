@@ -88,49 +88,33 @@ namespace Control_de_Asistencia_ITCA
         {
             //ESTABLECER UN TEMPORIZADOR CADA CIERTO TIEMPO
             var timer = new System.Timers.Timer(TimeSpan.FromSeconds(0.5).TotalMilliseconds);
+            //HACER REFERENCIA A LA CLASE SELECCIONAR PARA SELECCIONAR LA FILA
+            Seleccionar seleccionar = new Seleccionar();
             //LA ACCION QUE VA A HACER AL ALCANZAR EL TIEMPO LIMITE
             timer.Elapsed += (sender, e) =>
             {
-                if (DateTimeInternet())
-                {
-                    DateTimeOffset horaInternet = InternetTime.GetCurrentTime().Value.ToLocalTime();
-                    seleccionarFila(horaInternet);
-                }
-                else
-                {
-                    DateTimeOffset horaLocal = DateTime.Today;
-                    seleccionarFila(horaLocal);
+                //VALIDAR QUE LA FECHA DEL REGISTRO SEA IGUAL A LA DE HOY
+                validaciones();
+                if (btnRegistrar.Enabled) // SI ES ES IGUAL EL BOTON DE REGISTRAR ASISTENCIA ESTARA ACTIVADO
+                { 
+                    //OBTENER LA HORA DE INTERNET
+                    if (DateTimeInternet())
+                    {
+                        DateTimeOffset horaInternet = InternetTime.GetCurrentTime().Value.ToLocalTime();
+                        seleccionar.seleccionarFila(horaInternet, tblHorarioAsistencia, "txtIniciar", "txtFecha", 6);
+                    }
+                    else //CASO CONTRARIO LA HORA LOCAL
+                    {
+                        DateTimeOffset horaLocal = DateTime.Today;
+                        seleccionar.seleccionarFila(horaLocal, tblHorarioAsistencia, "txtIniciar","txtFecha", 6);
+                    }
                 }
             };
             //INICIAR EL TEMPORIZADOR
             timer.Start();
         }
 
-        public void seleccionarFila(DateTimeOffset fecha)
-        {
-            string horaMenor = tblHorarioAsistencia.Rows[0].Cells[6].Value.ToString();
-            int id = 0;
-            tblHorarioAsistencia.ClearSelection();
-            foreach (DataGridViewRow row in tblHorarioAsistencia.Rows)
-            {
-               if( DateTime.Parse(row.Cells["txtIniciar"].Value.ToString()).Date < DateTime.Parse(horaMenor).Date)
-                {
-                    horaMenor = row.Cells["txtIniciar"].Value.ToString();
-                    id = id++;
-                }
-            }
-
-            if (btnRegistrar.Enabled)
-            {
-                DateTime horaInicio = DateTime.Parse(horaMenor);
-                DateTime horaActual = DateTime.Parse(fecha.ToString("HH:mm"));
-                if (horaActual.Date < horaInicio.Date)
-                {
-                    tblHorarioAsistencia.Rows[id].Selected = true;
-                    //row.DefaultCellStyle.BackColor = Color.FromArgb(50, 205, 50);
-                }
-            }
-        }
+       
 
         public bool DateTimeInternet()
         {
@@ -144,47 +128,72 @@ namespace Control_de_Asistencia_ITCA
 
         private void btnAsistenciaDocente_Click(object sender, EventArgs e)
         {
-            RegistroAsistenciaDocente registro = new RegistroAsistenciaDocente();
+            HistorialAsistencia registro = new HistorialAsistencia();
             registro.ShowDialog();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
 
-            List<String> fechas = new List<string>();
+            List<String> horasNormales = new List<string>();
+            List<String> horasMaximas = new List<string>();
+            string mensaje =  "";
+            //LLENAR UNA LISTA DE FECHAS
             foreach (DataGridViewRow row in tblHorarioAsistencia.Rows)
             {
-                fechas.Add(row.Cells["txtFecha"].Value.ToString());
+                //fechas.Add(row.Cells["txtFecha"].Value.ToString());
+                DateTime horaRegistro = DateTime.Parse(row.Cells["txtInicio"].Value.ToString());
+                horaRegistro.AddMinutes(15);
+                horasMaximas.Add(horaRegistro.ToString("HH:mm"));
+                horasNormales.Add(row.Cells["txtInicio"].Value.ToString());
             }
-            Func<List<string>, ServicioAsistencia.estado> getEstado = lista =>
+            Func<List<string>, ServicioAsistencia.estado> getEstado = listaHoras =>
             {
-                DateTime actual = DateTime.Parse(InternetTime.GetCurrentTime().Value.ToLocalTime().ToString("dd/MM/yyyy"));
-                foreach (string item in lista)
+                try
                 {
-                    DateTime referencia = DateTime.Parse(item);
-                    if (actual.Date < referencia.Date)
+                    DateTime actualInternet = DateTime.Parse(InternetTime.GetCurrentTime().Value.ToLocalTime().ToString("HH:mm"));
+                    DateTime actualLocal = DateTime.Parse(DateTime.Today.ToString("HH:mm"));
+                    for (int i = 0; i < listaHoras.Count; i++)
                     {
-                        return servicio.getEstado(1);
+                        DateTime auxHora = DateTime.Parse(listaHoras[i]);
+                        DateTime auxHoraMax = DateTime.Parse(horasMaximas[i]);
+                        if ((actualInternet.Date >= auxHora.Date && actualInternet.Date <= auxHoraMax.Date) ||
+                        (actualLocal.Date >= auxHora.Date && actualLocal.Date <= auxHoraMax.Date))
+                        {
+                            mensaje = Valores.valores.msjAsistenciaPresente;
+                            return servicio.getEstado(1);
+                        }else if (actualInternet.Date > auxHoraMax.Date.AddHours(2) || actualLocal.Date > auxHoraMax.Date.AddHours(2))
+                        {
+                            mensaje = Valores.valores.msjAsistenciaAtraso;
+                            return servicio.getEstado(2);
+                        }
+                        else
+                        {
+                            mensaje = Valores.valores.msjAsistenciaInjustificado;
+                            return servicio.getEstado(3);
+                        }
                     }
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("Se ha producio una excepción al obtener la fecha y hora.", "Exception",
+                        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 return null;
             };
-            servicio.saveAsistencia(Tipo.SesionTipo, Usuario.Sesion, Valores.valores.msjAsistenciaPresente,
-                DateTime.Parse(DateTime.Today.ToString("dd/MM/yyyy")).Date, 
-                getEstado(fechas), "Sin comentaros", "S/A");
-
-            
-
-            if (InternetTime.GetCurrentTime().Value.ToLocalTime() != null)
+            DateTimeOffset fechaActual = InternetTime.GetCurrentTime().Value.ToLocalTime();
+            if (DateTimeInternet())
             {
-                DateTime horaInternet = DateTime.Parse(InternetTime.GetCurrentTime().Value.ToLocalTime().ToString("dd/MM/yyyy"));
-
+                servicio.saveAsistencia(Tipo.SesionTipo, Usuario.Sesion, mensaje,
+                DateTime.Parse(fechaActual.ToString("dd/MM/yyyy")).Date,
+                getEstado(horasNormales), "Sin comentaros", "S/A");
             }
             else
             {
-                DateTime horaLocal = DateTime.Parse(DateTime.Today.ToString("dd/MM/yyyy"));
-
+                servicio.saveAsistencia(Tipo.SesionTipo, Usuario.Sesion, mensaje,
+               DateTime.Parse(DateTime.Today.ToString("dd/MM/yyyy")).Date,
+               getEstado(horasNormales), "Sin comentaros", "S/A");
             }
+
         }
 
         private void tblHorarioAsistencia_ColumnSortModeChanged(object sender, DataGridViewColumnEventArgs e)

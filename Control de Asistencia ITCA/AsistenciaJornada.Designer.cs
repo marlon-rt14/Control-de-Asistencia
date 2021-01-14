@@ -30,13 +30,6 @@ namespace Control_de_Asistencia_ITCA
         private void InitializeComponent()
         {
             this.tblHorarioAsistencia = new System.Windows.Forms.DataGridView();
-            this.cmbUserName = new System.Windows.Forms.ComboBox();
-            this.btnAsistenciaDocente = new System.Windows.Forms.Button();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.pbxLogo = new System.Windows.Forms.PictureBox();
-            this.lblCargo = new System.Windows.Forms.Label();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.pbxUser = new System.Windows.Forms.PictureBox();
             this.txtID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtCedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +39,13 @@ namespace Control_de_Asistencia_ITCA
             this.txtSpp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtEsp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSsp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbUserName = new System.Windows.Forms.ComboBox();
+            this.btnAsistenciaDocente = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.lblCargo = new System.Windows.Forms.Label();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.pbxUser = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblHorarioAsistencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxUser)).BeginInit();
@@ -77,77 +77,6 @@ namespace Control_de_Asistencia_ITCA
             this.tblHorarioAsistencia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tblHorarioAsistencia.Size = new System.Drawing.Size(879, 327);
             this.tblHorarioAsistencia.TabIndex = 17;
-            // 
-            // cmbUserName
-            // 
-            this.cmbUserName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbUserName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbUserName.FormattingEnabled = true;
-            this.cmbUserName.Items.AddRange(new object[] {
-            "Cambiar nombre de usuario",
-            "Cambiar contraseña"});
-            this.cmbUserName.Location = new System.Drawing.Point(157, 4);
-            this.cmbUserName.Name = "cmbUserName";
-            this.cmbUserName.Size = new System.Drawing.Size(121, 21);
-            this.cmbUserName.TabIndex = 16;
-            // 
-            // btnAsistenciaDocente
-            // 
-            this.btnAsistenciaDocente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAsistenciaDocente.Location = new System.Drawing.Point(747, 106);
-            this.btnAsistenciaDocente.Name = "btnAsistenciaDocente";
-            this.btnAsistenciaDocente.Size = new System.Drawing.Size(144, 23);
-            this.btnAsistenciaDocente.TabIndex = 15;
-            this.btnAsistenciaDocente.Text = "Registro de Asistencia";
-            this.btnAsistenciaDocente.UseVisualStyleBackColor = true;
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.Location = new System.Drawing.Point(157, 106);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(114, 23);
-            this.btnRegistrar.TabIndex = 14;
-            this.btnRegistrar.Text = "Registrar Asistencia";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            // 
-            // pbxLogo
-            // 
-            this.pbxLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pbxLogo.BackgroundImage = global::Control_de_Asistencia_ITCA.Properties.Resources.itca;
-            this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxLogo.Location = new System.Drawing.Point(795, 4);
-            this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(96, 96);
-            this.pbxLogo.TabIndex = 13;
-            this.pbxLogo.TabStop = false;
-            // 
-            // lblCargo
-            // 
-            this.lblCargo.AutoSize = true;
-            this.lblCargo.Location = new System.Drawing.Point(154, 61);
-            this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(35, 13);
-            this.lblCargo.TabIndex = 12;
-            this.lblCargo.Text = "Cargo";
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(154, 39);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(28, 13);
-            this.lblTipo.TabIndex = 11;
-            this.lblTipo.Text = "Tipo";
-            // 
-            // pbxUser
-            // 
-            this.pbxUser.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pbxUser.Location = new System.Drawing.Point(12, 4);
-            this.pbxUser.Name = "pbxUser";
-            this.pbxUser.Size = new System.Drawing.Size(128, 125);
-            this.pbxUser.TabIndex = 10;
-            this.pbxUser.TabStop = false;
             // 
             // txtID
             // 
@@ -221,6 +150,79 @@ namespace Control_de_Asistencia_ITCA
             this.txtSsp.HeaderText = "Fin - segundo periodo";
             this.txtSsp.Name = "txtSsp";
             this.txtSsp.ReadOnly = true;
+            // 
+            // cmbUserName
+            // 
+            this.cmbUserName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUserName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbUserName.FormattingEnabled = true;
+            this.cmbUserName.Items.AddRange(new object[] {
+            "Cambiar nombre de usuario",
+            "Cambiar contraseña"});
+            this.cmbUserName.Location = new System.Drawing.Point(157, 4);
+            this.cmbUserName.Name = "cmbUserName";
+            this.cmbUserName.Size = new System.Drawing.Size(121, 21);
+            this.cmbUserName.TabIndex = 16;
+            // 
+            // btnAsistenciaDocente
+            // 
+            this.btnAsistenciaDocente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAsistenciaDocente.Location = new System.Drawing.Point(747, 106);
+            this.btnAsistenciaDocente.Name = "btnAsistenciaDocente";
+            this.btnAsistenciaDocente.Size = new System.Drawing.Size(144, 23);
+            this.btnAsistenciaDocente.TabIndex = 15;
+            this.btnAsistenciaDocente.Text = "Registro de Asistencia";
+            this.btnAsistenciaDocente.UseVisualStyleBackColor = true;
+            this.btnAsistenciaDocente.Click += new System.EventHandler(this.btnAsistenciaDocente_Click);
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Location = new System.Drawing.Point(157, 106);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(114, 23);
+            this.btnRegistrar.TabIndex = 14;
+            this.btnRegistrar.Text = "Registrar Asistencia";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // pbxLogo
+            // 
+            this.pbxLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.pbxLogo.BackgroundImage = global::Control_de_Asistencia_ITCA.Properties.Resources.itca;
+            this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxLogo.Location = new System.Drawing.Point(795, 4);
+            this.pbxLogo.Name = "pbxLogo";
+            this.pbxLogo.Size = new System.Drawing.Size(96, 96);
+            this.pbxLogo.TabIndex = 13;
+            this.pbxLogo.TabStop = false;
+            // 
+            // lblCargo
+            // 
+            this.lblCargo.AutoSize = true;
+            this.lblCargo.Location = new System.Drawing.Point(154, 61);
+            this.lblCargo.Name = "lblCargo";
+            this.lblCargo.Size = new System.Drawing.Size(35, 13);
+            this.lblCargo.TabIndex = 12;
+            this.lblCargo.Text = "Cargo";
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Location = new System.Drawing.Point(154, 39);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(28, 13);
+            this.lblTipo.TabIndex = 11;
+            this.lblTipo.Text = "Tipo";
+            // 
+            // pbxUser
+            // 
+            this.pbxUser.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pbxUser.Location = new System.Drawing.Point(12, 4);
+            this.pbxUser.Name = "pbxUser";
+            this.pbxUser.Size = new System.Drawing.Size(128, 125);
+            this.pbxUser.TabIndex = 10;
+            this.pbxUser.TabStop = false;
             // 
             // AsistenciaJornada
             // 

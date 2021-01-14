@@ -1,7 +1,7 @@
 ﻿
 namespace Control_de_Asistencia_ITCA.Views
 {
-    partial class RegistroAsistenciaDocente
+    partial class HistorialAsistencia
     {
         /// <summary>
         /// Required designer variable.

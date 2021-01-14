@@ -82,8 +82,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\Horas.cs" />
     <Compile Include="Controllers\InternetTime.cs" />
     <Compile Include="Controllers\IniciarDatos.cs" />
+    <Compile Include="Controllers\Seleccionar.cs" />
     <Compile Include="Controllers\Validar.cs" />
     <Compile Include="Modelo\Tipo.cs" />
     <Compile Include="Modelo\Usuario.cs" />
@@ -96,11 +98,11 @@
     <Compile Include="Views\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\RegistroAsistenciaDocente.cs">
+    <Compile Include="Views\HistorialAsistencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\RegistroAsistenciaDocente.Designer.cs">
-      <DependentUpon>RegistroAsistenciaDocente.cs</DependentUpon>
+    <Compile Include="Views\HistorialAsistencia.Designer.cs">
+      <DependentUpon>HistorialAsistencia.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AsistenciaDocente.resx">
       <DependentUpon>AsistenciaDocente.cs</DependentUpon>
@@ -121,8 +123,8 @@
     <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\RegistroAsistenciaDocente.resx">
-      <DependentUpon>RegistroAsistenciaDocente.cs</DependentUpon>
+    <EmbeddedResource Include="Views\HistorialAsistencia.resx">
+      <DependentUpon>HistorialAsistencia.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\ServicioAsistencia\Control_de_Asistencia_ITCA.ServicioAsistencia.asistencia.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>

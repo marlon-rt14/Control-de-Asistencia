@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Control_de_Asistencia_ITCA.Views
 {
-    public partial class RegistroAsistenciaDocente : Form
+    public partial class HistorialAsistencia : Form
     {
-        public RegistroAsistenciaDocente()
+        public HistorialAsistencia()
         {
             InitializeComponent();
             iniciarDatos();
