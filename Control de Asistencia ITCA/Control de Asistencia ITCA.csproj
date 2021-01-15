@@ -85,6 +85,7 @@
     <Compile Include="Controllers\Horas.cs" />
     <Compile Include="Controllers\InternetTime.cs" />
     <Compile Include="Controllers\IniciarDatos.cs" />
+    <Compile Include="Controllers\ObtenerRed.cs" />
     <Compile Include="Controllers\Seguridad.cs" />
     <Compile Include="Controllers\Seleccionar.cs" />
     <Compile Include="Controllers\Validar.cs" />
@@ -92,6 +93,11 @@
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Valores\valores.cs" />
     <Compile Include="Views\CambiarClave.cs">
       <SubType>Form</SubType>
@@ -125,14 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Views\CambiarClave.resx">
       <DependentUpon>CambiarClave.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,7 +343,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
@@ -371,7 +371,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itca.jpeg" />
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

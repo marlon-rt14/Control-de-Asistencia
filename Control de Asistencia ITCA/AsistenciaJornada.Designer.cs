@@ -45,10 +45,8 @@ namespace Control_de_Asistencia_ITCA
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.lblCargo = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
-            this.pbxUser = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblHorarioAsistencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUser)).BeginInit();
             this.SuspendLayout();
             // 
             // tblHorarioAsistencia
@@ -188,14 +186,13 @@ namespace Control_de_Asistencia_ITCA
             // 
             // pbxLogo
             // 
-            this.pbxLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pbxLogo.BackgroundImage = global::Control_de_Asistencia_ITCA.Properties.Resources.itca;
+            this.pbxLogo.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pbxLogo.BackgroundImage = global::Control_de_Asistencia_ITCA.Properties.Resources.logo;
             this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxLogo.Location = new System.Drawing.Point(795, 4);
+            this.pbxLogo.Location = new System.Drawing.Point(12, 12);
             this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(96, 96);
-            this.pbxLogo.TabIndex = 13;
+            this.pbxLogo.Size = new System.Drawing.Size(136, 117);
+            this.pbxLogo.TabIndex = 18;
             this.pbxLogo.TabStop = false;
             // 
             // lblCargo
@@ -216,15 +213,6 @@ namespace Control_de_Asistencia_ITCA
             this.lblTipo.TabIndex = 11;
             this.lblTipo.Text = "Tipo";
             // 
-            // pbxUser
-            // 
-            this.pbxUser.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pbxUser.Location = new System.Drawing.Point(12, 4);
-            this.pbxUser.Name = "pbxUser";
-            this.pbxUser.Size = new System.Drawing.Size(128, 125);
-            this.pbxUser.TabIndex = 10;
-            this.pbxUser.TabStop = false;
-            // 
             // AsistenciaJornada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,12 +225,10 @@ namespace Control_de_Asistencia_ITCA
             this.Controls.Add(this.pbxLogo);
             this.Controls.Add(this.lblCargo);
             this.Controls.Add(this.lblTipo);
-            this.Controls.Add(this.pbxUser);
             this.Name = "AsistenciaJornada";
             this.Text = "AsistenciaJornada";
             ((System.ComponentModel.ISupportInitialize)(this.tblHorarioAsistencia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,7 +251,6 @@ namespace Control_de_Asistencia_ITCA
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblTipo;
-        private System.Windows.Forms.PictureBox pbxUser;
         public System.Windows.Forms.ComboBox cmbUserName;
     }
 }

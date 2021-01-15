@@ -29,10 +29,8 @@ namespace Control_de_Asistencia_ITCA
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbxUser = new System.Windows.Forms.PictureBox();
             this.lblTipo = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnAsistenciaDocente = new System.Windows.Forms.Button();
             this.cmbUserName = new System.Windows.Forms.ComboBox();
@@ -46,19 +44,10 @@ namespace Control_de_Asistencia_ITCA
             this.txtIniciar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtConcluir = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
+            this.pbxLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblHorarioAsistencia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbxUser
-            // 
-            this.pbxUser.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pbxUser.Location = new System.Drawing.Point(12, 12);
-            this.pbxUser.Name = "pbxUser";
-            this.pbxUser.Size = new System.Drawing.Size(128, 125);
-            this.pbxUser.TabIndex = 0;
-            this.pbxUser.TabStop = false;
             // 
             // lblTipo
             // 
@@ -77,18 +66,6 @@ namespace Control_de_Asistencia_ITCA
             this.lblCargo.Size = new System.Drawing.Size(35, 13);
             this.lblCargo.TabIndex = 3;
             this.lblCargo.Text = "Cargo";
-            // 
-            // pbxLogo
-            // 
-            this.pbxLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pbxLogo.BackgroundImage = global::Control_de_Asistencia_ITCA.Properties.Resources.itca;
-            this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxLogo.Location = new System.Drawing.Point(711, 12);
-            this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(96, 96);
-            this.pbxLogo.TabIndex = 5;
-            this.pbxLogo.TabStop = false;
             // 
             // btnRegistrar
             // 
@@ -226,6 +203,19 @@ namespace Control_de_Asistencia_ITCA
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.ReadOnly = true;
             // 
+            // pbxLogo
+            //
+            this.pbxLogo.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pbxLogo.BackgroundImage = global::Control_de_Asistencia_ITCA.Properties.Resources.logo;
+            this.pbxLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxLogo.Location = new System.Drawing.Point(12, 12);
+            this.pbxLogo.Name = "pbxLogo";
+            this.pbxLogo.Size = new System.Drawing.Size(128, 125);
+            this.pbxLogo.TabIndex = 5;
+            this.pbxLogo.TabStop = false;
+            // 
             // AsistenciaDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,20 +228,16 @@ namespace Control_de_Asistencia_ITCA
             this.Controls.Add(this.pbxLogo);
             this.Controls.Add(this.lblCargo);
             this.Controls.Add(this.lblTipo);
-            this.Controls.Add(this.pbxUser);
             this.Name = "AsistenciaDocente";
             this.Text = "Control de Asistencia ITCA";
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblHorarioAsistencia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pbxUser;
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.PictureBox pbxLogo;

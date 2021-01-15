@@ -9,7 +9,6 @@ C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITC
 C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.Views.Login.resources
 C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.AsistenciaDocente.resources
 C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.AsistenciaJornada.resources
-C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control de Asistencia ITCA.csprojAssemblyReference.cache
 C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.Views.HistorialAsistencia.resources
 C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.Views.frmCambiarUsuario.resources
 C:\Users\mjavi\source\repos\Control de Asistencia ITCA\Control de Asistencia ITCA\obj\Debug\Control_de_Asistencia_ITCA.Views.frmCambiarClave.resources
