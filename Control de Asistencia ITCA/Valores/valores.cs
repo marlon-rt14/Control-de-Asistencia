@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Control_de_Asistencia_ITCA.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,7 @@ namespace Control_de_Asistencia_ITCA.Valores
         public static string msjAsistenciaPresente = "Su asistencia ha sido guardada como Presente a las " + DateTime.Today.ToString("HH:mm");
         public static string msjAsistenciaAtraso = "Su asistencia ha sido guardada como Atraso a las " + DateTime.Today.ToString("HH:mm");
         public static string msjAsistenciaInjustificado = "Su asistencia ha sido guardada como Injustificado a las " + DateTime.Today.ToString("HH:mm");
+        public static string red = "GALO";
+        public static string mac = "aux";
     }
 }

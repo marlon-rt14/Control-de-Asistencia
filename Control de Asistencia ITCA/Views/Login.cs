@@ -24,95 +24,105 @@ namespace Control_de_Asistencia_ITCA.Views
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            //VALIDAR ALGUN POSIBLE ERROR CON LA CONEXION AL SERVIDOR
-            try
+            if(ObtenerRed.obtenerFQDN() == Valores.valores.red)
             {
-                //TENER UNA LISTA DE TODOS LOS EMPLEADOS
-                IList<ServicioAsistencia.empleado> listaEmpleados = GetServicio.getListEmpleados();
-                //DECLARAR UNA VARIABLE PARA EL ID DEL EMPLEADO ACTUAL
-                int idEmpleadoActual = new int();
-                //USUARIO ENCONTRAD
-                bool encontrado = false;
-                //DECLARAR UNA VARIABLE COMO BANDERA DE LA CLAVE
-                string auxClave = "";
-                //RECORRER TODA LA LISTA DE EMPLEADOS PARA VALIDAR USUARIO Y CONTRASEÑA
-                foreach (ServicioAsistencia.empleado item in listaEmpleados)
+                //VALIDAR ALGUN POSIBLE ERROR CON LA CONEXION AL SERVIDOR
+                try
                 {
-                    //VALIDAR USUARIO Y CONTRASEÑA
-                    if (item.usuario == txtUsuario.Text)
+                    //TENER UNA LISTA DE TODOS LOS EMPLEADOS
+                    IList<ServicioAsistencia.empleado> listaEmpleados = GetServicio.getListEmpleados();
+                    //DECLARAR UNA VARIABLE PARA EL ID DEL EMPLEADO ACTUAL
+                    int idEmpleadoActual = new int();
+                    //USUARIO ENCONTRAD
+                    bool encontrado = false;
+                    //DECLARAR UNA VARIABLE COMO BANDERA DE LA CLAVE
+                    string auxClave = "";
+                    //RECORRER TODA LA LISTA DE EMPLEADOS PARA VALIDAR USUARIO Y CONTRASEÑA
+                    foreach (ServicioAsistencia.empleado item in listaEmpleados)
                     {
-                        //VALIDAR SI EL USUARIO INGRESA POR PRIMERA VEZ PARA ENCRIPTAR SU CLAVE ACTUAL
-                        if(item.clave == txtClave.Text)
+                        //VALIDAR USUARIO Y CONTRASEÑA
+                        if (item.usuario == txtUsuario.Text)
                         {
-                            auxClave = txtClave.Text;
-                            encontrado = true;
-                            //RECUPERAR EL ID DEL EMPLEADO ACTUAL
-                            idEmpleadoActual = item.idEmpleado;
-                            break;
-                        }
-                        //CASO CONTRARIO SI SU CLAVE YA ESTA ENCRIPTADA, DESENCRIPTAR Y COMPARAR CON LA QUE INGRESÓ
-                        else
-                        {
-                            if(txtClave.Text == Seguridad.Desencriptar(item.clave))
+                            //VALIDAR SI EL USUARIO INGRESA POR PRIMERA VEZ PARA ENCRIPTAR SU CLAVE ACTUAL
+                            if (item.clave == txtClave.Text)
                             {
+                                auxClave = txtClave.Text;
                                 encontrado = true;
                                 //RECUPERAR EL ID DEL EMPLEADO ACTUAL
                                 idEmpleadoActual = item.idEmpleado;
                                 break;
                             }
+                            //CASO CONTRARIO SI SU CLAVE YA ESTA ENCRIPTADA, DESENCRIPTAR Y COMPARAR CON LA QUE INGRESÓ
+                            else
+                            {
+                                if (txtClave.Text == Seguridad.Desencriptar(item.clave))
+                                {
+                                    encontrado = true;
+                                    //RECUPERAR EL ID DEL EMPLEADO ACTUAL
+                                    idEmpleadoActual = item.idEmpleado;
+                                    break;
+                                }
+                            }
+
                         }
-                        
                     }
-                }
 
-                if (encontrado)
-                {
-                    //IDENTIFCAR QUE TIPO DE EMPLEADO ES EL QUE INGRESO
-                    ServicioAsistencia.tipo tipo = validarTipoEmpleado(idEmpleadoActual);
-                    //GUARDAR EL TIPO EN UNA NUEVA CLASE
-                    Tipo.SesionTipo = tipo;
-                    //ABRIR EL RESPECTIVO FORMULARIO SEGUN EL TIPO
-                    if (tipo != null && tipo.descripcionTipo == "Docente")
+                    if (encontrado)
                     {
-                        ServicioAsistencia.empleado empleadoActual = GetServicio.getEmpleado(idEmpleadoActual);
-                        Usuario.Sesion = empleadoActual;
-
-                        //GUARDAR PRIMERA VEZ
-                        if(Usuario.Sesion.clave == auxClave)
+                        //IDENTIFCAR QUE TIPO DE EMPLEADO ES EL QUE INGRESO
+                        ServicioAsistencia.tipo tipo = validarTipoEmpleado(idEmpleadoActual);
+                        //GUARDAR EL TIPO EN UNA NUEVA CLASE
+                        Tipo.SesionTipo = tipo;
+                        //ABRIR EL RESPECTIVO FORMULARIO SEGUN EL TIPO
+                        if (tipo != null && tipo.descripcionTipo == "Docente")
                         {
-                            GetServicio.updateEmpleado(Usuario.Sesion.idEmpleado, Usuario.Sesion.cedula, Usuario.Sesion.nombres,
-                            Usuario.Sesion.apellidos, Usuario.Sesion.usuario, Usuario.Sesion.funcion,
-                            Seguridad.Encriptar(auxClave));
-                        }
+                            ServicioAsistencia.empleado empleadoActual = GetServicio.getEmpleado(idEmpleadoActual);
+                            Usuario.Sesion = empleadoActual;
 
-                        //ABRIR FORMULARIOS PARA DOCENTES
-                        AsistenciaDocente childDocente = new AsistenciaDocente();
-                        this.Hide();
-                        childDocente.Show();
+                            //GUARDAR PRIMERA VEZ
+                            if (Usuario.Sesion.clave == auxClave)
+                            {
+                                GetServicio.updateEmpleado(Usuario.Sesion.idEmpleado, Usuario.Sesion.cedula, Usuario.Sesion.nombres,
+                                Usuario.Sesion.apellidos, Usuario.Sesion.usuario, Usuario.Sesion.funcion,
+                                Seguridad.Encriptar(auxClave));
+                            }
+
+                            //ABRIR FORMULARIOS PARA DOCENTES
+                            AsistenciaDocente childDocente = new AsistenciaDocente();
+                            this.Hide();
+                            childDocente.Show();
+                            //this.Close();
+                        }
+                        else if (tipo != null && (tipo.descripcionTipo == "Administrativo" || tipo.descripcionTipo == "Limpieza"))
+                        {
+                            ServicioAsistencia.empleado empleadoActual = GetServicio.getEmpleado(idEmpleadoActual);
+                            Usuario.Sesion = empleadoActual;
+                            //ABRIR FORMULARIOS PARA ADMINISTRATIVOS
+                            AsistenciaJornada childJornada = new AsistenciaJornada();
+                            this.Hide();
+                            childJornada.Show();
+                            //this.Dispose();
+                        }
                         //this.Close();
                     }
-                    else if (tipo != null && (tipo.descripcionTipo == "Administrativo" || tipo.descripcionTipo == "Limpieza"))
+                    else
                     {
-                        ServicioAsistencia.empleado empleadoActual = GetServicio.getEmpleado(idEmpleadoActual);
-                        Usuario.Sesion = empleadoActual;
-                        //ABRIR FORMULARIOS PARA ADMINISTRATIVOS
-                        AsistenciaJornada childJornada = new AsistenciaJornada();
-                        this.Hide();
-                        childJornada.Show();
-                        //this.Dispose();
+                        MessageBox.Show(Valores.valores.msjCredencialesIncorrectos, Valores.valores.titleErrorCredenciales,
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    //this.Close();
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show(Valores.valores.msjCredencialesIncorrectos, Valores.valores.titleErrorCredenciales,
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(Valores.valores.msjErrorServidor, Valores.valores.titleErrorServidor, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(Valores.valores.msjErrorServidor, Valores.valores.titleErrorServidor, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usted no se encuentra en la institución, por favor aceérquese para registrar su asistencia.",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+           
 
         }
 
